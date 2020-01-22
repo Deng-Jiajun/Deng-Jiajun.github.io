@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>test on Don&#39;t Judge</title>
+    <link>https://blog.dontjudge.cn/categories/test/</link>
+    <description>Recent content in test on Don&#39;t Judge</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 22 Jan 2020 23:26:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://blog.dontjudge.cn/categories/test/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>阿里云OSS测试</title>
+      <link>https://blog.dontjudge.cn/post/%E9%98%BF%E9%87%8C%E4%BA%91oss%E6%B5%8B%E8%AF%95/</link>
+      <pubDate>Wed, 22 Jan 2020 23:26:00 +0800</pubDate>
+      
+      <guid>https://blog.dontjudge.cn/post/%E9%98%BF%E9%87%8C%E4%BA%91oss%E6%B5%8B%E8%AF%95/</guid>
+      <description>本文唯一作用就是测试阿里云OSS的费用 图片大小40.694KB 标准存储 创建时间：2020年1月22日 23:10 阿里云oss域名： 自有域名：</description>
+    </item>
+    
+    <item>
+      <title>测试用页面</title>
+      <link>https://blog.dontjudge.cn/post/%E6%B5%8B%E8%AF%95%E7%94%A8%E9%A1%B5%E9%9D%A2/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:01 +0800</pubDate>
+      
+      <guid>https://blog.dontjudge.cn/post/%E6%B5%8B%E8%AF%95%E7%94%A8%E9%A1%B5%E9%9D%A2/</guid>
+      <description>网易云音乐： $$ evidence_{i}=\sum_{j}W_{ij}x_{j}+b_{i} $$ $2^2$</description>
+    </item>
+    
+  </channel>
+</rss>

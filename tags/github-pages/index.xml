@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GitHub Pages on Don&#39;t Judge</title>
+    <link>https://blog.dontjudge.cn/tags/github-pages/</link>
+    <description>Recent content in GitHub Pages on Don&#39;t Judge</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 23 Jan 2020 05:20:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://blog.dontjudge.cn/tags/github-pages/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hugo &#43; Github Pages 搭建Blog</title>
+      <link>https://blog.dontjudge.cn/post/hugo-&#43;-github-pages-%E6%90%AD%E5%BB%BAblog/</link>
+      <pubDate>Thu, 23 Jan 2020 05:20:00 +0800</pubDate>
+      
+      <guid>https://blog.dontjudge.cn/post/hugo-&#43;-github-pages-%E6%90%AD%E5%BB%BAblog/</guid>
+      <description>本文简单记录通过 Hugo + Github Pages 搭建 Blog 的过程，主要说过程，细节配置不详述。 GitHub Pages 参考 GitHub Pages 搭建教程 - 少数派 使用GitHub自带的主题先让页面能够通过自己</description>
+    </item>
+    
+  </channel>
+</rss>

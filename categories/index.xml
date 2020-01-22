@@ -1,15 +1,60 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on Even - A super concise theme for Hugo</title>
+    <title>Categories on Don&#39;t Judge</title>
     <link>https://blog.dontjudge.cn/categories/</link>
-    <description>Recent content in Categories on Even - A super concise theme for Hugo</description>
+    <description>Recent content in Categories on Don&#39;t Judge</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Tue, 10 Jul 2018 00:00:00 +0800</lastBuildDate>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 23 Jan 2020 05:20:00 +0800</lastBuildDate>
     
 	<atom:link href="https://blog.dontjudge.cn/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>GitHub Pages</title>
+      <link>https://blog.dontjudge.cn/categories/github-pages/</link>
+      <pubDate>Thu, 23 Jan 2020 05:20:00 +0800</pubDate>
+      
+      <guid>https://blog.dontjudge.cn/categories/github-pages/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hugo</title>
+      <link>https://blog.dontjudge.cn/categories/hugo/</link>
+      <pubDate>Thu, 23 Jan 2020 05:20:00 +0800</pubDate>
+      
+      <guid>https://blog.dontjudge.cn/categories/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Markdown</title>
+      <link>https://blog.dontjudge.cn/categories/markdown/</link>
+      <pubDate>Thu, 23 Jan 2020 01:00:00 +0800</pubDate>
+      
+      <guid>https://blog.dontjudge.cn/categories/markdown/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Typora</title>
+      <link>https://blog.dontjudge.cn/categories/typora/</link>
+      <pubDate>Thu, 23 Jan 2020 01:00:00 +0800</pubDate>
+      
+      <guid>https://blog.dontjudge.cn/categories/typora/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>test</title>
+      <link>https://blog.dontjudge.cn/categories/test/</link>
+      <pubDate>Wed, 22 Jan 2020 23:26:00 +0800</pubDate>
+      
+      <guid>https://blog.dontjudge.cn/categories/test/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>category-2</title>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo on Don&#39;t Judge</title>
+    <link>https://blog.dontjudge.cn/tags/hugo/</link>
+    <description>Recent content in Hugo on Don&#39;t Judge</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 23 Jan 2020 05:20:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://blog.dontjudge.cn/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hugo &#43; Github Pages 搭建Blog</title>
+      <link>https://blog.dontjudge.cn/post/hugo-&#43;-github-pages-%E6%90%AD%E5%BB%BAblog/</link>
+      <pubDate>Thu, 23 Jan 2020 05:20:00 +0800</pubDate>
+      
+      <guid>https://blog.dontjudge.cn/post/hugo-&#43;-github-pages-%E6%90%AD%E5%BB%BAblog/</guid>
+      <description>本文简单记录通过 Hugo + Github Pages 搭建 Blog 的过程，主要说过程，细节配置不详述。 GitHub Pages 参考 GitHub Pages 搭建教程 - 少数派 使用GitHub自带的主题先让页面能够通过自己</description>
+    </item>
+    
+    <item>
+      <title>Hugo静态网站图片插入问题</title>
+      <link>https://blog.dontjudge.cn/post/hugo%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99%E5%9B%BE%E7%89%87%E6%8F%92%E5%85%A5/</link>
+      <pubDate>Wed, 22 Jan 2020 19:23:00 +0800</pubDate>
+      
+      <guid>https://blog.dontjudge.cn/post/hugo%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99%E5%9B%BE%E7%89%87%E6%8F%92%E5%85%A5/</guid>
+      <description>本文记录在使用Hugo生成静态网站过程中，关于文章本地图片插入的问题 Hugo静态资源载入逻辑 hugo 的静态文件放置在 /static 文件夹下，文章 markdown 文件放在 /content/post 文</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Hugo静态网站图片插入问题 - Don&#39;t Judge</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="Deng" /><meta name="description" content="本文记录在使用Hugo生成静态网站过程中，关于文章本地图片插入的问题 Hugo静态资源载入逻辑 hugo 的静态文件放置在 /static 文件夹下，文章 markdown 文件放在 /content/post 文" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.59.0 with theme even" />
+
+
+<link rel="canonical" href="https://blog.dontjudge.cn/post/hugo%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99%E5%9B%BE%E7%89%87%E6%8F%92%E5%85%A5/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<link href="/dist/even.c2a46f00.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="Hugo静态网站图片插入问题" />
+<meta property="og:description" content="本文记录在使用Hugo生成静态网站过程中，关于文章本地图片插入的问题 Hugo静态资源载入逻辑 hugo 的静态文件放置在 /static 文件夹下，文章 markdown 文件放在 /content/post 文" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.dontjudge.cn/post/hugo%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99%E5%9B%BE%E7%89%87%E6%8F%92%E5%85%A5/" />
+<meta property="article:published_time" content="2020-01-22T19:23:00+08:00" />
+<meta property="article:modified_time" content="2020-01-22T22:15:00+08:00" />
+<meta itemprop="name" content="Hugo静态网站图片插入问题">
+<meta itemprop="description" content="本文记录在使用Hugo生成静态网站过程中，关于文章本地图片插入的问题 Hugo静态资源载入逻辑 hugo 的静态文件放置在 /static 文件夹下，文章 markdown 文件放在 /content/post 文">
+
+
+<meta itemprop="datePublished" content="2020-01-22T19:23:00&#43;08:00" />
+<meta itemprop="dateModified" content="2020-01-22T22:15:00&#43;08:00" />
+<meta itemprop="wordCount" content="1169">
+
+
+
+<meta itemprop="keywords" content="Hugo," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Hugo静态网站图片插入问题"/>
+<meta name="twitter:description" content="本文记录在使用Hugo生成静态网站过程中，关于文章本地图片插入的问题 Hugo静态资源载入逻辑 hugo 的静态文件放置在 /static 文件夹下，文章 markdown 文件放在 /content/post 文"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">Don&#39;t Judge</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">About</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">Don&#39;t Judge</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">About</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">Hugo静态网站图片插入问题</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2020-01-22 19:23 </span>
+        <div class="post-category">
+            <a href="/categories/hugo/"> Hugo </a>
+            </div>
+          <span class="more-meta"> 约 1169 字 </span>
+          <span class="more-meta"> 预计阅读 3 分钟 </span>
+        <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#hugo静态资源载入逻辑">Hugo静态资源载入逻辑</a></li>
+<li><a href="#解决方案">解决方案</a></li>
+<li><a href="#其他问题">其他问题</a></li>
+<li><a href="#后记">后记</a></li>
+<li><a href="#参考资料">参考资料</a></li>
+</ul></li>
+</ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      
+
+<blockquote>
+<p>本文记录在使用Hugo生成静态网站过程中，关于文章本地图片插入的问题</p>
+</blockquote>
+
+<h2 id="hugo静态资源载入逻辑">Hugo静态资源载入逻辑</h2>
+
+<ol>
+<li><p>hugo 的静态文件放置在 /static 文件夹下，文章 markdown 文件放在 /content/post 文件夹下</p></li>
+
+<li><p>hugo 生成的 public 文件夹（即整个网页静态文件），会将static里的内容放到网站根目录</p></li>
+
+<li><p>基于以上两点，图片的相对路径要写成这种格式：<code>![imagename](/img/imagename.png)</code></p></li>
+
+<li><p>由于 markdown 和生成的 html 的图片路径是一致的，因此 markdown 里也要这么写。但是如果直接把图片放到 /static/img 里，在本地就无法正常显示这个文件夹</p></li>
+</ol>
+
+<blockquote>
+<p>显然不能，因为路径不一致：</p>
+
+<p>static：C:\Users\Deng-\OneDrive\HugoBlog\static\img</p>
+
+<p>markdown文档：C:\Users\Deng-\OneDrive\HugoBlog\content\post</p>
+</blockquote>
+
+<h2 id="解决方案">解决方案</h2>
+
+<p>基于以上4点原因，解决方案有以下几种：</p>
+
+<ol>
+<li>在 /post/img 里放图片，然后复制到 /static/img</li>
+</ol>
+
+<p>评价：麻烦</p>
+
+<ol>
+<li>在1的基础上，写一个批处理，完成复制的任务；（因为之前写过的批处理：生成 public.cmd，只要在前面加上复制的命令就行）</li>
+</ol>
+
+<p>评价：可行，但是不完美，可能出现文件权限问题</p>
+
+<ol>
+<li>不管，就当瞎了，本地不看，直接看server实时渲染</li>
+</ol>
+
+<p>评价：可行，但是太惨了</p>
+
+<ol>
+<li>做一个 link，链接两个文件夹</li>
+</ol>
+
+<p>评价：一劳永逸，可行。建立链接 cmd 命令：<code>mklink C:\Users\Deng-\OneDrive\HugoBlog\content\post\img C:\Users\Deng-\OneDrive\HugoBlog\static\img /J</code></p>
+
+<hr />
+
+<p>至此，hugo的配置已经完毕，但是还可能有其他的问题导致图片加载有问题</p>
+
+<h2 id="其他问题">其他问题</h2>
+
+<ol>
+<li>严格注意路径：只能写成 <code>/img/imagename.png</code> 的形式（注意<code>/</code>和<code>\</code> 的区别)</li>
+</ol>
+
+<blockquote>
+<p>可能是当前主题不支持<img>的原因，嵌入图片的代码只能写成这样：<code>![imagename](/img/imagename.png)</code>；<code>&lt;img src=&quot;&quot; alt=&quot;&quot; style=&quot;zoom:50%;&quot; /&gt;</code> 这种格式的修改图片缩放比例的代码也是不能用的</p>
+</blockquote>
+
+<ol>
+<li><p>为了方便，我们希望在typora里粘贴的图片直接到img路径下，为此要做以下两步</p>
+
+<ol>
+<li>在markdown的文件头写入图片根目录，根目录为当前文件夹(<code>./</code>) ：<code>typora-root-url: ./</code></li>
+</ol>
+
+<p>这个也可以在格式-&gt;图像-&gt;点击设置图片根目录，选择 <code>\content\post</code> typora会自动会加入这行配置</p>
+
+<ol>
+<li>typora偏好设置，设置图像<strong>复制到指定路径</strong> <code>./img</code>，应用规则<strong>优先使用相对路径</strong></li>
+</ol></li>
+</ol>
+
+<h2 id="后记">后记</h2>
+
+<p>只是因为对本地图片的插入有执念，折腾了很久，中途一度想放弃，最后稀里糊涂试出来了，不确定任何情况下都能生效。凑巧，试出来了而已，很多坑都是，莫名其妙踩出来的，真的就挺玄学的。其实最方便的还是直接用对象存储OSS，不用搞得这么麻烦。阿里云的我都已经开通了，还没用七牛云有10G免费额度，我没注册。下次再碰到这种问题，还是直接OSS走起吧。</p>
+
+<h2 id="参考资料">参考资料</h2>
+
+<p>相对路径：<a href="https://www.cnblogs.com/crizygo/p/5369081.html">https://www.cnblogs.com/crizygo/p/5369081.html</a></p>
+
+<p>mklink：<a href="https://cloud.tencent.com/developer/article/1341325">https://cloud.tencent.com/developer/article/1341325</a></p>
+
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">Deng</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+        2020-01-22 22:15
+        
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/hugo/">Hugo</a>
+          </div>
+      <nav class="post-nav">
+        <a class="prev" href="/post/%E9%98%BF%E9%87%8C%E4%BA%91oss%E6%B5%8B%E8%AF%95/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">阿里云OSS测试</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        <a class="next" href="/post/%E6%B5%8B%E8%AF%95%E7%94%A8%E9%A1%B5%E9%9D%A2/">
+            <span class="next-text nav-default">测试用页面</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="https://github.com/Deng-Jiajun" class="iconfont icon-github" title="github"></a>
+  <a href="https://blog.dontjudge.cn/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  <div class="busuanzi-footer">
+    <span id="busuanzi_container_site_pv"> 本站总访问量 <span id="busuanzi_value_site_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次 </span>
+      <span class="division">|</span>
+    <span id="busuanzi_container_site_uv"> 本站总访客数 <span id="busuanzi_value_site_uv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 人 </span>
+  </div>
+
+  <span class="copyright-year">
+    &copy; 
+    2020
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">Deng</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script><script></script><script src="https://cdn.jsdelivr.net/npm/raphael@2.2.7/raphael.min.js" integrity="sha256-67By+NpOtm9ka1R6xpUefeGOY8kWWHHRAKlvaTJ7ONI=" crossorigin="anonymous"></script> <script src="https://cdn.jsdelivr.net/npm/flowchart.js@1.8.0/release/flowchart.min.js" integrity="sha256-zNGWjubXoY6rb5MnmpBNefO0RgoVYfle9p0tvOQM+6k=" crossorigin="anonymous"></script><script></script><script src="https://cdn.jsdelivr.net/npm/webfontloader@1.6.28/webfontloader.js" integrity="sha256-4O4pS1SH31ZqrSO2A/2QJTVjTPqVe+jnYgOWUVr7EEc=" crossorigin="anonymous"></script> <script src="https://cdn.jsdelivr.net/npm/snapsvg@0.5.1/dist/snap.svg-min.js" integrity="sha256-oI+elz+sIm+jpn8F/qEspKoKveTc5uKeFHNNVexe6d8=" crossorigin="anonymous"></script> <script src="https://cdn.jsdelivr.net/npm/underscore@1.8.3/underscore-min.js" integrity="sha256-obZACiHd7gkOk9iIL/pimWMTJ4W/pBsKu+oZnSeBIek=" crossorigin="anonymous"></script> <script src="https://cdn.jsdelivr.net/gh/bramp/js-sequence-diagrams@2.0.1/dist/sequence-diagram-min.js" integrity="sha384-8748Vn52gHJYJI0XEuPB2QlPVNUkJlJn9tHqKec6J3q2r9l8fvRxrgn/E5ZHV0sP" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bramp/js-sequence-diagrams@2.0.1/dist/sequence-diagram-min.css" integrity="sha384-6QbLKJMz5dS3adWSeINZe74uSydBGFbnzaAYmp+tKyq60S7H2p6V7g1TysM5lAaF" crossorigin="anonymous">
+<script type="text/javascript" src="/dist/even.26188efa.min.js"></script>
+  <script type="text/javascript">
+    window.MathJax = {
+      tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+      showProcessingMessages: false,
+      messageStyle: 'none'
+    };
+  </script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"  integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

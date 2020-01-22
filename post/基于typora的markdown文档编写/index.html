@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>基于Typora的Markdown文档编写 - Don&#39;t Judge</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="Deng" /><meta name="description" content="本文是2019年暑假实习期间写的，应该可以称为Markdown文档编写指南。 下为正文。 基于Typora的Markdown文档编写 修改时间 修改" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.59.0 with theme even" />
+
+
+<link rel="canonical" href="https://blog.dontjudge.cn/post/%E5%9F%BA%E4%BA%8Etypora%E7%9A%84markdown%E6%96%87%E6%A1%A3%E7%BC%96%E5%86%99/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<link href="/dist/even.c2a46f00.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="基于Typora的Markdown文档编写" />
+<meta property="og:description" content="本文是2019年暑假实习期间写的，应该可以称为Markdown文档编写指南。 下为正文。 基于Typora的Markdown文档编写 修改时间 修改" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.dontjudge.cn/post/%E5%9F%BA%E4%BA%8Etypora%E7%9A%84markdown%E6%96%87%E6%A1%A3%E7%BC%96%E5%86%99/" />
+<meta property="article:published_time" content="2020-01-23T01:00:00+08:00" />
+<meta property="article:modified_time" content="2020-01-23T01:00:00+08:00" />
+<meta itemprop="name" content="基于Typora的Markdown文档编写">
+<meta itemprop="description" content="本文是2019年暑假实习期间写的，应该可以称为Markdown文档编写指南。 下为正文。 基于Typora的Markdown文档编写 修改时间 修改">
+
+
+<meta itemprop="datePublished" content="2020-01-23T01:00:00&#43;08:00" />
+<meta itemprop="dateModified" content="2020-01-23T01:00:00&#43;08:00" />
+<meta itemprop="wordCount" content="3668">
+
+
+
+<meta itemprop="keywords" content="Markdown,Typora," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="基于Typora的Markdown文档编写"/>
+<meta name="twitter:description" content="本文是2019年暑假实习期间写的，应该可以称为Markdown文档编写指南。 下为正文。 基于Typora的Markdown文档编写 修改时间 修改"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">Don&#39;t Judge</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">About</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">Don&#39;t Judge</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">About</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">基于Typora的Markdown文档编写</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2020-01-23 01:00 </span>
+        <div class="post-category">
+            <a href="/categories/markdown/"> Markdown </a>
+            <a href="/categories/typora/"> Typora </a>
+            </div>
+          <span class="more-meta"> 约 3668 字 </span>
+          <span class="more-meta"> 预计阅读 8 分钟 </span>
+        <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+<ul>
+<li><a href="#基于typora的markdown文档编写">基于Typora的Markdown文档编写</a>
+<ul>
+<li><a href="#1-简介">1. 简介</a>
+<ul>
+<li><a href="#1-1-markdown是什么">1.1 Markdown是什么？</a></li>
+<li><a href="#1-2-typora是什么">1.2 Typora是什么？</a></li>
+<li><a href="#1-3-为什么用它们">1.3 为什么用它们？</a></li>
+</ul></li>
+<li><a href="#2-markdown-常用语法">2. Markdown 常用语法</a>
+<ul>
+<li><a href="#2-1-添加目录">2.1 添加目录</a></li>
+<li><a href="#2-2-标题级别">2.2 标题级别</a></li>
+<li><a href="#2-3-行内标记">2.3 行内标记</a></li>
+<li><a href="#2-4-列表段落">2.4 列表段落</a>
+<ul>
+<li><a href="#2-4-1有序列表">2.4.1有序列表</a></li>
+<li><a href="#2-4-2-无序列表">2.4.2 无序列表</a></li>
+<li><a href="#2-4-3-任务列表">2.4.3 任务列表</a></li>
+</ul></li>
+<li><a href="#2-5-代码段落">2.5 代码段落</a></li>
+<li><a href="#2-6-引用段落">2.6 引用段落</a></li>
+<li><a href="#2-7-插入图片">2.7 插入图片</a></li>
+<li><a href="#2-8-插入链接">2.8 插入链接</a></li>
+<li><a href="#2-9-插入表格">2.9 插入表格</a></li>
+<li><a href="#2-10-页内跳转">2.10 页内跳转</a></li>
+</ul></li>
+<li><a href="#3-typora-使用技巧">3. Typora 使用技巧</a>
+<ul>
+<li><a href="#3-1-常用快捷键">3.1 常用快捷键</a>
+<ul>
+<li><a href="#3-1-1-段落">3.1.1 段落</a></li>
+<li><a href="#3-1-2-格式">3.1.2 格式</a></li>
+<li><a href="#3-1-3-视图">3.1.3 视图</a></li>
+</ul></li>
+<li><a href="#3-2-常用功能及设置">3.2 常用功能及设置</a>
+<ul>
+<li><a href="#3-2-1-导出文件">3.2.1 导出文件</a></li>
+<li><a href="#3-2-2-启动选项">3.2.2 启动选项</a></li>
+<li><a href="#3-2-3-图像保存">3.2.3 图像保存</a></li>
+<li><a href="#3-2-4-侧边栏折叠展开">3.2.4 侧边栏折叠展开</a></li>
+</ul></li>
+<li><a href="#3-3-文档图片集成">3.3 文档图片集成</a>
+<ul>
+<li><a href="#3-3-1-在线图床">3.3.1 在线图床</a></li>
+<li><a href="#3-3-2-图片转-base64">3.3.2 图片转 base64</a></li>
+<li><a href="#3-3-3-随附图片文件夹">3.3.3 随附图片文件夹</a></li>
+<li><a href="#3-3-4-转换通用格式文档">3.3.4 转换通用格式文档</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#4-总结">4. 总结</a></li>
+<li><a href="#参考链接">参考链接</a></li>
+</ul></li>
+</ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      
+
+<blockquote>
+<p>本文是2019年暑假实习期间写的，应该可以称为Markdown文档编写指南。</p>
+
+<p>下为正文。</p>
+</blockquote>
+
+<h1 id="基于typora的markdown文档编写">基于Typora的Markdown文档编写</h1>
+
+<table>
+<thead>
+<tr>
+<th>修改时间</th>
+<th>修改描述</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>2019‎年‎8‎月‎5‎日，‏‎18:19:05</td>
+<td>创建</td>
+</tr>
+
+<tr>
+<td>‎2019‎年‎8‎月‎8‎日，‏‎14:33:43</td>
+<td>基本完稿</td>
+</tr>
+
+<tr>
+<td>‎2019‎年‎8‎月‎9‎日，‏‎9:14:31</td>
+<td>添加行内标记-高亮</td>
+</tr>
+
+<tr>
+<td>‎2019‎年‎8‎月‎13‎日，‏‎10:54:39</td>
+<td>修改图片集成部分描述</td>
+</tr>
+</tbody>
+</table>
+
+<p>[TOC]</p>
+
+<h2 id="1-简介">1. 简介</h2>
+
+<h3 id="1-1-markdown是什么">1.1 Markdown是什么？</h3>
+
+<blockquote>
+<p>Markdown是一种可以使用普通文本编辑器编写的标记语言，通过简单的标记语法，它可以使普通文本内容具有一定的格式。
+Markdown具有一系列衍生版本，用于扩展Markdown的功能（如表格、脚注、内嵌HTML等等），这些功能原初的Markdown尚不具备，它们能让Markdown转换成更多的格式，例如LaTeX，Docbook。Markdown增强版中比较有名的有Markdown Extra、MultiMarkdown、 Maruku等。这些衍生版本要么基于工具，如Pandoc；要么基于网站，如GitHub和Wikipedia，在语法上基本兼容，但在一些语法和渲染效果上有改动。</p>
+
+<p>——百度百科</p>
+</blockquote>
+
+<h3 id="1-2-typora是什么">1.2 Typora是什么？</h3>
+
+<p><img src="http://112.74.43.0/deng/markdown_img/typora_slogan1.png" alt="typora_slogan1" /></p>
+
+<p><strong>A TRULY MINIMAL MARKDOWN EDITOR.</strong>    ——官网 slogan</p>
+
+<p><img src="http://112.74.43.0/deng/markdown_img/typora_搜索引擎结果.png" alt="typora_搜索引擎结果" /></p>
+
+<p><strong>Typora — a markdown editor, markdown reader.</strong>    ——Bing 搜索结果</p>
+
+<p><strong>Typora：基于 Electron 的“读写一体” Markdown 编辑器。</strong></p>
+
+<blockquote>
+<p>支持html语法进行文本标记</p>
+
+<p>开发者工具 ：<code>Shift</code> + <code>F12</code></p>
+
+<p><img src="http://112.74.43.0/deng/markdown_img/typora_开发者工具.png" alt="typora_开发者工具" /></p>
+</blockquote>
+
+<h3 id="1-3-为什么用它们">1.3 为什么用它们？</h3>
+
+<div align="center">
+    <font size="15" color="red">简单</font>
+</div>
+
+<ul>
+<li>MarkdownPad 2 双栏显示</li>
+</ul>
+
+<p><img src="http://markdownpad.com/img/markdownpad2.png" alt="MarkdownPad 2 界面截图" /></p>
+
+<ul>
+<li>Typora 单栏显示</li>
+</ul>
+
+<p><img src="http://112.74.43.0/deng/markdown_img/typora_编辑界面截图.png" alt="typora_编辑界面截图" /></p>
+
+<h2 id="2-markdown-常用语法">2. Markdown 常用语法</h2>
+
+<h3 id="2-1-添加目录">2.1 添加目录</h3>
+
+<p>语法: <code>[TOC]</code>+<code>回车</code></p>
+
+<blockquote>
+<p>目录不是标准markdown语法，部分markdown渲染器可渲染。</p>
+</blockquote>
+
+<h3 id="2-2-标题级别">2.2 标题级别</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma"># 顶级标题 等价于 &lt;h1&gt;
+## 次级标题 等价于 &lt;h2&gt;
+### 3级标题 等价于 &lt;h3&gt;
+#### 4级标题 等价于 &lt;h4&gt;
+##### 5级标题 等价于 &lt;h5&gt;
+###### 6级标题 等价于 &lt;h6&gt;</pre></td></tr></table>
+</div>
+</div>
+<p>N个<code>#</code>+<code>空格</code>+<code>标题内容</code>，几个#代表几级标题，标题层级最小延申到六级
+&gt; 建议使用快捷键 <code>CTRL</code> + <code>数字键1~6</code>代替</p>
+
+<h3 id="2-3-行内标记">2.3 行内标记</h3>
+
+<table>
+<thead>
+<tr>
+<th>语法实例</th>
+<th>效果</th>
+<th>描述</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>*emphasize*</code></td>
+<td><em>emphasize</em></td>
+<td>斜体，相当于<code>&lt;em&gt;</code>标签，<strong>建议使用快捷键<code>CTRL</code>+<code>I</code></strong></td>
+</tr>
+
+<tr>
+<td><code>**strong**</code></td>
+<td><strong>strong</strong></td>
+<td>粗体，相当于<code>&lt;strong&gt;</code>标签，<strong>建议使用快捷键 <code>CTRL</code>+<code>B</code></strong></td>
+</tr>
+
+<tr>
+<td><code>~~strikethrough~~</code></td>
+<td><del>strikethrough</del></td>
+<td>建议手动输入或需要使用时点击<code>格式</code>=&gt;<code>删除线</code>。快捷键<code>Alt</code> + <code>Shift</code> + <code>5</code> ，难按。</td>
+</tr>
+
+<tr>
+<td>`code`</td>
+<td><code>code</code></td>
+<td>行内代码标注，相当于<code>&lt;code&gt;</code>标签，建议手动输入。快捷键<code>CTRL</code>+ <code>Shift</code>+ ` ，手动输入更快。</td>
+</tr>
+
+<tr>
+<td>\==highlight==</td>
+<td>==highlight==</td>
+<td>高亮，markdown 拓展语法，需要在偏好设置中开启该语法才能渲染该样式。无默认快捷键，建议手动输入。</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="2-4-列表段落">2.4 列表段落</h3>
+
+<h4 id="2-4-1有序列表">2.4.1有序列表</h4>
+
+<p>语法：<code>1.</code>+<code>空格</code></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-markdown" data-lang="markdown"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-markdown" data-lang="markdown"><span class="k">1.</span> 有序列表1
+   <span class="k">1.</span> 有序列表1.1
+   <span class="k">2.</span> 有序列表1.2
+<span class="k">2.</span> 有序列表2
+3. 有序列表3</code></pre></td></tr></table>
+</div>
+</div>
+<p>👇
+1. 有序列表1
+   1. 有序列表1.1
+   2. 有序列表1.2
+2. 有序列表2
+3. 有序列表3</p>
+
+<h4 id="2-4-2-无序列表">2.4.2 无序列表</h4>
+
+<p>语法：<code>-</code>+<code>空格</code></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-markdown" data-lang="markdown"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-markdown" data-lang="markdown"><span class="k">-</span> 无序列表1
+  <span class="k">-</span> 无序列表1.1
+    <span class="k">-</span> 无序列表1.1.1
+      <span class="k">-</span> 无序列表1.1.1.1
+- 无序列表2</code></pre></td></tr></table>
+</div>
+</div>
+<p>👇
+- 无序列表1
+  - 无序列表1.1
+    - 无序列表1.1.1
+      - 无序列表1.1.1.1
+- 无序列表2</p>
+
+<blockquote>
+<p>列表操作与word一致，按<code>回车键</code>换行自动跟随生成序号，<code>Tab</code>提升层级， <code>Shift</code>+ <code>Tab</code>降低层级。
+停止列表标记，返回段落：再按一次<code>回车键</code>。</p>
+
+<p>建议手动输入，快捷键：有序：<code>CTRL</code>+ <code>Shift</code>+ <code>[</code>；无序：<code>CTRL</code>+ <code>Shift</code>+ <code>]</code>。</p>
+</blockquote>
+
+<h4 id="2-4-3-任务列表">2.4.3 任务列表</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-markdown" data-lang="markdown"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-markdown" data-lang="markdown"><span class="k">- [ ]</span> 任务1
+<span class="k">- [x]</span> 任务2
+- [ ] 任务3</code></pre></td></tr></table>
+</div>
+</div>
+<p>👇
+- [ ] 任务1
+- [x] 任务2
+- [ ] 任务3</p>
+
+<blockquote>
+<p>任务列表不是标准markdown语法，部分markdown渲染器可渲染。
+使用频率不高，需要时点击<code>段落</code>=&gt;<code>任务列表</code>使用即可。</p>
+</blockquote>
+
+<h3 id="2-5-代码段落">2.5 代码段落</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-markdown" data-lang="markdown"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-markdown" data-lang="markdown">​```c
+<span class="gh">#include&lt;stdio.h&gt;
+</span><span class="gh"></span>int mian(void)
+{
+    printf(&#34;hello world&#34;);
+    return 0;
+}
+​```</code></pre></td></tr></table>
+</div>
+</div>
+<p>👇</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-c" data-lang="c"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-c" data-lang="c"><span class="cp">#include</span><span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span><span class="cp"></span><span class="kt">int</span> <span class="nf">mian</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="n">printf</span><span class="p">(</span><span class="s">&#34;hello world&#34;</span><span class="p">);</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span></code></pre></td></tr></table>
+</div>
+</div>
+<h3 id="2-6-引用段落">2.6 引用段落</h3>
+
+<p>语法: <code>&gt;</code>+<code>空格</code></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">&gt; 应用段落</pre></td></tr></table>
+</div>
+</div>
+<p>👇</p>
+
+<blockquote>
+<p>引用段落</p>
+
+<p>虽然名字叫引用(quote)，但实际使用中极其适合用作标注、提示(tips)</p>
+
+<p>快捷键 <code>CTRL</code>+ <code>Shift</code>+ <code>Q</code></p>
+</blockquote>
+
+<h3 id="2-7-插入图片">2.7 插入图片</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">![图片内容描述](图片路径)
+![typora官网图片](https://typora.io/img/new/image.png)</pre></td></tr></table>
+</div>
+</div>
+<p>👇
+<img src="https://typora.io/img/new/image.png" alt="typora官网图片" /></p>
+
+<blockquote>
+<p>最简单的插入方式：复制图片，在页面直接<code>CTRL</code> +<code>v</code> 即可插入
+图片将保存在 <code>C:\Users\【用户名】\AppData\Roaming\Typora\typora-user-images</code> 路径下</p>
+</blockquote>
+
+<h3 id="2-8-插入链接">2.8 插入链接</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">[链接文字内容](链接地址)
+[实达迪美](http://www.dimadata.com.cn/)</pre></td></tr></table>
+</div>
+</div>
+<p>实例链接：<a href="http://www.dimadata.com.cn/">实达迪美</a></p>
+
+<h3 id="2-9-插入表格">2.9 插入表格</h3>
+
+<p>……，请直接用快捷键：  <code>CTRL</code> + <code>T</code></p>
+
+<h3 id="2-10-页内跳转">2.10 页内跳转</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">[跳转文字内容](#+跳转标题)	（复制要跳转的标题，有多个#的，只留下一个#）
+[markdown是什么](# 1.1 Markdown是什么？)</pre></td></tr></table>
+</div>
+</div>
+<p>👇</p>
+
+<p>跳转到 <a href="# 1.1 Markdown是什么？">markdown是什么</a></p>
+
+<blockquote>
+<p>另一种锚标记：
+利用标签 <code>&lt;a name=&quot;go&quot;&gt;另一种锚标记&lt;/a&gt;</code>设立跳转点
+使用标签名跳转<code>[另一种锚标记](#go)</code></p>
+
+<p><a href="#go-here">跳转到目的地</a>
+<a name="go-here">目的地</a></p>
+
+<p>实测<strong>导出的 word 文件中无法识别这种跳转</strong>，不建议使用</p>
+</blockquote>
+
+<h2 id="3-typora-使用技巧">3. Typora 使用技巧</h2>
+
+<h3 id="3-1-常用快捷键">3.1 常用快捷键</h3>
+
+<h4 id="3-1-1-段落">3.1.1 段落</h4>
+
+<p><img src="http://112.74.43.0/deng/markdown_img/typora_段落_快捷键.png" alt="typora_段落_快捷键" /></p>
+
+<table>
+<thead>
+<tr>
+<th>作用</th>
+<th>快捷键</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>设置标题级别</td>
+<td><code>CTRL</code> + <code>数字键1~6</code></td>
+</tr>
+
+<tr>
+<td>表格</td>
+<td><code>CTRL</code> + <code>T</code></td>
+</tr>
+
+<tr>
+<td>引用</td>
+<td><code>CTRL</code>+ <code>Shift</code>+ <code>Q</code></td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="3-1-2-格式">3.1.2 格式</h4>
+
+<p><img src="http://112.74.43.0/deng/markdown_img/typora_格式_快捷键.png" alt="typora_格式_快捷键" /></p>
+
+<table>
+<thead>
+<tr>
+<th>作用</th>
+<th>快捷键</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>加粗</td>
+<td><code>CTRL</code> + <code>U</code></td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="3-1-3-视图">3.1.3 视图</h4>
+
+<p><img src="http://112.74.43.0/deng/markdown_img/typora_视图_快捷键.png" alt="typora_视图_快捷键" /></p>
+
+<table>
+<thead>
+<tr>
+<th>作用</th>
+<th>快捷键</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>设置标题级别</td>
+<td><code>CTRL</code> + <code>/</code></td>
+</tr>
+
+<tr>
+<td>侧边栏</td>
+<td><code>CTRL</code>+ <code>Shift</code>+ <code>L</code></td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="3-2-常用功能及设置">3.2 常用功能及设置</h3>
+
+<h4 id="3-2-1-导出文件">3.2.1 导出文件</h4>
+
+<p><img src="http://112.74.43.0/deng/markdown_img/typora_导出文件.png" alt="typora_导出文件" /></p>
+
+<h4 id="3-2-2-启动选项">3.2.2 启动选项</h4>
+
+<p><img src="http://112.74.43.0/deng/markdown_img/typora_启动选项.png" alt="typora_启动选项" /></p>
+
+<blockquote>
+<p>启动选项设置为<code>重新打开上次使用的文件和目录</code>，更快恢复原先的编辑状态</p>
+</blockquote>
+
+<h4 id="3-2-3-图像保存">3.2.3 图像保存</h4>
+
+<p><img src="http://112.74.43.0/deng/markdown_img/typora_图像保存.png" alt="typora_图像保存" /></p>
+
+<ul>
+<li><p>推荐设置1（统一图像绝对路径）：<code>复制到指定路径</code>  <code>e:/markdown/img/${filename}</code></p></li>
+
+<li><p>推荐设置2（文档同级相对路径）：<code>复制到指定路径</code>  <code>./${filename}</code></p></li>
+</ul>
+
+<h4 id="3-2-4-侧边栏折叠展开">3.2.4 侧边栏折叠展开</h4>
+
+<p><img src="http://112.74.43.0/deng/markdown_img/typora_侧边栏折叠展开.png" alt="typora_侧边栏折叠展开" /></p>
+
+<h3 id="3-3-文档图片集成">3.3 文档图片集成</h3>
+
+<blockquote>
+<p>Markdown 文档本身只是一个文本文件，对于图片的加载，依靠图片路径载入，而无法与文档集成。
+这里提供几种对于文档图片集成问题的解决思路及优缺点分析：</p>
+</blockquote>
+
+<h4 id="3-3-1-在线图床">3.3.1 在线图床</h4>
+
+<p>Markdown 文档中使用在线图床是网络上比较通用的一种解决方案，在线图床也有各种现成可用的解决方案，保证了文章图片的访问。但是在线图床不论是免费或是收费，服务总是存在不确定性，且受到网络质量的影响，整体配置过程也较繁琐，一旦要迁移，体验可能不太愉快。</p>
+
+<blockquote>
+<p>提供一种不使用平台图床的解决方案（需要有云服务器）：
+本地所有的图片保存到 img 统一路径下，markdown 文档中需要提供云端访问时，图片拖到云主机可访问的img路径下，将本地 markdown 中的路径全局替换为云主机的img访问地址。如果要换主机 ip 或者域名，统一全局替换就行。</p>
+</blockquote>
+
+<h4 id="3-3-2-图片转-base64">3.3.2 图片转 base64</h4>
+
+<p>示例图片（无特殊含义）：<img src="data:image/png;base64,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" alt="图片描述" /></p>
+
+<p>一种可以称得上「奇技淫巧」的方案，将图片转为 base64 编码，通过markdown 或 html <code>&lt;img&gt;</code>标签直接嵌入文档中，导出为 pdf 和 docx 文件时也能正常显示，但缺点也很明显：</p>
+
+<ul>
+<li>首先，文档体积急剧膨胀，图片转 base64 编码会在原文件的基础上膨胀约 30%，当然，一般来说，文档图片膨胀 30% 并不是无法接受的。</li>
+<li>其次，base64 编码在 Markdown 文档中显示效果及其不友好，一张 12k 的图片，在文档中占到 8 屏。虽然可以通过在文档末尾添加图片列表，但是一旦图片数量较多，文档维护难度大。</li>
+</ul>
+
+<blockquote>
+<p><strong>相对来说，图片转 base64 算得上是一种折衷的好方法</strong>，对于只能通过 <code>.md</code> 文本传输的场景，是唯一解，相较图床而言不依赖网络环境，并且图片集成在文档中，永久保存，只要阅读器正常渲染，文本与图片就是一体的，建议在图片量不大且要求明确的文档中使用。</p>
+</blockquote>
+
+<h4 id="3-3-3-随附图片文件夹">3.3.3 随附图片文件夹</h4>
+
+<p>既然本身就是文档和图片分离的，最简单的方式自然是直接把图片文件夹也交付给对方，只要在编写文档时使用相对路径，那么将 <code>.md</code> 文档和对应的图片文件夹一共交付即可。缺点很明确，不是单文件，需要<strong>打包提供</strong>。</p>
+
+<h4 id="3-3-4-转换通用格式文档">3.3.4 转换通用格式文档</h4>
+
+<p>以上3个方案的前提都是需要交付 <code>.md</code> 格式文档，且对方有markdown文档阅读器（最好还是同一个软件）。那么最直接避免格式不同造成不必要麻烦的方式，就是直接转换为通用格式文档，<code>.docx</code> 或 <code>.pdf</code>。</p>
+
+<blockquote>
+<p>除非只能提供<code>.docx</code>，否则 <code>.pdf</code> 是更好的选择，一是 <code>.pdf</code> 可以保持显示效果的一致性，二是 <code>.docx</code> 对一些样式不支持或不一致，无法显示效果，如引用和表格。</p>
+
+<p>这两种文档保证了文档和图片的集成，是通用的文档格式，但在转换为这两种格式保证可阅读性的同时，也关闭了对其进行修改的可能性。（<code>.docx</code> 转换为 <code>.md</code> 效果不理想）</p>
+
+<p>实际上 markdown 本身作为一种简单语法的标记语言，图片只是附加的内容，markdown本身要做的就是内容与样式的分离，做出修改本质上也是对文本的修改。实际上大多数情况下要修改的，多半也是文字内容而不是修改图片，那么只要做到不必要的时候不引入、少引入图片，交付提供 <code>pdf</code>，该问题就自然被绕过了。</p>
+</blockquote>
+
+<h2 id="4-总结">4. 总结</h2>
+
+<p>Markdown 的设计逻辑是<strong>内容与样式分离</strong>，只要形成自己的书写习惯与规范，就不需要关注显示效果上的问题，减轻了文档编写的负担，使编写者进入所谓「心流」的状态，专注于内容本身，而不是显示效果、样式等内容。Word 这类文字处理软件，功能复杂强大，但同时也很容易将使用者的注意力分散到各个细节的处理上，影响了文档编写的效率。使用简单，还算美观的显示效果，这是个人认为使用 Markdown + Typora 这一组合编写文档的优势所在，习惯之后能够轻松构建一份合格的文档。</p>
+
+<p>Less is More.</p>
+
+<h2 id="参考链接">参考链接</h2>
+
+<p>[1] <a href="https://baike.baidu.com/item/markdown">markdown 百度百科</a></p>
+
+<p>[2] <a href="https://typora.io">Typora 官网</a></p>
+
+<p>[3] <a href="https://zhuanlan.zhihu.com/p/44998516">Typora - 不要太棒的Markdown编辑器</a></p>
+
+<p>[4] <a href="https://sspai.com/post/54912">Typora 完全使用详解</a></p>
+
+<p>[5] <a href="https://segmentfault.com/a/1190000018650408">markdown博客图床上传的艰辛之路</a></p>
+
+<p>[6] <a href="https://www.toolnb.com/tools/ImageToBase64.html">图片转base64</a></p>
+
+<p>[7] <a href="https://blog.csdn.net/cxs123678/article/details/82533306">Markdown中嵌入base64图片</a></p>
+
+<p>base64编码图片👇</p>
+
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">Deng</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+        2020-01-23 01:00
+        
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/markdown/">Markdown</a>
+          <a href="/tags/typora/">Typora</a>
+          </div>
+      <nav class="post-nav">
+        <a class="prev" href="/post/hugo-&#43;-github-pages-%E6%90%AD%E5%BB%BAblog/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">Hugo &#43; Github Pages 搭建Blog</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        <a class="next" href="/post/%E9%98%BF%E9%87%8C%E4%BA%91oss%E6%B5%8B%E8%AF%95/">
+            <span class="next-text nav-default">阿里云OSS测试</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="https://github.com/Deng-Jiajun" class="iconfont icon-github" title="github"></a>
+  <a href="https://blog.dontjudge.cn/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  <div class="busuanzi-footer">
+    <span id="busuanzi_container_site_pv"> 本站总访问量 <span id="busuanzi_value_site_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次 </span>
+      <span class="division">|</span>
+    <span id="busuanzi_container_site_uv"> 本站总访客数 <span id="busuanzi_value_site_uv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 人 </span>
+  </div>
+
+  <span class="copyright-year">
+    &copy; 
+    2020
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">Deng</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script><script></script><script src="https://cdn.jsdelivr.net/npm/raphael@2.2.7/raphael.min.js" integrity="sha256-67By+NpOtm9ka1R6xpUefeGOY8kWWHHRAKlvaTJ7ONI=" crossorigin="anonymous"></script> <script src="https://cdn.jsdelivr.net/npm/flowchart.js@1.8.0/release/flowchart.min.js" integrity="sha256-zNGWjubXoY6rb5MnmpBNefO0RgoVYfle9p0tvOQM+6k=" crossorigin="anonymous"></script><script></script><script src="https://cdn.jsdelivr.net/npm/webfontloader@1.6.28/webfontloader.js" integrity="sha256-4O4pS1SH31ZqrSO2A/2QJTVjTPqVe+jnYgOWUVr7EEc=" crossorigin="anonymous"></script> <script src="https://cdn.jsdelivr.net/npm/snapsvg@0.5.1/dist/snap.svg-min.js" integrity="sha256-oI+elz+sIm+jpn8F/qEspKoKveTc5uKeFHNNVexe6d8=" crossorigin="anonymous"></script> <script src="https://cdn.jsdelivr.net/npm/underscore@1.8.3/underscore-min.js" integrity="sha256-obZACiHd7gkOk9iIL/pimWMTJ4W/pBsKu+oZnSeBIek=" crossorigin="anonymous"></script> <script src="https://cdn.jsdelivr.net/gh/bramp/js-sequence-diagrams@2.0.1/dist/sequence-diagram-min.js" integrity="sha384-8748Vn52gHJYJI0XEuPB2QlPVNUkJlJn9tHqKec6J3q2r9l8fvRxrgn/E5ZHV0sP" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bramp/js-sequence-diagrams@2.0.1/dist/sequence-diagram-min.css" integrity="sha384-6QbLKJMz5dS3adWSeINZe74uSydBGFbnzaAYmp+tKyq60S7H2p6V7g1TysM5lAaF" crossorigin="anonymous">
+<script type="text/javascript" src="/dist/even.26188efa.min.js"></script>
+  <script type="text/javascript">
+    window.MathJax = {
+      tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+      showProcessingMessages: false,
+      messageStyle: 'none'
+    };
+  </script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"  integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

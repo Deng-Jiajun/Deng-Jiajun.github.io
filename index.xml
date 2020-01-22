@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Even - A super concise theme for Hugo</title>
+    <title>Don&#39;t Judge</title>
     <link>https://blog.dontjudge.cn/</link>
-    <description>Recent content on Even - A super concise theme for Hugo</description>
+    <description>Recent content on Don&#39;t Judge</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Wed, 22 Jan 2020 01:33:33 +0800</lastBuildDate>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 23 Jan 2020 05:20:00 +0800</lastBuildDate>
     
 	<atom:link href="https://blog.dontjudge.cn/index.xml" rel="self" type="application/rss+xml" />
     
@@ -32,26 +32,48 @@ It makes use of a variety of open source projects including:
     </item>
     
     <item>
-      <title>test</title>
-      <link>https://blog.dontjudge.cn/post/test/</link>
-      <pubDate>Wed, 22 Jan 2020 01:33:33 +0800</pubDate>
+      <title>Hugo &#43; Github Pages 搭建Blog</title>
+      <link>https://blog.dontjudge.cn/post/hugo-&#43;-github-pages-%E6%90%AD%E5%BB%BAblog/</link>
+      <pubDate>Thu, 23 Jan 2020 05:20:00 +0800</pubDate>
       
-      <guid>https://blog.dontjudge.cn/post/test/</guid>
-      <description>$ 2^2 $
-3
-4
-561
-12
-1 2 3 4 5 6 7 8 9 10  &amp;lt;iframe style=&amp;#34;max-width: 100%&amp;#34; class=&amp;#34;music163&amp;#34; frameborder=&amp;#34;no&amp;#34; border=&amp;#34;0&amp;#34; marginwidth=&amp;#34;0&amp;#34; marginheight=&amp;#34;0&amp;#34; width=&amp;#34;330&amp;#34; height=&amp;#34;86&amp;#34; src=&amp;#34;//music.163.com/outchain/player?type=2&amp;amp;id=28196554&amp;amp;auto=0&amp;amp;height=66&amp;#34;&amp;gt; &amp;lt;/iframe&amp;gt;   </description>
+      <guid>https://blog.dontjudge.cn/post/hugo-&#43;-github-pages-%E6%90%AD%E5%BB%BAblog/</guid>
+      <description>本文简单记录通过 Hugo + Github Pages 搭建 Blog 的过程，主要说过程，细节配置不详述。 GitHub Pages 参考 GitHub Pages 搭建教程 - 少数派 使用GitHub自带的主题先让页面能够通过自己</description>
     </item>
     
     <item>
-      <title>过程记录</title>
-      <link>https://blog.dontjudge.cn/post/record/</link>
-      <pubDate>Sun, 12 Jan 2020 01:33:33 +0800</pubDate>
+      <title>基于Typora的Markdown文档编写</title>
+      <link>https://blog.dontjudge.cn/post/%E5%9F%BA%E4%BA%8Etypora%E7%9A%84markdown%E6%96%87%E6%A1%A3%E7%BC%96%E5%86%99/</link>
+      <pubDate>Thu, 23 Jan 2020 01:00:00 +0800</pubDate>
       
-      <guid>https://blog.dontjudge.cn/post/record/</guid>
-      <description>过程记录</description>
+      <guid>https://blog.dontjudge.cn/post/%E5%9F%BA%E4%BA%8Etypora%E7%9A%84markdown%E6%96%87%E6%A1%A3%E7%BC%96%E5%86%99/</guid>
+      <description>本文是2019年暑假实习期间写的，应该可以称为Markdown文档编写指南。 下为正文。 基于Typora的Markdown文档编写 修改时间 修改</description>
+    </item>
+    
+    <item>
+      <title>阿里云OSS测试</title>
+      <link>https://blog.dontjudge.cn/post/%E9%98%BF%E9%87%8C%E4%BA%91oss%E6%B5%8B%E8%AF%95/</link>
+      <pubDate>Wed, 22 Jan 2020 23:26:00 +0800</pubDate>
+      
+      <guid>https://blog.dontjudge.cn/post/%E9%98%BF%E9%87%8C%E4%BA%91oss%E6%B5%8B%E8%AF%95/</guid>
+      <description>本文唯一作用就是测试阿里云OSS的费用 图片大小40.694KB 标准存储 创建时间：2020年1月22日 23:10 阿里云oss域名： 自有域名：</description>
+    </item>
+    
+    <item>
+      <title>Hugo静态网站图片插入问题</title>
+      <link>https://blog.dontjudge.cn/post/hugo%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99%E5%9B%BE%E7%89%87%E6%8F%92%E5%85%A5/</link>
+      <pubDate>Wed, 22 Jan 2020 19:23:00 +0800</pubDate>
+      
+      <guid>https://blog.dontjudge.cn/post/hugo%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99%E5%9B%BE%E7%89%87%E6%8F%92%E5%85%A5/</guid>
+      <description>本文记录在使用Hugo生成静态网站过程中，关于文章本地图片插入的问题 Hugo静态资源载入逻辑 hugo 的静态文件放置在 /static 文件夹下，文章 markdown 文件放在 /content/post 文</description>
+    </item>
+    
+    <item>
+      <title>测试用页面</title>
+      <link>https://blog.dontjudge.cn/post/%E6%B5%8B%E8%AF%95%E7%94%A8%E9%A1%B5%E9%9D%A2/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:01 +0800</pubDate>
+      
+      <guid>https://blog.dontjudge.cn/post/%E6%B5%8B%E8%AF%95%E7%94%A8%E9%A1%B5%E9%9D%A2/</guid>
+      <description>网易云音乐： $$ evidence_{i}=\sum_{j}W_{ij}x_{j}+b_{i} $$ $2^2$</description>
     </item>
     
     <item>
@@ -69,8 +91,8 @@ It makes use of a variety of open source projects including:
       <pubDate>Thu, 31 Aug 2017 15:43:48 +0800</pubDate>
       
       <guid>https://blog.dontjudge.cn/post/english-preview/</guid>
-      <description>Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&#39;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&#39;t cover using CSS to style your theme.
-We&#39;ll start with creating a new site with a very basic template.</description>
+      <description>Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.
+We&amp;rsquo;ll start with creating a new site with a very basic template.</description>
     </item>
     
     <item>
@@ -98,16 +120,25 @@ We&#39;ll start with creating a new site with a very basic template.</descriptio
       
       <guid>https://blog.dontjudge.cn/post/shortcodes/</guid>
       <description>&lt;h1 id=&#34;admonition&#34;&gt;Admonition&lt;/h1&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;p&gt;biu biu biu.&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
+
+&lt;div class=&#34;admonition note&#34;&gt;&lt;p class=&#34;admonition-title&#34;&gt;I&amp;#39;m title!&lt;/p&gt;
+  
+biu biu biu.
+
+&lt;details class=&#34;admonition note&#34;&gt;&lt;summary class=&#34;admonition-title&#34;&gt;note&lt;/summary&gt;
+  &lt;p&gt;biu biu biu.&lt;/p&gt;
+
+&lt;/details&gt;
+
+&lt;div class=&#34;admonition example&#34;&gt;
+  &lt;p&gt;Without title.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;lnt&#34;&gt; 1
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
@@ -132,8 +163,7 @@ biu biu biu.
 Without title.
 {{% /admonition %}}
 
-{{% /admonition %}}
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+{{% /admonition %}}&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;</description>
     </item>
@@ -147,7 +177,7 @@ Without title.
       <description>&lt;h2 id=&#34;usage&#34;&gt;Usage&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-flow&#34; data-lang=&#34;flow&#34;&gt;&lt;span class=&#34;lnt&#34;&gt; 1
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
@@ -164,7 +194,7 @@ Without title.
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;st=&amp;gt;start: Start|past:&amp;gt;http://www.google.com[blank]
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-flow&#34; data-lang=&#34;flow&#34;&gt;st=&amp;gt;start: Start|past:&amp;gt;http://www.google.com[blank]
 e=&amp;gt;end: End:&amp;gt;http://www.google.com
 op1=&amp;gt;operation: My Operation|past
 op2=&amp;gt;operation: Stuff|current
@@ -178,8 +208,7 @@ st-&amp;gt;op1(right)-&amp;gt;cond
 cond(yes, right)-&amp;gt;c2
 cond(no)-&amp;gt;sub1(left)-&amp;gt;op1
 c2(yes)-&amp;gt;io-&amp;gt;e
-c2(no)-&amp;gt;op2-&amp;gt;e
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+c2(no)-&amp;gt;op2-&amp;gt;e&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;</description>
     </item>
@@ -193,17 +222,16 @@ c2(no)-&amp;gt;op2-&amp;gt;e
       <description>&lt;h2 id=&#34;usage&#34;&gt;Usage&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sequence&#34; data-lang=&#34;sequence&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;Andrew-&amp;gt;China: Says Hello
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sequence&#34; data-lang=&#34;sequence&#34;&gt;Andrew-&amp;gt;China: Says Hello
 Note right of China: China thinks\nabout it
 China--&amp;gt;Andrew: How are you?
-Andrew-&amp;gt;&amp;gt;China: I am good thanks!
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+Andrew-&amp;gt;&amp;gt;China: I am good thanks!&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;</description>
     </item>
@@ -216,17 +244,26 @@ Andrew-&amp;gt;&amp;gt;China: I am good thanks!
       <guid>https://blog.dontjudge.cn/post/syntax-highlighting/</guid>
       <description>&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span class=&#34;kd&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;helloWorld&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span class=&#34;kd&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;helloWorld&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;()&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
   &lt;span class=&#34;nx&#34;&gt;alert&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;Hello, World!&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
 &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://blog.dontjudge.cn/post/%E5%AE%8C%E6%95%B4%E6%96%87%E4%BB%B6%E5%A4%B4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.dontjudge.cn/post/%E5%AE%8C%E6%95%B4%E6%96%87%E4%BB%B6%E5%A4%B4/</guid>
+      <description>1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41  --- title: &amp;#34;完整文件头&amp;#34; date: 2020-01-22T04:12:48+08:00 lastmod: 2020-01-22T04:12:48+08:00 draft: true keywords: [] description: &amp;#34;&amp;#34; tags: [] categories: [] author: &amp;#34;&amp;#34; # You can also close(false) or open(true) something for this content.</description>
     </item>
     
   </channel>
