@@ -20,14 +20,5 @@
       <description>本文唯一作用就是测试阿里云OSS的费用 图片大小40.694KB 标准存储 创建时间：2020年1月22日 23:10 阿里云oss域名： 自有域名：</description>
     </item>
     
-    <item>
-      <title>测试用页面</title>
-      <link>https://blog.dontjudge.cn/post/%E6%B5%8B%E8%AF%95%E7%94%A8%E9%A1%B5%E9%9D%A2/</link>
-      <pubDate>Wed, 01 Jan 2020 00:00:01 +0800</pubDate>
-      
-      <guid>https://blog.dontjudge.cn/post/%E6%B5%8B%E8%AF%95%E7%94%A8%E9%A1%B5%E9%9D%A2/</guid>
-      <description>网易云音乐： $$ evidence_{i}=\sum_{j}W_{ij}x_{j}+b_{i} $$ $2^2$</description>
-    </item>
-    
   </channel>
 </rss>

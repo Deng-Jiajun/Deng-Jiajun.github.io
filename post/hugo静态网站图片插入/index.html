@@ -50,7 +50,7 @@
 
 <meta itemprop="datePublished" content="2020-01-22T19:23:00&#43;08:00" />
 <meta itemprop="dateModified" content="2020-01-22T22:15:00&#43;08:00" />
-<meta itemprop="wordCount" content="1169">
+<meta itemprop="wordCount" content="1171">
 
 
 
@@ -131,7 +131,7 @@
         <div class="post-category">
             <a href="/categories/hugo/"> Hugo </a>
             </div>
-          <span class="more-meta"> 约 1169 字 </span>
+          <span class="more-meta"> 约 1171 字 </span>
           <span class="more-meta"> 预计阅读 3 分钟 </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
       </div>
@@ -186,28 +186,18 @@
 <p>基于以上4点原因，解决方案有以下几种：</p>
 
 <ol>
-<li>在 /post/img 里放图片，然后复制到 /static/img</li>
+<li><p>在 /post/img 里放图片，然后复制到 /static/img
+评价：麻烦</p></li>
+
+<li><p>在1的基础上，写一个批处理，完成复制的任务；（因为之前写过的批处理：生成 public.cmd，只要在前面加上复制的命令就行）
+评价：可行，但是不完美，可能出现文件权限问题</p></li>
+
+<li><p>不管，就当瞎了，本地不看，直接看server实时渲染
+评价：可行，但是太惨了</p></li>
+
+<li><p>做一个 link，链接两个文件夹
+评价：一劳永逸，可行。建立链接 cmd 命令：<code>mklink C:\Users\Deng-\OneDrive\HugoBlog\content\post\img C:\Users\Deng-\OneDrive\HugoBlog\static\img /J</code></p></li>
 </ol>
-
-<p>评价：麻烦</p>
-
-<ol>
-<li>在1的基础上，写一个批处理，完成复制的任务；（因为之前写过的批处理：生成 public.cmd，只要在前面加上复制的命令就行）</li>
-</ol>
-
-<p>评价：可行，但是不完美，可能出现文件权限问题</p>
-
-<ol>
-<li>不管，就当瞎了，本地不看，直接看server实时渲染</li>
-</ol>
-
-<p>评价：可行，但是太惨了</p>
-
-<ol>
-<li>做一个 link，链接两个文件夹</li>
-</ol>
-
-<p>评价：一劳永逸，可行。建立链接 cmd 命令：<code>mklink C:\Users\Deng-\OneDrive\HugoBlog\content\post\img C:\Users\Deng-\OneDrive\HugoBlog\static\img /J</code></p>
 
 <hr />
 
@@ -215,27 +205,22 @@
 
 <h2 id="其他问题">其他问题</h2>
 
-<ol>
-<li>严格注意路径：只能写成 <code>/img/imagename.png</code> 的形式（注意<code>/</code>和<code>\</code> 的区别)</li>
-</ol>
+<ul>
+<li>严格注意路径：只能写成 <code>/img/imagename.png</code> 的形式（注意 <code>/</code> 和 <code>\</code> 的区别)</li>
+</ul>
 
 <blockquote>
 <p>可能是当前主题不支持<img>的原因，嵌入图片的代码只能写成这样：<code>![imagename](/img/imagename.png)</code>；<code>&lt;img src=&quot;&quot; alt=&quot;&quot; style=&quot;zoom:50%;&quot; /&gt;</code> 这种格式的修改图片缩放比例的代码也是不能用的</p>
 </blockquote>
 
-<ol>
-<li><p>为了方便，我们希望在typora里粘贴的图片直接到img路径下，为此要做以下两步</p>
+<ul>
+<li><p>为了方便，我们希望在typora里粘贴的图片直接到img路径下，为此要做以下两步：</p>
 
 <ol>
-<li>在markdown的文件头写入图片根目录，根目录为当前文件夹(<code>./</code>) ：<code>typora-root-url: ./</code></li>
-</ol>
-
-<p>这个也可以在格式-&gt;图像-&gt;点击设置图片根目录，选择 <code>\content\post</code> typora会自动会加入这行配置</p>
-
-<ol>
+<li>在markdown的文件头写入图片根目录，根目录为当前文件夹(<code>./</code>) ：<code>typora-root-url: ./</code>（也可以在格式-&gt;图像-&gt;点击设置图片根目录，选择 <code>\content\post</code> typora会自动会加入这行配置）</li>
 <li>typora偏好设置，设置图像<strong>复制到指定路径</strong> <code>./img</code>，应用规则<strong>优先使用相对路径</strong></li>
 </ol></li>
-</ol>
+</ul>
 
 <h2 id="后记">后记</h2>
 
@@ -274,11 +259,7 @@
             <span class="prev-text nav-default">阿里云OSS测试</span>
             <span class="prev-text nav-mobile">上一篇</span>
           </a>
-        <a class="next" href="/post/%E6%B5%8B%E8%AF%95%E7%94%A8%E9%A1%B5%E9%9D%A2/">
-            <span class="next-text nav-default">测试用页面</span>
-            <span class="next-text nav-mobile">下一篇</span>
-            <i class="iconfont icon-right"></i>
-          </a>
+        
       </nav>
     </footer>
   </article>
@@ -288,19 +269,24 @@
   
 
   
+    <script src="https://utteranc.es/client.js"
+            repo="Deng-Jiajun/Deng-Jiajun.github.io"
+            issue-term="pathname"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://github.com/utterance">comments powered by utterances.</a></noscript>
 
       </div>
     </main>
 
     <footer id="footer" class="footer">
-      <div class="social-links">
-      <a href="https://github.com/Deng-Jiajun" class="iconfont icon-github" title="github"></a>
-  <a href="https://blog.dontjudge.cn/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
-</div>
+      
 
 <div class="copyright">
   <span class="power-by">
-    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 生成
   </span>
   <span class="division">|</span>
   <span class="theme-info">
@@ -309,19 +295,15 @@
   </span>
 
   <div class="busuanzi-footer">
-    <span id="busuanzi_container_site_pv"> 本站总访问量 <span id="busuanzi_value_site_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次 </span>
+    <span id="busuanzi_container_site_pv"> 总访问量 <span id="busuanzi_value_site_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次 </span>
       <span class="division">|</span>
-    <span id="busuanzi_container_site_uv"> 本站总访客数 <span id="busuanzi_value_site_uv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 人 </span>
+    <span id="busuanzi_container_site_uv"> 总访客数 <span id="busuanzi_value_site_uv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 人 </span>
   </div>
 
-  <span class="copyright-year">
-    &copy; 
-    2020
-    <span class="heart">
-      <i class="iconfont icon-heart"></i>
-    </span>
-    <span class="author">Deng</span>
-  </span>
+  
+
+  
+  <span class="copyright-and-others">Copyright &copy; 2020 <a href="https://github.com/Deng-Jiajun" style="color:#c05b4d">Deng</a></span>. All Rights Reserved
 </div>
     </footer>
 
