@@ -23,13 +23,6 @@
   </url>
   
   <url>
-    <loc>https://blog.dontjudge.cn/tags/github-pages/</loc>
-    <lastmod>2020-01-23T06:33:00+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.dontjudge.cn/categories/github-pages/</loc>
     <lastmod>2020-01-23T06:33:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -37,7 +30,7 @@
   </url>
   
   <url>
-    <loc>https://blog.dontjudge.cn/tags/hugo/</loc>
+    <loc>https://blog.dontjudge.cn/tags/github-pages/</loc>
     <lastmod>2020-01-23T06:33:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -45,6 +38,13 @@
   
   <url>
     <loc>https://blog.dontjudge.cn/categories/hugo/</loc>
+    <lastmod>2020-01-23T06:33:00+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.dontjudge.cn/tags/hugo/</loc>
     <lastmod>2020-01-23T06:33:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
