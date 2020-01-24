@@ -9,15 +9,64 @@
   </url>
   
   <url>
-    <loc>https://blog.dontjudge.cn/</loc>
-    <lastmod>2020-01-23T07:43:00+08:00</lastmod>
+    <loc>https://blog.dontjudge.cn/tags/blog/</loc>
+    <lastmod>2020-01-25T03:44:00+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.dontjudge.cn/categories/blog/</loc>
+    <lastmod>2020-01-25T03:44:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://blog.dontjudge.cn/categories/</loc>
-    <lastmod>2020-01-23T06:33:00+08:00</lastmod>
+    <lastmod>2020-01-25T03:44:00+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.dontjudge.cn/</loc>
+    <lastmod>2020-01-25T03:44:00+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.dontjudge.cn/categories/hugo/</loc>
+    <lastmod>2020-01-25T03:44:00+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.dontjudge.cn/tags/hugo/</loc>
+    <lastmod>2020-01-25T03:44:00+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.dontjudge.cn/post/hugo%E4%B8%BB%E9%A2%98even%E7%9A%84%E8%87%AA%E5%AE%9A%E4%B9%89%E9%85%8D%E7%BD%AE/</loc>
+    <lastmod>2020-01-25T03:44:00+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.dontjudge.cn/post/</loc>
+    <lastmod>2020-01-25T03:44:00+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.dontjudge.cn/tags/</loc>
+    <lastmod>2020-01-25T03:44:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -37,20 +86,6 @@
   </url>
   
   <url>
-    <loc>https://blog.dontjudge.cn/categories/hugo/</loc>
-    <lastmod>2020-01-23T06:33:00+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.dontjudge.cn/tags/hugo/</loc>
-    <lastmod>2020-01-23T06:33:00+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.dontjudge.cn/post/hugo-&#43;-github-pages-%E6%90%AD%E5%BB%BAblog/</loc>
     <lastmod>2020-01-23T06:33:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -58,28 +93,14 @@
   </url>
   
   <url>
-    <loc>https://blog.dontjudge.cn/post/</loc>
-    <lastmod>2020-01-23T06:33:00+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.dontjudge.cn/tags/</loc>
-    <lastmod>2020-01-23T06:33:00+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.dontjudge.cn/tags/markdown/</loc>
+    <loc>https://blog.dontjudge.cn/categories/markdown/</loc>
     <lastmod>2020-01-23T01:00:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://blog.dontjudge.cn/categories/markdown/</loc>
+    <loc>https://blog.dontjudge.cn/tags/markdown/</loc>
     <lastmod>2020-01-23T01:00:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
