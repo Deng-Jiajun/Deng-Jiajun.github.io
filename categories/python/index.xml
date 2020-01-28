@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>python on Don&#39;t Judge</title>
+    <link>https://blog.dontjudge.cn/categories/python/</link>
+    <description>Recent content in python on Don&#39;t Judge</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 14 Aug 2019 19:09:25 +0800</lastBuildDate>
+    
+	<atom:link href="https://blog.dontjudge.cn/categories/python/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Python 文件处理相关</title>
+      <link>https://blog.dontjudge.cn/post/python-%E6%96%87%E4%BB%B6%E5%A4%84%E7%90%86%E7%9B%B8%E5%85%B3/</link>
+      <pubDate>Wed, 14 Aug 2019 19:09:25 +0800</pubDate>
+      
+      <guid>https://blog.dontjudge.cn/post/python-%E6%96%87%E4%BB%B6%E5%A4%84%E7%90%86%E7%9B%B8%E5%85%B3/</guid>
+      <description>路径分隔符 os.altsep 一个变量，显示python内置路径分隔符 当前文件路径 两种方式获取到的路径存在同样的问题，pycharm 运行显示分隔符为/，cmd</description>
+    </item>
+    
+  </channel>
+</rss>

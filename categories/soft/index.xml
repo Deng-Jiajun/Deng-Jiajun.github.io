@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>soft on Don&#39;t Judge</title>
+    <link>https://blog.dontjudge.cn/categories/soft/</link>
+    <description>Recent content in soft on Don&#39;t Judge</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 13 Aug 2019 17:26:38 +0800</lastBuildDate>
+    
+	<atom:link href="https://blog.dontjudge.cn/categories/soft/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Linux 基础环境配置</title>
+      <link>https://blog.dontjudge.cn/post/linux-%E5%9F%BA%E7%A1%80%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Tue, 13 Aug 2019 17:26:38 +0800</pubDate>
+      
+      <guid>https://blog.dontjudge.cn/post/linux-%E5%9F%BA%E7%A1%80%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</guid>
+      <description>Linux 基础环境配置 zsh：yum install zsh git：yum install git oh my zsh：sh -c &amp;quot;$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)&amp;quot; 默认zsh：chsh -s /bin/zsh 看默认shell：echo $SHELL python</description>
+    </item>
+    
+    <item>
+      <title>Windows 常用软件记录</title>
+      <link>https://blog.dontjudge.cn/post/windows-%E5%B8%B8%E7%94%A8%E8%BD%AF%E4%BB%B6%E8%AE%B0%E5%BD%95/</link>
+      <pubDate>Tue, 13 Aug 2019 17:26:26 +0800</pubDate>
+      
+      <guid>https://blog.dontjudge.cn/post/windows-%E5%B8%B8%E7%94%A8%E8%BD%AF%E4%BB%B6%E8%AE%B0%E5%BD%95/</guid>
+      <description>软件、环境列表 电脑管家下载 https://guanjia.qq.com/ 谷歌浏览器 QQ 同步文件夹安装包 Clover Xftp Xshell Acrobat Reader DC 官网下载 微云同步助手 https://www.weiyun.com/download.html Free Download Manager（https://www.fre</description>
+    </item>
+    
+  </channel>
+</rss>

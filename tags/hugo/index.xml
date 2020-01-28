@@ -6,17 +6,26 @@
     <description>Recent content in Hugo on Don&#39;t Judge</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 24 Jan 2020 20:08:00 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 27 Jan 2020 16:47:00 +0800</lastBuildDate>
     
 	<atom:link href="https://blog.dontjudge.cn/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Hugo主题Even的自定义配置</title>
-      <link>https://blog.dontjudge.cn/post/hugo%E4%B8%BB%E9%A2%98even%E7%9A%84%E8%87%AA%E5%AE%9A%E4%B9%89%E9%85%8D%E7%BD%AE/</link>
+      <title>Hugo &#43; Typora 编写文章注意事项</title>
+      <link>https://blog.dontjudge.cn/post/hugo-&#43;-typora-%E7%BC%96%E5%86%99%E6%96%87%E7%AB%A0%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/</link>
+      <pubDate>Mon, 27 Jan 2020 16:47:00 +0800</pubDate>
+      
+      <guid>https://blog.dontjudge.cn/post/hugo-&#43;-typora-%E7%BC%96%E5%86%99%E6%96%87%E7%AB%A0%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/</guid>
+      <description>Hugo 版本：0.59 even 版本：v4.0.0 Hugo + Typora编写文章注意事项 1. 文本换行 Typora 对于换行的约束比较宽松，可以接受以下几种换行方式： 非源代码模</description>
+    </item>
+    
+    <item>
+      <title>Hugo 主题 Even 的自定义配置</title>
+      <link>https://blog.dontjudge.cn/post/hugo-%E4%B8%BB%E9%A2%98-even-%E7%9A%84%E8%87%AA%E5%AE%9A%E4%B9%89%E9%85%8D%E7%BD%AE/</link>
       <pubDate>Fri, 24 Jan 2020 20:08:00 +0800</pubDate>
       
-      <guid>https://blog.dontjudge.cn/post/hugo%E4%B8%BB%E9%A2%98even%E7%9A%84%E8%87%AA%E5%AE%9A%E4%B9%89%E9%85%8D%E7%BD%AE/</guid>
+      <guid>https://blog.dontjudge.cn/post/hugo-%E4%B8%BB%E9%A2%98-even-%E7%9A%84%E8%87%AA%E5%AE%9A%E4%B9%89%E9%85%8D%E7%BD%AE/</guid>
       <description>本文记录 Blog 使用的 Hugo 主题 https://github.com/olOwOlo/hugo-theme-even 的自定义配置。 Hugo 版本：0.59 even 版本：v4.0.0 1. 主题安装与应用 clone 到本地就算安装成功： 1 git clone https://github.com/olOwOlo/hugo-theme-even themes/even 将 themes\even\exampleSite\config.toml 文件复制到 Hugo site</description>
     </item>
     
@@ -30,11 +39,11 @@
     </item>
     
     <item>
-      <title>Hugo静态网站图片插入问题</title>
-      <link>https://blog.dontjudge.cn/post/hugo%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99%E5%9B%BE%E7%89%87%E6%8F%92%E5%85%A5/</link>
+      <title>Hugo 静态网站图片插入问题</title>
+      <link>https://blog.dontjudge.cn/post/hugo-%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99%E5%9B%BE%E7%89%87%E6%8F%92%E5%85%A5/</link>
       <pubDate>Wed, 22 Jan 2020 19:23:00 +0800</pubDate>
       
-      <guid>https://blog.dontjudge.cn/post/hugo%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99%E5%9B%BE%E7%89%87%E6%8F%92%E5%85%A5/</guid>
+      <guid>https://blog.dontjudge.cn/post/hugo-%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99%E5%9B%BE%E7%89%87%E6%8F%92%E5%85%A5/</guid>
       <description>本文记录在使用Hugo生成静态网站过程中，关于文章本地图片插入的问题 Hugo静态资源载入逻辑 hugo 的静态文件放置在 /static 文件夹下，文章 markdown 文件放在 /content/post 文</description>
     </item>
     
