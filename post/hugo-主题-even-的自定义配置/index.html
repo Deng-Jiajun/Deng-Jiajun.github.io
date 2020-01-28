@@ -50,7 +50,7 @@
 
 <meta itemprop="datePublished" content="2020-01-24T20:08:00&#43;08:00" />
 <meta itemprop="dateModified" content="2020-01-29T03:36:00&#43;08:00" />
-<meta itemprop="wordCount" content="917">
+<meta itemprop="wordCount" content="974">
 
 
 
@@ -128,7 +128,7 @@
             <a href="/categories/hugo/"> Hugo </a>
             <a href="/categories/blog/"> Blog </a>
             </div>
-          <span class="more-meta"> 约 917 字 </span>
+          <span class="more-meta"> 约 974 字 </span>
           <span class="more-meta"> 预计阅读 2 分钟 </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
       </div>
@@ -282,6 +282,10 @@ GitHub App：<a href="https://github.com/apps/utterances">https://github.com/app
 
 <p>主题只提供了在首页隐藏文章，而在归档处能看得见文章的设定。<br />
 但是存在需要把一些不希望在正常页面能看得见的文章（没营养的流水账）上传的需求。即又想上传，又不希望被看见的需求。</p>
+
+<p>解决方案：<br />
+将需要隐藏的文章放入 <code>content/xx/</code><br />
+此时生成的文章能够通过 <code>baseURL/xx/</code> 访问，如果写了tags/categories，也能被识别。</p>
 
 <h3 id="后记">后记</h3>
 

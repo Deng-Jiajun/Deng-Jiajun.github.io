@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>C on Don&#39;t Judge</title>
+    <link>https://blog.dontjudge.cn/categories/c/</link>
+    <description>Recent content in C on Don&#39;t Judge</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 22 Mar 2019 03:22:35 +0800</lastBuildDate>
+    
+	<atom:link href="https://blog.dontjudge.cn/categories/c/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>VS2017环境下，C语言使用malloc()创建动态数组，引发了异常: 写入访问权限冲突。 string 是 0xFFFFFFFFB212A360。</title>
+      <link>https://blog.dontjudge.cn/post/vs2017%E7%8E%AF%E5%A2%83%E4%B8%8Bc%E8%AF%AD%E8%A8%80%E4%BD%BF%E7%94%A8malloc%E5%88%9B%E5%BB%BA%E5%8A%A8%E6%80%81%E6%95%B0%E7%BB%84%E5%BC%95%E5%8F%91%E4%BA%86%E5%BC%82%E5%B8%B8_-%E5%86%99%E5%85%A5%E8%AE%BF%E9%97%AE%E6%9D%83%E9%99%90%E5%86%B2%E7%AA%81-string-%E6%98%AF-0xffffffffb212a360/</link>
+      <pubDate>Fri, 22 Mar 2019 03:22:35 +0800</pubDate>
+      
+      <guid>https://blog.dontjudge.cn/post/vs2017%E7%8E%AF%E5%A2%83%E4%B8%8Bc%E8%AF%AD%E8%A8%80%E4%BD%BF%E7%94%A8malloc%E5%88%9B%E5%BB%BA%E5%8A%A8%E6%80%81%E6%95%B0%E7%BB%84%E5%BC%95%E5%8F%91%E4%BA%86%E5%BC%82%E5%B8%B8_-%E5%86%99%E5%85%A5%E8%AE%BF%E9%97%AE%E6%9D%83%E9%99%90%E5%86%B2%E7%AA%81-string-%E6%98%AF-0xffffffffb212a360/</guid>
+      <description>在 CSDN 写的唯一篇，给它转过来。VS2017环境下，C语言使用malloc（）创建动态数组，引发了异常: 写入访问权限冲突。 string 是 0xFFFFFFF</description>
+    </item>
+    
+  </channel>
+</rss>
