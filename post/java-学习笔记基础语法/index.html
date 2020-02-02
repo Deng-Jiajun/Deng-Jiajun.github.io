@@ -50,7 +50,7 @@
 
 <meta itemprop="datePublished" content="2020-01-26T14:55:00&#43;08:00" />
 <meta itemprop="dateModified" content="2020-01-26T14:55:00&#43;08:00" />
-<meta itemprop="wordCount" content="1465">
+<meta itemprop="wordCount" content="1826">
 
 
 
@@ -128,8 +128,8 @@
             <a href="/categories/java/"> Java </a>
             <a href="/categories/note/"> note </a>
             </div>
-          <span class="more-meta"> 约 1465 字 </span>
-          <span class="more-meta"> 预计阅读 3 分钟 </span>
+          <span class="more-meta"> 约 1826 字 </span>
+          <span class="more-meta"> 预计阅读 4 分钟 </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
       </div>
     </header>
@@ -167,7 +167,12 @@
 <li><a href="#和-equals">== 和 equals</a></li>
 <li><a href="#字符串分割-string-split-regex">字符串分割 String.split(regex)</a></li>
 </ul></li>
+<li><a href="#静态static关键字修饰成员方法">静态static关键字修饰成员方法</a></li>
+<li><a href="#静态代码块">静态代码块</a></li>
+<li><a href="#数组工具类arrays">数组工具类Arrays</a></li>
+<li><a href="#数组工具类math">数组工具类Math</a></li>
 </ul></li>
+<li><a href="#继承-super-this-抽象类">继承、super、this、抽象类</a></li>
 </ul></li>
 <li><a href="#idea-快捷操作">IDEA 快捷操作</a>
 <ul>
@@ -353,7 +358,45 @@
 
 <h4 id="字符串分割-string-split-regex">字符串分割 String.split(regex)</h4>
 
-<p>注意正则表达式的处理,如</p>
+<p>注意正则表达式的处理,如：分隔符为 <code>.</code> 时，需将表达式写为 <code>\\.</code></p>
+
+<h3 id="静态static关键字修饰成员方法">静态static关键字修饰成员方法</h3>
+
+<ol>
+<li>静态内容先于非静态内容创建，故静态内容无法直接访问非静态内容</li>
+<li><code>this</code> 代表当前<strong>对象</strong>，故无法在静态方法中使用 <code>this</code></li>
+</ol>
+
+<h3 id="静态代码块">静态代码块</h3>
+
+<p>被 <code>static{ }</code> 包裹的内容，第一次用到该类时，静态代码块执行<strong>唯一一次</strong>。</p>
+
+<p>常用作对静态成员变量的统一赋值。</p>
+
+<h3 id="数组工具类arrays">数组工具类Arrays</h3>
+
+<p><code>Arrays.sort(arr)</code> ：将 arr 排序</p>
+
+<p><code>str.toCharArray()</code> ：将 str 转化为数组</p>
+
+<h3 id="数组工具类math">数组工具类Math</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">public static double abs(double num)：获取绝对值。有多种重载。
+public static double ceil(double num)：向上取整。
+public static double floor(double num)：向下取整。
+public static long round(double num)：四舍五入。
+Math.PI代表近似的圆周率常量（double）。</pre></td></tr></table>
+</div>
+</div>
+<h2 id="继承-super-this-抽象类">继承、super、this、抽象类</h2>
 
 <h1 id="idea-快捷操作">IDEA 快捷操作</h1>
 
@@ -391,6 +434,10 @@
 <span class="p">}</span></code></pre></td></tr></table>
 </div>
 </div>
+<blockquote>
+<p>.for<strong>r</strong> 可生成倒序</p>
+</blockquote>
+
 <h1 id="java-内存划分-栈-堆">Java 内存划分（栈、堆……）</h1>
 
 <blockquote>
@@ -400,6 +447,8 @@
 <li>数组：<a href="https://www.bilibili.com/video/av69867488?p=85">一个数组的内存图</a></li>
 <li>对象：<a href="https://www.bilibili.com/video/av69867488?p=102">一个对象的内存图</a></li>
 <li>字符串：<a href="https://www.bilibili.com/video/av69882344?p=22">字符串的常量池</a></li>
+<li>静态变量：<a href="https://www.bilibili.com/video/av69882344?p=33">静态static的内存图</a></li>
+<li>super和this：<a href="https://www.bilibili.com/video/av69882344?p=50">super和tihis关键字图解</a></li>
 </ol>
 </blockquote>
 
@@ -437,7 +486,9 @@
 
 <h2 id="3-方法区-method-area">3. 方法区（Method Area）</h2>
 
-<p><strong>存储 .class 相关信息,包含方法的信息</strong></p>
+<p><strong>存储 .class 相关信息（即类）,包含方法的信息</strong></p>
+
+<p>方法区中含有一个<strong>静态区</strong>，静态成员到<strong>方法区</strong>的<strong>静态区</strong>内访问</p>
 
 <h2 id="4-本地方法栈-native-method-stack">4. 本地方法栈（Native Method Stack）</h2>
 
