@@ -50,7 +50,7 @@
 
 <meta itemprop="datePublished" content="2020-01-26T14:55:00&#43;08:00" />
 <meta itemprop="dateModified" content="2020-01-26T14:55:00&#43;08:00" />
-<meta itemprop="wordCount" content="1826">
+<meta itemprop="wordCount" content="2159">
 
 
 
@@ -128,8 +128,8 @@
             <a href="/categories/java/"> Java </a>
             <a href="/categories/note/"> note </a>
             </div>
-          <span class="more-meta"> 约 1826 字 </span>
-          <span class="more-meta"> 预计阅读 4 分钟 </span>
+          <span class="more-meta"> 约 2159 字 </span>
+          <span class="more-meta"> 预计阅读 5 分钟 </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
       </div>
     </header>
@@ -172,7 +172,15 @@
 <li><a href="#数组工具类arrays">数组工具类Arrays</a></li>
 <li><a href="#数组工具类math">数组工具类Math</a></li>
 </ul></li>
-<li><a href="#继承-super-this-抽象类">继承、super、this、抽象类</a></li>
+<li><a href="#接口-多态">接口、多态</a></li>
+<li><a href="#final-权限-内部类">final、权限、内部类</a>
+<ul>
+<li><a href="#关于final">关于final</a>
+<ul>
+<li><a href="#f基本类型与引用类型">f基本类型与引用类型</a></li>
+<li><a href="#局部变量与成员变量">局部变量与成员变量</a></li>
+</ul></li>
+</ul></li>
 </ul></li>
 <li><a href="#idea-快捷操作">IDEA 快捷操作</a>
 <ul>
@@ -396,8 +404,118 @@ public static long round(double num)：四舍五入。
 Math.PI代表近似的圆周率常量（double）。</pre></td></tr></table>
 </div>
 </div>
-<h2 id="继承-super-this-抽象类">继承、super、this、抽象类</h2>
+<h2 id="接口-多态">接口、多态</h2>
 
+<p>instanceof 用法</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="nf">static</span> <span class="kt">void</span> <span class="nf">giveMeAPet</span><span class="p">(</span><span class="n">Animal</span> <span class="nf">animal</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">animal</span> <span class="nf">instanceof</span> <span class="n">Dog</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">Dog</span> <span class="nf">dog</span> <span class="o">=</span> <span class="p">(</span><span class="n">Dog</span><span class="p">)</span> <span class="n">animal</span><span class="p">;</span>
+        <span class="n">dog</span><span class="p">.</span><span class="na">watchHouse</span><span class="p">();</span>
+    <span class="p">}</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">animal</span> <span class="nf">instanceof</span> <span class="n">Cat</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">Cat</span> <span class="nf">cat</span> <span class="o">=</span> <span class="p">(</span><span class="n">Cat</span><span class="p">)</span> <span class="n">animal</span><span class="p">;</span>
+        <span class="n">cat</span><span class="p">.</span><span class="na">catchMouse</span><span class="p">();</span>
+    <span class="p">}</span>
+<span class="p">}</span></code></pre></td></tr></table>
+</div>
+</div>
+<h2 id="final-权限-内部类">final、权限、内部类</h2>
+
+<h3 id="关于final">关于final</h3>
+
+<h4 id="f基本类型与引用类型">f基本类型与引用类型</h4>
+
+<p>对于基本类型来说，不可变说的是变量当中的数据不可改变<br />
+对于引用类型来说，不可变说的是变量当中的<strong>地址值</strong>不可改变</p>
+
+<p>即：指向的对象不可变，但是对象的成员变量的值可以更改</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">final</span> <span class="nf">Student</span> <span class="n">stu2</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Student</span><span class="p">(</span><span class="s">&#34;stu1&#34;</span><span class="p">);</span>
+<span class="n">stu2</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Student</span><span class="p">(</span><span class="s">&#34;stu2&#34;</span><span class="p">);</span>	<span class="c1">// 不可改变指向
+</span><span class="c1"></span><span class="n">stu2</span><span class="p">.</span><span class="na">setName</span><span class="p">(</span><span class="s">&#34;stu2&#34;</span><span class="p">);</span>	<span class="o">//</span> <span class="n">可改变成员数据</span></code></pre></td></tr></table>
+</div>
+</div>
+<h4 id="局部变量与成员变量">局部变量与成员变量</h4>
+
+<p>对于局部变量而言，可以先创建，再赋值</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">final</span> <span class="nf">int</span> <span class="n">num3</span><span class="p">;</span>
+<span class="n">num3</span> <span class="o">=</span> <span class="n">30</span><span class="p">;</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>而对于成员变量，必须<strong>在创建时就赋值</strong>，或者<strong>通过构造方法赋值</strong><br />
+<strong>注意，两种方法为二选一，不能同时采用</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="nf">class</span> <span class="n">Person</span> <span class="p">{</span>
+
+    <span class="kd">private</span> <span class="nf">final</span> <span class="n">String</span> <span class="nf">name</span> <span class="o">=</span> <span class="s">&#34;name1&#34;</span><span class="p">;</span>	<span class="c1">// 二选一
+</span><span class="c1"></span>
+    <span class="kd">public</span> <span class="nf">Person</span><span class="p">()</span> <span class="p">{</span>
+        <span class="n">name</span> <span class="o">=</span> <span class="s">&#34;name2&#34;</span><span class="p">;</span>	<span class="c1">// 二选一
+</span><span class="c1"></span>    <span class="p">}</span>
+
+    <span class="kd">public</span> <span class="nf">Person</span><span class="p">(</span><span class="n">String</span> <span class="nf">name</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">name</span> <span class="o">=</span> <span class="n">name</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="kd">public</span> <span class="nf">String</span> <span class="n">getName</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="n">name</span><span class="p">;</span>
+    <span class="p">}</span>
+
+   <span class="kd">public</span> <span class="nf">void</span> <span class="n">setName</span><span class="p">(</span><span class="n">String</span> <span class="nf">name</span><span class="p">)</span> <span class="p">{</span>
+       <span class="k">this</span><span class="p">.</span><span class="na">name</span> <span class="o">=</span> <span class="n">name</span><span class="p">;</span>	<span class="c1">// final，不可再次赋值
+</span><span class="c1"></span>   <span class="p">}</span>
+<span class="p">}</span></code></pre></td></tr></table>
+</div>
+</div>
 <h1 id="idea-快捷操作">IDEA 快捷操作</h1>
 
 <h2 id="快捷输入次数循环">快捷输入次数循环</h2>
