@@ -6,7 +6,7 @@
     <description>Recent content in Tags on Don&#39;t Judge</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 03 Feb 2020 01:10:00 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 19 Feb 2020 03:17:00 +0800</lastBuildDate>
     
 	<atom:link href="https://blog.dontjudge.cn/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,9 +14,36 @@
     <item>
       <title>Life</title>
       <link>https://blog.dontjudge.cn/tags/life/</link>
-      <pubDate>Mon, 03 Feb 2020 01:10:00 +0800</pubDate>
+      <pubDate>Wed, 19 Feb 2020 03:17:00 +0800</pubDate>
       
       <guid>https://blog.dontjudge.cn/tags/life/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Java</title>
+      <link>https://blog.dontjudge.cn/tags/java/</link>
+      <pubDate>Thu, 06 Feb 2020 23:40:00 +0800</pubDate>
+      
+      <guid>https://blog.dontjudge.cn/tags/java/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>MyBatis</title>
+      <link>https://blog.dontjudge.cn/tags/mybatis/</link>
+      <pubDate>Thu, 06 Feb 2020 23:40:00 +0800</pubDate>
+      
+      <guid>https://blog.dontjudge.cn/tags/mybatis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>note</title>
+      <link>https://blog.dontjudge.cn/tags/note/</link>
+      <pubDate>Thu, 06 Feb 2020 23:38:00 +0800</pubDate>
+      
+      <guid>https://blog.dontjudge.cn/tags/note/</guid>
       <description></description>
     </item>
     
@@ -44,24 +71,6 @@
       <pubDate>Mon, 27 Jan 2020 16:47:00 +0800</pubDate>
       
       <guid>https://blog.dontjudge.cn/tags/tpora/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Java</title>
-      <link>https://blog.dontjudge.cn/tags/java/</link>
-      <pubDate>Sun, 26 Jan 2020 14:55:00 +0800</pubDate>
-      
-      <guid>https://blog.dontjudge.cn/tags/java/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>note</title>
-      <link>https://blog.dontjudge.cn/tags/note/</link>
-      <pubDate>Sun, 26 Jan 2020 14:55:00 +0800</pubDate>
-      
-      <guid>https://blog.dontjudge.cn/tags/note/</guid>
       <description></description>
     </item>
     

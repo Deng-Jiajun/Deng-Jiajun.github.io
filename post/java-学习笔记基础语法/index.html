@@ -43,14 +43,14 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://blog.dontjudge.cn/post/java-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/" />
 <meta property="article:published_time" content="2020-01-26T14:55:00+08:00" />
-<meta property="article:modified_time" content="2020-01-26T14:55:00+08:00" />
+<meta property="article:modified_time" content="2020-02-06T23:37:00+08:00" />
 <meta itemprop="name" content="Java 学习笔记（基础语法）">
 <meta itemprop="description" content="过一遍 Java 视频，随便记录一些花里胡哨的知识点。 Java基础语法 数据类型转换、运算符、方法入门 数据类型转换_强制转换 大范围 -&gt; 小范围 无法进行隐式转">
 
 
 <meta itemprop="datePublished" content="2020-01-26T14:55:00&#43;08:00" />
-<meta itemprop="dateModified" content="2020-01-26T14:55:00&#43;08:00" />
-<meta itemprop="wordCount" content="2159">
+<meta itemprop="dateModified" content="2020-02-06T23:37:00&#43;08:00" />
+<meta itemprop="wordCount" content="3077">
 
 
 
@@ -128,8 +128,8 @@
             <a href="/categories/java/"> Java </a>
             <a href="/categories/note/"> note </a>
             </div>
-          <span class="more-meta"> 约 2159 字 </span>
-          <span class="more-meta"> 预计阅读 5 分钟 </span>
+          <span class="more-meta"> 约 3077 字 </span>
+          <span class="more-meta"> 预计阅读 7 分钟 </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
       </div>
     </header>
@@ -177,9 +177,14 @@
 <ul>
 <li><a href="#关于final">关于final</a>
 <ul>
-<li><a href="#f基本类型与引用类型">f基本类型与引用类型</a></li>
+<li><a href="#基本类型与引用类型">基本类型与引用类型</a></li>
 <li><a href="#局部变量与成员变量">局部变量与成员变量</a></li>
 </ul></li>
+<li><a href="#public-protected-default-private">public、protected、default、private</a></li>
+<li><a href="#内部类调用">内部类调用</a></li>
+<li><a href="#变量重名时内部类访问外部类的变量">变量重名时内部类访问外部类的变量</a></li>
+<li><a href="#局部内部类访问-有效final的-局部变量">局部内部类访问【有效final的】局部变量</a></li>
+<li><a href="#匿名内部类和匿名对象的创建">匿名内部类和匿名对象的创建</a></li>
 </ul></li>
 </ul></li>
 <li><a href="#idea-快捷操作">IDEA 快捷操作</a>
@@ -437,7 +442,7 @@ Math.PI代表近似的圆周率常量（double）。</pre></td></tr></table>
 
 <h3 id="关于final">关于final</h3>
 
-<h4 id="f基本类型与引用类型">f基本类型与引用类型</h4>
+<h4 id="基本类型与引用类型">基本类型与引用类型</h4>
 
 <p>对于基本类型来说，不可变说的是变量当中的数据不可改变<br />
 对于引用类型来说，不可变说的是变量当中的<strong>地址值</strong>不可改变</p>
@@ -516,6 +521,200 @@ Math.PI代表近似的圆周率常量（double）。</pre></td></tr></table>
 <span class="p">}</span></code></pre></td></tr></table>
 </div>
 </div>
+<h3 id="public-protected-default-private">public、protected、default、private</h3>
+
+<p>类间访问权限：<a href="https://www.bilibili.com/video/av69882344?p=87">四种权限修饰符的权限范围</a></p>
+
+<table>
+<thead>
+<tr>
+<th></th>
+<th>public</th>
+<th>protected</th>
+<th>(default)</th>
+<th>private</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>同一个类</td>
+<td>YES</td>
+<td>YES</td>
+<td>YES</td>
+<td>YES</td>
+</tr>
+
+<tr>
+<td>同一个包</td>
+<td>YES</td>
+<td>YES</td>
+<td>YES</td>
+<td>NO</td>
+</tr>
+
+<tr>
+<td>不同包子类</td>
+<td>YES</td>
+<td>YES</td>
+<td>NO</td>
+<td>NO</td>
+</tr>
+
+<tr>
+<td>不同包非子类</td>
+<td>YES</td>
+<td>NO</td>
+<td>NO</td>
+<td>NO</td>
+</tr>
+</tbody>
+</table>
+
+<p>类的权限修饰符：<a href="https://www.bilibili.com/video/av69882344?p=92">局部内部类定义</a></p>
+
+<p>public &gt; protected &gt; (default) &gt; private</p>
+
+<p>定义一个类的时候，权限修饰符规则：</p>
+
+<ol>
+<li>外部类：public / (default)</li>
+<li>成员内部类：public / protected / (default) / private</li>
+<li>局部内部类：什么都不能写</li>
+</ol>
+
+<h3 id="内部类调用">内部类调用</h3>
+
+<p>内部类直接调用格式：【外部类名称.内部类名称 对象名 = new 外部类名称().new 内部类名称();】</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="c1">// Heart为Body的内部类
+</span><span class="c1"></span><span class="n">Body</span><span class="p">.</span><span class="na">Heart</span> <span class="nf">heart</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Body</span><span class="p">().</span><span class="na">new</span> <span class="n">Heart</span><span class="p">();</span>
+<span class="n">heart</span><span class="p">.</span><span class="na">beat</span><span class="p">();</span></code></pre></td></tr></table>
+</div>
+</div>
+<h3 id="变量重名时内部类访问外部类的变量">变量重名时内部类访问外部类的变量</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="c1">// 如果出现了重名现象，那么格式是：外部类名称.this.外部类成员变量名
+</span><span class="c1"></span><span class="kd">public</span> <span class="nf">class</span> <span class="n">Outer</span> <span class="p">{</span>
+
+    <span class="kt">int</span> <span class="nf">num</span> <span class="o">=</span> <span class="n">10</span><span class="p">;</span> <span class="c1">// 外部类的成员变量
+</span><span class="c1"></span>
+    <span class="kd">public</span> <span class="nf">class</span> <span class="n">Inner</span> <span class="cm">/*extends Object*/</span> <span class="p">{</span>
+
+        <span class="kt">int</span> <span class="nf">num</span> <span class="o">=</span> <span class="n">20</span><span class="p">;</span> <span class="c1">// 内部类的成员变量
+</span><span class="c1"></span>
+        <span class="kd">public</span> <span class="nf">void</span> <span class="n">methodInner</span><span class="p">()</span> <span class="p">{</span>
+            <span class="kt">int</span> <span class="nf">num</span> <span class="o">=</span> <span class="n">30</span><span class="p">;</span> <span class="c1">// 内部类方法的局部变量
+</span><span class="c1"></span>            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">num</span><span class="p">);</span> <span class="c1">// 局部变量，就近原则
+</span><span class="c1"></span>            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="na">num</span><span class="p">);</span> <span class="c1">// 内部类的成员变量
+</span><span class="c1"></span>            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">Outer</span><span class="p">.</span><span class="na">this</span><span class="p">.</span><span class="na">num</span><span class="p">);</span> <span class="c1">// 外部类的成员变量
+</span><span class="c1"></span>        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span></code></pre></td></tr></table>
+</div>
+</div>
+<h3 id="局部内部类访问-有效final的-局部变量">局部内部类访问【有效final的】局部变量</h3>
+
+<p><a href="https://www.bilibili.com/video/av69882344?p=93">局部内部类的final问题</a></p>
+
+<p>局部内部类，如果希望访问所在方法的局部变量，那么这个局部变量必须是【有效final的】</p>
+
+<p>原因：</p>
+
+<ol>
+<li><p>new出来的对象在堆内存当中。</p></li>
+
+<li><p>局部变量是跟着方法走的，在栈内存当中。</p></li>
+
+<li><p>方法运行结束之后，立刻出栈，局部变量就会立刻消失。</p></li>
+
+<li><p>但是new出来的对象会在堆当中持续存在，直到垃圾回收消失。</p></li>
+</ol>
+
+<h3 id="匿名内部类和匿名对象的创建">匿名内部类和匿名对象的创建</h3>
+
+<p>匿名内部类：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="n">MyInterface</span> <span class="nf">obj</span> <span class="o">=</span> <span class="k">new</span> <span class="n">MyInterface</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="nf">void</span> <span class="n">method</span><span class="p">()</span> <span class="p">{</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&#34;匿名内部类实现了方法&#34;</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">};</span></code></pre></td></tr></table>
+</div>
+</div>
+<blockquote>
+<p>匿名内部类适用于需要实现接口，并<strong>只需要创建一个对象</strong>的情况。</p>
+</blockquote>
+
+<p>匿名对象：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="k">new</span> <span class="n">MyInterface</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="nf">void</span> <span class="n">method</span><span class="p">()</span> <span class="p">{</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&#34;匿名对象实现方法&#34;</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}.</span><span class="na">method</span><span class="p">();</span></code></pre></td></tr></table>
+</div>
+</div>
+<blockquote>
+<p>匿名对象适用于只需要使用一次对象方法的情况。</p>
+</blockquote>
+
+<ol>
+<li><p>匿名内部类，在【创建对象】的时候，只能使用唯一一次。<br />
+如果希望多次创建对象，而且类的内容一样的话，那么就需要使用单独定义的实现类了。</p></li>
+
+<li><p>匿名对象，在【调用方法】的时候，只能调用唯一一次。<br />
+如果希望同一个对象，调用多次方法，那么必须给对象起个名字。</p></li>
+
+<li><p>匿名内部类是省略了【实现类/子类名称】，但是匿名对象是省略了【对象名称】</p></li>
+</ol>
+
 <h1 id="idea-快捷操作">IDEA 快捷操作</h1>
 
 <h2 id="快捷输入次数循环">快捷输入次数循环</h2>
@@ -626,7 +825,7 @@ Math.PI代表近似的圆周率常量（double）。</pre></td></tr></table>
   <p class="copyright-item">
     <span class="item-title">上次更新</span>
     <span class="item-content">
-        2020-01-26 14:55
+        2020-02-06 23:37
         
     </span>
   </p>

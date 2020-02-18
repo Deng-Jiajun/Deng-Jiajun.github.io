@@ -6,10 +6,28 @@
     <description>Recent content in Java on Don&#39;t Judge</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 26 Jan 2020 14:55:00 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 06 Feb 2020 23:40:00 +0800</lastBuildDate>
     
 	<atom:link href="https://blog.dontjudge.cn/categories/java/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>MyBatis 学习笔记</title>
+      <link>https://blog.dontjudge.cn/post/mybatis-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
+      <pubDate>Thu, 06 Feb 2020 23:40:00 +0800</pubDate>
+      
+      <guid>https://blog.dontjudge.cn/post/mybatis-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
+      <description>1. Linux 服务器操作记录 Linux 服务器为初始的 centos 镜像，只安装了 nginx 保证网站能否访问。为了后续测试需要，对服务器进行配置。 1.1 mysql 安装 yum install mysql</description>
+    </item>
+    
+    <item>
+      <title>Java 学习笔记（语言进阶）</title>
+      <link>https://blog.dontjudge.cn/post/java-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E8%AF%AD%E8%A8%80%E8%BF%9B%E9%98%B6/</link>
+      <pubDate>Thu, 06 Feb 2020 23:38:00 +0800</pubDate>
+      
+      <guid>https://blog.dontjudge.cn/post/java-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E8%AF%AD%E8%A8%80%E8%BF%9B%E9%98%B6/</guid>
+      <description>看完基础语法，累了，不想再看语言进阶了，太多了，先往后学，遇到需要补充的再按需学习，留坑待填。</description>
+    </item>
     
     <item>
       <title>Java 学习笔记（基础语法）</title>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MyBatis on Don&#39;t Judge</title>
+    <link>https://blog.dontjudge.cn/tags/mybatis/</link>
+    <description>Recent content in MyBatis on Don&#39;t Judge</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 06 Feb 2020 23:40:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://blog.dontjudge.cn/tags/mybatis/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>MyBatis 学习笔记</title>
+      <link>https://blog.dontjudge.cn/post/mybatis-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
+      <pubDate>Thu, 06 Feb 2020 23:40:00 +0800</pubDate>
+      
+      <guid>https://blog.dontjudge.cn/post/mybatis-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
+      <description>1. Linux 服务器操作记录 Linux 服务器为初始的 centos 镜像，只安装了 nginx 保证网站能否访问。为了后续测试需要，对服务器进行配置。 1.1 mysql 安装 yum install mysql</description>
+    </item>
+    
+  </channel>
+</rss>
