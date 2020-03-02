@@ -17,7 +17,7 @@
       <pubDate>Thu, 06 Feb 2020 23:40:00 +0800</pubDate>
       
       <guid>https://blog.dontjudge.cn/post/mybatis-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
-      <description>1. Linux 服务器操作记录 Linux 服务器为初始的 centos 镜像，只安装了 nginx 保证网站能否访问。为了后续测试需要，对服务器进行配置。 1.1 mysql 安装 yum install mysql</description>
+      <description>1. Linux 服务器操作记录 Linux 服务器为初始的 centos 镜像，只安装了 nginx 保证网站能否访问。为了后续测试需要，对服务器进行配置。 1.1 mysql 安装 yum install mysql 2. mapper 映射对应关系建立</description>
     </item>
     
   </channel>
