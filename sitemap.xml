@@ -9,49 +9,56 @@
   </url>
   
   <url>
-    <loc>https://blog.dontjudge.cn/life/2020%E5%B9%B43%E6%9C%8814%E6%97%A503%E7%82%B908%E5%88%86/</loc>
-    <lastmod>2020-03-14T03:08:00+08:00</lastmod>
+    <loc>https://blog.dontjudge.cn/life/2020%E5%B9%B43%E6%9C%8824%E6%97%A514%E7%82%B958%E5%88%86/</loc>
+    <lastmod>2020-03-24T14:58:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://blog.dontjudge.cn/categories/</loc>
-    <lastmod>2020-03-14T03:08:00+08:00</lastmod>
+    <lastmod>2020-03-24T14:58:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://blog.dontjudge.cn/</loc>
-    <lastmod>2020-03-14T03:08:00+08:00</lastmod>
+    <lastmod>2020-03-24T14:58:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://blog.dontjudge.cn/tags/life/</loc>
-    <lastmod>2020-03-14T03:08:00+08:00</lastmod>
+    <lastmod>2020-03-24T14:58:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://blog.dontjudge.cn/categories/life/</loc>
-    <lastmod>2020-03-14T03:08:00+08:00</lastmod>
+    <lastmod>2020-03-24T14:58:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://blog.dontjudge.cn/life/</loc>
-    <lastmod>2020-03-14T03:08:00+08:00</lastmod>
+    <lastmod>2020-03-24T14:58:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://blog.dontjudge.cn/tags/</loc>
+    <lastmod>2020-03-24T14:58:00+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.dontjudge.cn/life/2020%E5%B9%B43%E6%9C%8814%E6%97%A503%E7%82%B908%E5%88%86/</loc>
     <lastmod>2020-03-14T03:08:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -79,14 +86,14 @@
   </url>
   
   <url>
-    <loc>https://blog.dontjudge.cn/tags/document/</loc>
+    <loc>https://blog.dontjudge.cn/categories/document/</loc>
     <lastmod>2020-03-04T16:08:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://blog.dontjudge.cn/categories/document/</loc>
+    <loc>https://blog.dontjudge.cn/tags/document/</loc>
     <lastmod>2020-03-04T16:08:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -114,14 +121,14 @@
   </url>
   
   <url>
-    <loc>https://blog.dontjudge.cn/categories/todo/</loc>
+    <loc>https://blog.dontjudge.cn/tags/todo/</loc>
     <lastmod>2020-03-04T16:08:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://blog.dontjudge.cn/tags/todo/</loc>
+    <loc>https://blog.dontjudge.cn/categories/todo/</loc>
     <lastmod>2020-03-04T16:08:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -205,13 +212,6 @@
   </url>
   
   <url>
-    <loc>https://blog.dontjudge.cn/categories/java/</loc>
-    <lastmod>2020-02-06T23:40:00+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.dontjudge.cn/tags/java/</loc>
     <lastmod>2020-02-06T23:40:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -219,7 +219,7 @@
   </url>
   
   <url>
-    <loc>https://blog.dontjudge.cn/categories/mybatis/</loc>
+    <loc>https://blog.dontjudge.cn/categories/java/</loc>
     <lastmod>2020-02-06T23:40:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -227,6 +227,13 @@
   
   <url>
     <loc>https://blog.dontjudge.cn/tags/mybatis/</loc>
+    <lastmod>2020-02-06T23:40:00+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.dontjudge.cn/categories/mybatis/</loc>
     <lastmod>2020-02-06T23:40:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -247,14 +254,14 @@
   </url>
   
   <url>
-    <loc>https://blog.dontjudge.cn/categories/note/</loc>
+    <loc>https://blog.dontjudge.cn/tags/note/</loc>
     <lastmod>2020-02-06T23:38:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://blog.dontjudge.cn/tags/note/</loc>
+    <loc>https://blog.dontjudge.cn/categories/note/</loc>
     <lastmod>2020-02-06T23:38:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -289,13 +296,6 @@
   </url>
   
   <url>
-    <loc>https://blog.dontjudge.cn/tags/blog/</loc>
-    <lastmod>2020-03-02T21:17:00+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.dontjudge.cn/categories/blog/</loc>
     <lastmod>2020-03-02T21:17:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -303,7 +303,7 @@
   </url>
   
   <url>
-    <loc>https://blog.dontjudge.cn/tags/hugo/</loc>
+    <loc>https://blog.dontjudge.cn/tags/blog/</loc>
     <lastmod>2020-03-02T21:17:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -311,6 +311,13 @@
   
   <url>
     <loc>https://blog.dontjudge.cn/categories/hugo/</loc>
+    <lastmod>2020-03-02T21:17:00+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.dontjudge.cn/tags/hugo/</loc>
     <lastmod>2020-03-02T21:17:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -352,14 +359,14 @@
   </url>
   
   <url>
-    <loc>https://blog.dontjudge.cn/tags/github-pages/</loc>
+    <loc>https://blog.dontjudge.cn/categories/github-pages/</loc>
     <lastmod>2020-01-23T06:33:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://blog.dontjudge.cn/categories/github-pages/</loc>
+    <loc>https://blog.dontjudge.cn/tags/github-pages/</loc>
     <lastmod>2020-01-23T06:33:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -380,14 +387,14 @@
   </url>
   
   <url>
-    <loc>https://blog.dontjudge.cn/categories/dos/</loc>
+    <loc>https://blog.dontjudge.cn/tags/dos/</loc>
     <lastmod>2020-01-22T19:29:27+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://blog.dontjudge.cn/tags/dos/</loc>
+    <loc>https://blog.dontjudge.cn/categories/dos/</loc>
     <lastmod>2020-01-22T19:29:27+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -499,14 +506,14 @@
   </url>
   
   <url>
-    <loc>https://blog.dontjudge.cn/categories/python/</loc>
+    <loc>https://blog.dontjudge.cn/tags/python/</loc>
     <lastmod>2019-08-14T19:09:25+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://blog.dontjudge.cn/tags/python/</loc>
+    <loc>https://blog.dontjudge.cn/categories/python/</loc>
     <lastmod>2019-08-14T19:09:25+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -520,14 +527,14 @@
   </url>
   
   <url>
-    <loc>https://blog.dontjudge.cn/categories/linux/</loc>
+    <loc>https://blog.dontjudge.cn/tags/linux/</loc>
     <lastmod>2019-08-13T17:26:38+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://blog.dontjudge.cn/tags/linux/</loc>
+    <loc>https://blog.dontjudge.cn/categories/linux/</loc>
     <lastmod>2019-08-13T17:26:38+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -576,13 +583,6 @@
   </url>
   
   <url>
-    <loc>https://blog.dontjudge.cn/tags/markdown/</loc>
-    <lastmod>2019-08-05T18:19:05+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.dontjudge.cn/categories/markdown/</loc>
     <lastmod>2019-08-05T18:19:05+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -590,7 +590,7 @@
   </url>
   
   <url>
-    <loc>https://blog.dontjudge.cn/tags/typora/</loc>
+    <loc>https://blog.dontjudge.cn/tags/markdown/</loc>
     <lastmod>2019-08-05T18:19:05+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -598,6 +598,13 @@
   
   <url>
     <loc>https://blog.dontjudge.cn/categories/typora/</loc>
+    <lastmod>2019-08-05T18:19:05+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.dontjudge.cn/tags/typora/</loc>
     <lastmod>2019-08-05T18:19:05+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -625,13 +632,6 @@
   </url>
   
   <url>
-    <loc>https://blog.dontjudge.cn/categories/c/</loc>
-    <lastmod>2019-03-22T03:22:35+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.dontjudge.cn/tags/c/</loc>
     <lastmod>2019-03-22T03:22:35+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -639,7 +639,7 @@
   </url>
   
   <url>
-    <loc>https://blog.dontjudge.cn/tags/visual-studio/</loc>
+    <loc>https://blog.dontjudge.cn/categories/c/</loc>
     <lastmod>2019-03-22T03:22:35+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -647,6 +647,13 @@
   
   <url>
     <loc>https://blog.dontjudge.cn/categories/visual-studio/</loc>
+    <lastmod>2019-03-22T03:22:35+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.dontjudge.cn/tags/visual-studio/</loc>
     <lastmod>2019-03-22T03:22:35+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
