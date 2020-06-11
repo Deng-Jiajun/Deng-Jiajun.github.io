@@ -6,7 +6,7 @@
     <description>Recent content in Tags on Don&#39;t Judge</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 24 Mar 2020 14:58:00 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 06 Jun 2020 00:01:00 +0800</lastBuildDate>
     
 	<atom:link href="https://blog.dontjudge.cn/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,9 +14,18 @@
     <item>
       <title>Life</title>
       <link>https://blog.dontjudge.cn/tags/life/</link>
-      <pubDate>Tue, 24 Mar 2020 14:58:00 +0800</pubDate>
+      <pubDate>Sat, 06 Jun 2020 00:01:00 +0800</pubDate>
       
       <guid>https://blog.dontjudge.cn/tags/life/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>summary</title>
+      <link>https://blog.dontjudge.cn/tags/summary/</link>
+      <pubDate>Thu, 04 Jun 2020 15:31:00 +0800</pubDate>
+      
+      <guid>https://blog.dontjudge.cn/tags/summary/</guid>
       <description></description>
     </item>
     
@@ -35,15 +44,6 @@
       <pubDate>Wed, 04 Mar 2020 16:08:00 +0800</pubDate>
       
       <guid>https://blog.dontjudge.cn/tags/study/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Todo</title>
-      <link>https://blog.dontjudge.cn/tags/todo/</link>
-      <pubDate>Wed, 04 Mar 2020 16:08:00 +0800</pubDate>
-      
-      <guid>https://blog.dontjudge.cn/tags/todo/</guid>
       <description></description>
     </item>
     
