@@ -43,14 +43,14 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://blog.dontjudge.cn/post/hugo-&#43;-github-pages-%E6%90%AD%E5%BB%BAblog/" />
 <meta property="article:published_time" content="2020-01-23T05:20:00+08:00" />
-<meta property="article:modified_time" content="2020-01-23T06:33:00+08:00" />
+<meta property="article:modified_time" content="2020-06-23T00:48:00+08:00" />
 <meta itemprop="name" content="Hugo &#43; Github Pages 搭建Blog">
 <meta itemprop="description" content="本文简单记录通过 Hugo &#43; Github Pages 搭建 Blog 的过程，主要说过程，细节配置不详述。 GitHub Pages 参考 GitHub Pages 搭建教程 - 少数派 使用GitHub自带的主题先让页面能够通过自己">
 
 
 <meta itemprop="datePublished" content="2020-01-23T05:20:00&#43;08:00" />
-<meta itemprop="dateModified" content="2020-01-23T06:33:00&#43;08:00" />
-<meta itemprop="wordCount" content="572">
+<meta itemprop="dateModified" content="2020-06-23T00:48:00&#43;08:00" />
+<meta itemprop="wordCount" content="1163">
 
 
 
@@ -129,8 +129,8 @@
             <a href="/categories/github-pages/"> GitHub Pages </a>
             <a href="/categories/blog/"> Blog </a>
             </div>
-          <span class="more-meta"> 约 572 字 </span>
-          <span class="more-meta"> 预计阅读 2 分钟 </span>
+          <span class="more-meta"> 约 1163 字 </span>
+          <span class="more-meta"> 预计阅读 3 分钟 </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
       </div>
     </header>
@@ -145,7 +145,10 @@
 <li><a href="#github-pages">GitHub Pages</a></li>
 <li><a href="#hugo">Hugo</a></li>
 <li><a href="#本地public上传github">本地public上传GitHub</a></li>
-<li><a href="#后记">后记</a></li>
+<li><a href="#后记">后记</a>
+<ul>
+<li><a href="#更新">更新</a></li>
+</ul></li>
 </ul></li>
 </ul>
 </nav>
@@ -178,7 +181,7 @@
 <ul>
 <li>地址：<a href="https://github.com/gohugoio/hugo/releases">Hugo Releases</a></li>
 <li>下那个 windows 的压缩包，里面的 <strong>hugo.exe</strong> 就是可用的成品</li>
-<li>把 hugo.exe 丢到合适的路径，然后配置系统变量Path</li>
+<li>把 hugo.exe 丢到合适的路径，然后配置系统变量Path（可以不设，具体说明见后记）</li>
 <li><code>hugo version</code> 能显示就算🆗了</li>
 </ul></li>
 
@@ -220,6 +223,58 @@
 
 <p>网上给出的方案都是命令行push到仓库,看不到实实在在的页面总是感觉不太能接受,所以用了看起来有点别扭的push姿势.</p>
 
+<h3 id="更新">更新</h3>
+
+<p>2020年6月22日23点26分</p>
+
+<p>今天看目录的时候突然想到一件事，实际上我只用到了上面提到的两个命令，我为了偷懒还写了俩cmd文件来跑命令：</p>
+
+<p><strong>1. 本地运行，顺便打开本地的地址</strong></p>
+
+<p><code>hugo 本地.cmd</code>：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="n">start</span> <span class="n">http</span><span class="err">:</span><span class="p">//</span><span class="n">localhost</span><span class="err">:</span><span class="n">1313</span><span class="p">/</span>
+<span class="n">hugo</span> <span class="n">server</span>
+<span class="n">pause</span></code></pre></td></tr></table>
+</div>
+</div>
+<p><strong>2. 生成静态网站到public文件夹</strong></p>
+
+<p><code>hugo 生成public.cmd</code>：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="n">hugo</span> <span class="p">-</span><span class="n">-baseUrl</span><span class="p">=</span><span class="s2">&#34;https://blog.dontjudge.cn&#34;</span>
+<span class="n">echo</span> <span class="n">public</span> <span class="n">build</span> <span class="n">success</span>
+<span class="n">pause</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>当时为了方便，把 <code>hugo.exe</code> 我直接丢在 <code>C:\hugo</code> 里，而且配置了环境变量。一般教程也会推荐，但是在我的使用场景下，其实没必要配。</p>
+
+<p>今天看到C盘根目录下的这个<code>hugo</code> 文件夹，我想了想，这个，没必要放这儿，环境变量，不需要。</p>
+
+<p>👉<strong>第一个想法</strong>：把 <code>hugo.exe</code> 拉到博客根目录<code>HugoBlog</code> ，把cmd里的 <code>hugo</code>改成 绝对路径<code>C:\······\HugoBlog\hugo.exe</code> 我试了下，nice，能用。</p>
+
+<p>👉<strong>第二个想法</strong>：wait, wait. <code>cmd</code> 和 <code>exe</code> 在同一路径，用啥绝对路径？要啥自行车？直接用啊，不用改啊！然后我又把他们改了回去😭</p>
+
+<p>至此，hugo站点的所有文件都包含在了文件夹 <code>HugoBlog</code> 内，包含：hugo博客框架、生成的静态博客文件public、hugo.exe本身。理论上把这个文件夹搬到另外一个盘甚至另外一台电脑都不会有什么问题。</p>
+
+<blockquote>
+<p>注意：移动 <code>hugo.exe</code> 的前提是 hugo 博客框架文件已经产生，即已经运行过了 <code>hugo new site BlogName</code> 命令，生成了一系列空文件，才能去动它。</p>
+
+<p>文中默认了一件事，所有命令，除了 <code>hugo new site BlogName</code> ，都是在hugo博客文件夹<code>BlogName</code>路径下运行的。</p>
+</blockquote>
+
     </div>
 
     <div class="post-copyright">
@@ -230,7 +285,7 @@
   <p class="copyright-item">
     <span class="item-title">上次更新</span>
     <span class="item-content">
-        2020-01-23 06:33
+        2020-06-23 00:48
         
     </span>
   </p>
