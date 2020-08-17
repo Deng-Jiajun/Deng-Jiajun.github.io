@@ -6,10 +6,46 @@
     <description>Recent content in Tags on Don&#39;t Judge</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 06 Aug 2020 04:42:00 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 17 Aug 2020 00:01:00 +0800</lastBuildDate>
     
 	<atom:link href="https://blog.dontjudge.cn/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>summary</title>
+      <link>https://blog.dontjudge.cn/tags/summary/</link>
+      <pubDate>Mon, 17 Aug 2020 00:01:00 +0800</pubDate>
+      
+      <guid>https://blog.dontjudge.cn/tags/summary/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>proxy</title>
+      <link>https://blog.dontjudge.cn/tags/proxy/</link>
+      <pubDate>Tue, 11 Aug 2020 15:43:00 +0800</pubDate>
+      
+      <guid>https://blog.dontjudge.cn/tags/proxy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Winows</title>
+      <link>https://blog.dontjudge.cn/tags/winows/</link>
+      <pubDate>Tue, 11 Aug 2020 15:43:00 +0800</pubDate>
+      
+      <guid>https://blog.dontjudge.cn/tags/winows/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>WSL</title>
+      <link>https://blog.dontjudge.cn/tags/wsl/</link>
+      <pubDate>Tue, 11 Aug 2020 15:43:00 +0800</pubDate>
+      
+      <guid>https://blog.dontjudge.cn/tags/wsl/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Life</title>
@@ -17,15 +53,6 @@
       <pubDate>Thu, 06 Aug 2020 04:42:00 +0800</pubDate>
       
       <guid>https://blog.dontjudge.cn/tags/life/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>summary</title>
-      <link>https://blog.dontjudge.cn/tags/summary/</link>
-      <pubDate>Tue, 04 Aug 2020 00:01:00 +0800</pubDate>
-      
-      <guid>https://blog.dontjudge.cn/tags/summary/</guid>
       <description></description>
     </item>
     

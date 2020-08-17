@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>proxy on Don&#39;t Judge</title>
+    <link>https://blog.dontjudge.cn/tags/proxy/</link>
+    <description>Recent content in proxy on Don&#39;t Judge</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 11 Aug 2020 15:43:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://blog.dontjudge.cn/tags/proxy/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>WSL2走Windows代理</title>
+      <link>https://blog.dontjudge.cn/post/wsl2%E8%B5%B0windows%E4%BB%A3%E7%90%86/</link>
+      <pubDate>Tue, 11 Aug 2020 15:43:00 +0800</pubDate>
+      
+      <guid>https://blog.dontjudge.cn/post/wsl2%E8%B5%B0windows%E4%BB%A3%E7%90%86/</guid>
+      <description>背景描述 wsl下解决特定方案可能需要clone项目/下文件等需要连接外网，wsl不走代理可能很慢甚至连不上 需求描述 让wsl2连接Window</description>
+    </item>
+    
+  </channel>
+</rss>

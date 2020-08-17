@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Don&#39;t Judge</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 22 Jun 2020 19:48:00 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 11 Aug 2020 15:43:00 +0800</lastBuildDate>
     
 	<atom:link href="https://blog.dontjudge.cn/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>WSL2走Windows代理</title>
+      <link>https://blog.dontjudge.cn/post/wsl2%E8%B5%B0windows%E4%BB%A3%E7%90%86/</link>
+      <pubDate>Tue, 11 Aug 2020 15:43:00 +0800</pubDate>
+      
+      <guid>https://blog.dontjudge.cn/post/wsl2%E8%B5%B0windows%E4%BB%A3%E7%90%86/</guid>
+      <description>背景描述 wsl下解决特定方案可能需要clone项目/下文件等需要连接外网，wsl不走代理可能很慢甚至连不上 需求描述 让wsl2连接Window</description>
+    </item>
     
     <item>
       <title>语雀试用小结</title>
