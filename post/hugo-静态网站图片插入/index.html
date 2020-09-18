@@ -43,14 +43,14 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://blog.dontjudge.cn/post/hugo-%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99%E5%9B%BE%E7%89%87%E6%8F%92%E5%85%A5/" />
 <meta property="article:published_time" content="2020-01-22T19:23:00+08:00" />
-<meta property="article:modified_time" content="2020-01-22T22:15:00+08:00" />
+<meta property="article:modified_time" content="2020-09-18T22:57:00+08:00" />
 <meta itemprop="name" content="Hugo 静态网站图片插入问题">
 <meta itemprop="description" content="本文记录在使用Hugo生成静态网站过程中，关于文章本地图片插入的问题 Hugo静态资源载入逻辑 hugo 的静态文件放置在 /static 文件夹下，文章 markdown 文件放在 /content/post 文">
 
 
 <meta itemprop="datePublished" content="2020-01-22T19:23:00&#43;08:00" />
-<meta itemprop="dateModified" content="2020-01-22T22:15:00&#43;08:00" />
-<meta itemprop="wordCount" content="1171">
+<meta itemprop="dateModified" content="2020-09-18T22:57:00&#43;08:00" />
+<meta itemprop="wordCount" content="1290">
 
 
 
@@ -127,7 +127,7 @@
         <div class="post-category">
             <a href="/categories/hugo/"> Hugo </a>
             </div>
-          <span class="more-meta"> 约 1171 字 </span>
+          <span class="more-meta"> 约 1290 字 </span>
           <span class="more-meta"> 预计阅读 3 分钟 </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
       </div>
@@ -218,6 +218,10 @@
 </ol></li>
 </ul>
 
+<blockquote>
+<p>❗❗再次提醒，路径严格遵循 <code>/img/imagename.png</code> 写法。在typora中，少了一个前斜杠的 <code>img/imagename.png</code> 也能显示，但是在生成的文件中，少了 <code>/</code> 时，文件地址将被解析为 <code>域名/文章名/img/imagename.png</code> 而不是 <code>域名/img/imagename.png</code> ，<strong>图片会找不到</strong>。</p>
+</blockquote>
+
 <h2 id="后记">后记</h2>
 
 <p>只是因为对本地图片的插入有执念，折腾了很久，中途一度想放弃，最后稀里糊涂试出来了，不确定任何情况下都能生效。凑巧，试出来了而已，很多坑都是，莫名其妙踩出来的，真的就挺玄学的。其实最方便的还是直接用对象存储OSS，不用搞得这么麻烦。阿里云的我都已经开通了，还没用七牛云有10G免费额度，我没注册。下次再碰到这种问题，还是直接OSS走起吧。</p>
@@ -238,7 +242,7 @@
   <p class="copyright-item">
     <span class="item-title">上次更新</span>
     <span class="item-content">
-        2020-01-22 22:15
+        2020-09-18 22:57
         
     </span>
   </p>
