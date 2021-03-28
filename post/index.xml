@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Don&#39;t Judge</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 27 Jan 2021 15:47:00 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 05 Mar 2021 00:39:28 +0800</lastBuildDate>
     
 	<atom:link href="https://blog.dontjudge.cn/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Windows 使用技巧</title>
+      <link>https://blog.dontjudge.cn/post/windows-%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/</link>
+      <pubDate>Fri, 05 Mar 2021 00:39:28 +0800</pubDate>
+      
+      <guid>https://blog.dontjudge.cn/post/windows-%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/</guid>
+      <description>一些需要记录/解释的Windows使用技巧 自定义时间短语 短语 格式 效果 sj %yyyy%年%M%月%dd%日%HH%点%mm%分 2021年03月0</description>
+    </item>
     
     <item>
       <title>《非暴力沟通》读书笔记</title>
