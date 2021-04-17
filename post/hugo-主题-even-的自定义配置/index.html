@@ -16,7 +16,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="Deng" /><meta name="description" content="本文记录 Blog 使用的 Hugo 主题 https://github.com/olOwOlo/hugo-theme-even 的自定义配置。 Hugo 版本：0.59 even 版本：v4.0.0 1. 主题安装与应用 clone 到本地就算安装成功： 1 git clone https://github.com/olOwOlo/hugo-theme-even themes/even 将 themes\even\exampleSite\config.toml 文件复制到 Hugo site" /><meta name="keywords" content="Code, Life" />
+<meta name="author" content="Deng" /><meta name="description" content="本文记录 Blog 使用的 Hugo 主题 https://github.com/olOwOlo/hugo-theme-even 的自定义配置。 Hugo 版本：0.59 even 版本：v4.0.0 v4.1.0 记录： 对整个 HugoBlog 文件夹做了 backup 直接把整个 v4.1.0 clone下来做了覆盖 检查" /><meta name="keywords" content="Code, Life" />
 
 
 
@@ -34,30 +34,31 @@
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-<link href="/dist/even.c2a46f00.min.css" rel="stylesheet">
+
+<link href="/sass/main.min.b5a744db6de49a86cadafb3b70f555ab443f83c307a483402259e94726b045ff.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
 <meta property="og:title" content="Hugo 主题 Even 的自定义配置" />
-<meta property="og:description" content="本文记录 Blog 使用的 Hugo 主题 https://github.com/olOwOlo/hugo-theme-even 的自定义配置。 Hugo 版本：0.59 even 版本：v4.0.0 1. 主题安装与应用 clone 到本地就算安装成功： 1 git clone https://github.com/olOwOlo/hugo-theme-even themes/even 将 themes\even\exampleSite\config.toml 文件复制到 Hugo site" />
+<meta property="og:description" content="本文记录 Blog 使用的 Hugo 主题 https://github.com/olOwOlo/hugo-theme-even 的自定义配置。 Hugo 版本：0.59 even 版本：v4.0.0 v4.1.0 记录： 对整个 HugoBlog 文件夹做了 backup 直接把整个 v4.1.0 clone下来做了覆盖 检查" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://blog.dontjudge.cn/post/hugo-%E4%B8%BB%E9%A2%98-even-%E7%9A%84%E8%87%AA%E5%AE%9A%E4%B9%89%E9%85%8D%E7%BD%AE/" />
 <meta property="article:published_time" content="2020-01-24T20:08:00+08:00" />
 <meta property="article:modified_time" content="2020-03-02T21:17:00+08:00" />
 <meta itemprop="name" content="Hugo 主题 Even 的自定义配置">
-<meta itemprop="description" content="本文记录 Blog 使用的 Hugo 主题 https://github.com/olOwOlo/hugo-theme-even 的自定义配置。 Hugo 版本：0.59 even 版本：v4.0.0 1. 主题安装与应用 clone 到本地就算安装成功： 1 git clone https://github.com/olOwOlo/hugo-theme-even themes/even 将 themes\even\exampleSite\config.toml 文件复制到 Hugo site">
+<meta itemprop="description" content="本文记录 Blog 使用的 Hugo 主题 https://github.com/olOwOlo/hugo-theme-even 的自定义配置。 Hugo 版本：0.59 even 版本：v4.0.0 v4.1.0 记录： 对整个 HugoBlog 文件夹做了 backup 直接把整个 v4.1.0 clone下来做了覆盖 检查">
 
 
 <meta itemprop="datePublished" content="2020-01-24T20:08:00&#43;08:00" />
 <meta itemprop="dateModified" content="2020-03-02T21:17:00&#43;08:00" />
-<meta itemprop="wordCount" content="1149">
+<meta itemprop="wordCount" content="1395">
 
 
 
 <meta itemprop="keywords" content="Hugo,Blog," />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Hugo 主题 Even 的自定义配置"/>
-<meta name="twitter:description" content="本文记录 Blog 使用的 Hugo 主题 https://github.com/olOwOlo/hugo-theme-even 的自定义配置。 Hugo 版本：0.59 even 版本：v4.0.0 1. 主题安装与应用 clone 到本地就算安装成功： 1 git clone https://github.com/olOwOlo/hugo-theme-even themes/even 将 themes\even\exampleSite\config.toml 文件复制到 Hugo site"/>
+<meta name="twitter:description" content="本文记录 Blog 使用的 Hugo 主题 https://github.com/olOwOlo/hugo-theme-even 的自定义配置。 Hugo 版本：0.59 even 版本：v4.0.0 v4.1.0 记录： 对整个 HugoBlog 文件夹做了 backup 直接把整个 v4.1.0 clone下来做了覆盖 检查"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -92,12 +93,21 @@
         <li class="mobile-menu-item">About</li>
       </a>
   </ul>
+
+  
+
+
 </nav>
+
   <div class="container" id="mobile-panel">
     <header id="header" class="header">
         <div class="logo-wrapper">
   <a href="/" class="logo">Don&#39;t Judge</a>
 </div>
+
+
+
+
 
 <nav class="site-navbar">
   <ul id="menu" class="menu">
@@ -112,6 +122,7 @@
       </li>
   </ul>
 </nav>
+
     </header>
 
     <main id="main" class="main">
@@ -128,7 +139,7 @@
             <a href="/categories/hugo/"> Hugo </a>
             <a href="/categories/blog/"> Blog </a>
             </div>
-          <span class="more-meta"> 约 1149 字 </span>
+          <span class="more-meta"> 约 1395 字 </span>
           <span class="more-meta"> 预计阅读 3 分钟 </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
       </div>
@@ -165,9 +176,37 @@
 <p>本文记录 Blog 使用的 <a href="https://gohugo.io/">Hugo</a> 主题 <a href="https://github.com/olOwOlo/hugo-theme-even">https://github.com/olOwOlo/hugo-theme-even</a> 的自定义配置。</p>
 </blockquote>
 
-<p>Hugo 版本：0.59</p>
+<p>Hugo 版本：<code>0.59</code></p>
 
-<p>even 版本：v4.0.0</p>
+<p>even 版本：<code>v4.0.0</code></p>
+
+<blockquote>
+<p><code>v4.1.0</code> 记录：</p>
+
+<ol>
+<li><p>对整个 <code>HugoBlog</code> 文件夹做了 backup</p></li>
+
+<li><p>直接把整个 <code>v4.1.0</code> clone下来做了覆盖</p></li>
+
+<li><p>检查原 v4.0 的 git 差异（不确定之前有没有push过)</p>
+
+<ol>
+<li>发现了三个更改，分别是 <code>i18n\zh-CN.yaml</code> <code>layouts\partials\comments.html</code> <code>layouts\partials\footer.html</code></li>
+<li>一个 <code>.bak</code> ：<code>layouts\partials\scripts.html.bak</code> 但是没看到变化</li>
+<li>删除了阿里和微信的二维码 <code>static/img/reward/alipay.png (git)</code> <code>static/img/reward/wechat.png (git)</code></li>
+</ol></li>
+
+<li><p>对比了一下对应文件，应该没变动，直接从 <code>v4.0</code> 里复制 <code>i18n\zh-CN.yaml</code> <code>layouts\partials\comments.html</code> <code>layouts\partials\footer.html</code>，覆盖了 <code>v4.1</code> 的版本，并删除了<code>static/img/reward/</code> 文件夹</p></li>
+</ol>
+
+<p>变更总结：</p>
+
+<ol>
+<li><code>v4.1.0</code> 整体覆盖 <code>v4.0.0</code></li>
+<li>沿用  <code>v4.0.0</code> 版本的 3 个文件： <code>i18n\zh-CN.yaml</code> <code>layouts\partials\comments.html</code> <code>layouts\partials\footer.html</code></li>
+<li>删除 <code>static/img/reward/</code> 文件夹</li>
+</ol>
+</blockquote>
 
 <h3 id="1-主题安装与应用">1. 主题安装与应用</h3>
 
@@ -410,15 +449,18 @@ GitHub App：<a href="https://github.com/apps/utterances">https://github.com/app
   <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script><script></script><script src="https://cdn.jsdelivr.net/npm/raphael@2.2.7/raphael.min.js" integrity="sha256-67By+NpOtm9ka1R6xpUefeGOY8kWWHHRAKlvaTJ7ONI=" crossorigin="anonymous"></script> <script src="https://cdn.jsdelivr.net/npm/flowchart.js@1.8.0/release/flowchart.min.js" integrity="sha256-zNGWjubXoY6rb5MnmpBNefO0RgoVYfle9p0tvOQM+6k=" crossorigin="anonymous"></script><script></script><script src="https://cdn.jsdelivr.net/npm/webfontloader@1.6.28/webfontloader.js" integrity="sha256-4O4pS1SH31ZqrSO2A/2QJTVjTPqVe+jnYgOWUVr7EEc=" crossorigin="anonymous"></script> <script src="https://cdn.jsdelivr.net/npm/snapsvg@0.5.1/dist/snap.svg-min.js" integrity="sha256-oI+elz+sIm+jpn8F/qEspKoKveTc5uKeFHNNVexe6d8=" crossorigin="anonymous"></script> <script src="https://cdn.jsdelivr.net/npm/underscore@1.8.3/underscore-min.js" integrity="sha256-obZACiHd7gkOk9iIL/pimWMTJ4W/pBsKu+oZnSeBIek=" crossorigin="anonymous"></script> <script src="https://cdn.jsdelivr.net/gh/bramp/js-sequence-diagrams@2.0.1/dist/sequence-diagram-min.js" integrity="sha384-8748Vn52gHJYJI0XEuPB2QlPVNUkJlJn9tHqKec6J3q2r9l8fvRxrgn/E5ZHV0sP" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bramp/js-sequence-diagrams@2.0.1/dist/sequence-diagram-min.css" integrity="sha384-6QbLKJMz5dS3adWSeINZe74uSydBGFbnzaAYmp+tKyq60S7H2p6V7g1TysM5lAaF" crossorigin="anonymous">
-<script type="text/javascript" src="/dist/even.26188efa.min.js"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.c12618f9a600c40bd024996677e951e64d3487006775aeb22e200c990006c5c7.js"></script>
   <script type="text/javascript">
     window.MathJax = {
-      tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
-      showProcessingMessages: false,
-      messageStyle: 'none'
+      tex: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        }
     };
   </script>
-  <script async src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"  integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.5/es5/tex-mml-chtml.js" integrity="sha256-HGLuEfFcsUJGhvB8cQ8nr0gai9EucOOaIxFw7qxmd+w=" crossorigin="anonymous"></script>
 
 
 
