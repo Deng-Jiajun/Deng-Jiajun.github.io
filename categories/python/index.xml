@@ -6,11 +6,7 @@
     <description>Recent content in python on Don&#39;t Judge</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 14 Aug 2019 19:09:25 +0800</lastBuildDate>
-    
-	<atom:link href="https://blog.dontjudge.cn/categories/python/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 14 Aug 2019 19:09:25 +0800</lastBuildDate><atom:link href="https://blog.dontjudge.cn/categories/python/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Python 文件处理相关</title>
       <link>https://blog.dontjudge.cn/post/python-%E6%96%87%E4%BB%B6%E5%A4%84%E7%90%86%E7%9B%B8%E5%85%B3/</link>

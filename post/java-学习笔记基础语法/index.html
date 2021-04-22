@@ -23,7 +23,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.59.0 with theme even" />
+<meta name="generator" content="Hugo 0.82.1 with theme even" />
 
 
 <link rel="canonical" href="https://blog.dontjudge.cn/post/java-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/" />
@@ -42,21 +42,15 @@
 <meta property="og:title" content="Java 学习笔记（基础语法）" />
 <meta property="og:description" content="过一遍 Java 视频，随便记录一些花里胡哨的知识点。 Java基础语法 数据类型转换、运算符、方法入门 数据类型转换_强制转换 大范围 -&gt; 小范围 无法进行隐式转" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://blog.dontjudge.cn/post/java-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/" />
-<meta property="article:published_time" content="2020-01-26T14:55:00+08:00" />
-<meta property="article:modified_time" content="2020-02-06T23:37:00+08:00" />
+<meta property="og:url" content="https://blog.dontjudge.cn/post/java-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2020-01-26T14:55:00&#43;08:00" />
+<meta property="article:modified_time" content="2020-02-06T23:37:00&#43;08:00" />
+
 <meta itemprop="name" content="Java 学习笔记（基础语法）">
-<meta itemprop="description" content="过一遍 Java 视频，随便记录一些花里胡哨的知识点。 Java基础语法 数据类型转换、运算符、方法入门 数据类型转换_强制转换 大范围 -&gt; 小范围 无法进行隐式转">
-
-
-<meta itemprop="datePublished" content="2020-01-26T14:55:00&#43;08:00" />
+<meta itemprop="description" content="过一遍 Java 视频，随便记录一些花里胡哨的知识点。 Java基础语法 数据类型转换、运算符、方法入门 数据类型转换_强制转换 大范围 -&gt; 小范围 无法进行隐式转"><meta itemprop="datePublished" content="2020-01-26T14:55:00&#43;08:00" />
 <meta itemprop="dateModified" content="2020-02-06T23:37:00&#43;08:00" />
-<meta itemprop="wordCount" content="3077">
-
-
-
-<meta itemprop="keywords" content="Java,note," />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="wordCount" content="3072">
+<meta itemprop="keywords" content="Java,note," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Java 学习笔记（基础语法）"/>
 <meta name="twitter:description" content="过一遍 Java 视频，随便记录一些花里胡哨的知识点。 Java基础语法 数据类型转换、运算符、方法入门 数据类型转换_强制转换 大范围 -&gt; 小范围 无法进行隐式转"/>
 
@@ -139,7 +133,7 @@
             <a href="/categories/java/"> Java </a>
             <a href="/categories/note/"> note </a>
             </div>
-          <span class="more-meta"> 约 3077 字 </span>
+          <span class="more-meta"> 约 3072 字 </span>
           <span class="more-meta"> 预计阅读 7 分钟 </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
       </div>
@@ -149,102 +143,91 @@
   <h2 class="post-toc-title">文章目录</h2>
   <div class="post-toc-content always-active">
     <nav id="TableOfContents">
-<ul>
-<li><a href="#java基础语法">Java基础语法</a>
-<ul>
-<li><a href="#数据类型转换-运算符-方法入门">数据类型转换、运算符、方法入门</a>
-<ul>
-<li><a href="#数据类型转换-强制转换">数据类型转换_强制转换</a></li>
-<li><a href="#算术运算符-加号的多种用法">算术运算符_加号的多种用法</a></li>
-<li><a href="#编译器的两点优化">编译器的两点优化</a></li>
-</ul></li>
-<li><a href="#数组">数组</a></li>
-</ul></li>
-<li><a href="#面向对象与常用类">面向对象与常用类</a>
-<ul>
-<li><a href="#类与对象-封装-构造方法">类与对象、封装、构造方法</a>
-<ul>
-<li><a href="#成员变量和局部变量的区别">成员变量和局部变量的区别</a></li>
-</ul></li>
-<li><a href="#scanner类-random类-arraylist类">Scanner类、Random类、ArrayList类</a>
-<ul>
-<li><a href="#arraylist集合存储基本数据类型">ArrayList集合存储基本数据类型</a></li>
-</ul></li>
-<li><a href="#string类-static-arrays类-math类">String类、static、Arrays类、Math类</a>
-<ul>
-<li><a href="#字符串概述和特点">字符串概述和特点</a>
-<ul>
-<li><a href="#字符串常量">字符串常量</a></li>
-<li><a href="#和-equals">== 和 equals</a></li>
-<li><a href="#字符串分割-string-split-regex">字符串分割 String.split(regex)</a></li>
-</ul></li>
-<li><a href="#静态static关键字修饰成员方法">静态static关键字修饰成员方法</a></li>
-<li><a href="#静态代码块">静态代码块</a></li>
-<li><a href="#数组工具类arrays">数组工具类Arrays</a></li>
-<li><a href="#数组工具类math">数组工具类Math</a></li>
-</ul></li>
-<li><a href="#接口-多态">接口、多态</a></li>
-<li><a href="#final-权限-内部类">final、权限、内部类</a>
-<ul>
-<li><a href="#关于final">关于final</a>
-<ul>
-<li><a href="#基本类型与引用类型">基本类型与引用类型</a></li>
-<li><a href="#局部变量与成员变量">局部变量与成员变量</a></li>
-</ul></li>
-<li><a href="#public-protected-default-private">public、protected、default、private</a></li>
-<li><a href="#内部类调用">内部类调用</a></li>
-<li><a href="#变量重名时内部类访问外部类的变量">变量重名时内部类访问外部类的变量</a></li>
-<li><a href="#局部内部类访问-有效final的-局部变量">局部内部类访问【有效final的】局部变量</a></li>
-<li><a href="#匿名内部类和匿名对象的创建">匿名内部类和匿名对象的创建</a></li>
-</ul></li>
-</ul></li>
-<li><a href="#idea-快捷操作">IDEA 快捷操作</a>
-<ul>
-<li><a href="#快捷输入次数循环">快捷输入次数循环</a></li>
-<li><a href="#快捷输入-list-循环">快捷输入 List 循环</a></li>
-</ul></li>
-<li><a href="#java-内存划分-栈-堆">Java 内存划分（栈、堆……）</a>
-<ul>
-<li><a href="#1-栈-stack">1. 栈（Stack）</a></li>
-<li><a href="#2-堆-heap">2. 堆（Heap）</a></li>
-<li><a href="#3-方法区-method-area">3. 方法区（Method Area）</a></li>
-<li><a href="#4-本地方法栈-native-method-stack">4. 本地方法栈（Native Method Stack）</a></li>
-<li><a href="#5-寄存器-pc-register">5. 寄存器（PC Register）</a></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#数据类型转换运算符方法入门">数据类型转换、运算符、方法入门</a>
+      <ul>
+        <li><a href="#数据类型转换_强制转换">数据类型转换_强制转换</a></li>
+        <li><a href="#算术运算符_加号的多种用法">算术运算符_加号的多种用法</a></li>
+        <li><a href="#编译器的两点优化">编译器的两点优化</a></li>
+      </ul>
+    </li>
+    <li><a href="#数组">数组</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#类与对象封装构造方法">类与对象、封装、构造方法</a>
+      <ul>
+        <li><a href="#成员变量和局部变量的区别">成员变量和局部变量的区别</a></li>
+      </ul>
+    </li>
+    <li><a href="#scanner类random类arraylist类">Scanner类、Random类、ArrayList类</a>
+      <ul>
+        <li><a href="#arraylist集合存储基本数据类型">ArrayList集合存储基本数据类型</a></li>
+      </ul>
+    </li>
+    <li><a href="#string类staticarrays类math类">String类、static、Arrays类、Math类</a>
+      <ul>
+        <li><a href="#字符串概述和特点">字符串概述和特点</a></li>
+        <li><a href="#静态static关键字修饰成员方法">静态static关键字修饰成员方法</a></li>
+        <li><a href="#静态代码块">静态代码块</a></li>
+        <li><a href="#数组工具类arrays">数组工具类Arrays</a></li>
+        <li><a href="#数组工具类math">数组工具类Math</a></li>
+      </ul>
+    </li>
+    <li><a href="#接口多态">接口、多态</a></li>
+    <li><a href="#final权限内部类">final、权限、内部类</a>
+      <ul>
+        <li><a href="#关于final">关于final</a></li>
+        <li><a href="#publicprotecteddefaultprivate">public、protected、default、private</a></li>
+        <li><a href="#内部类调用">内部类调用</a></li>
+        <li><a href="#变量重名时内部类访问外部类的变量">变量重名时内部类访问外部类的变量</a></li>
+        <li><a href="#局部内部类访问有效final的局部变量">局部内部类访问【有效final的】局部变量</a></li>
+        <li><a href="#匿名内部类和匿名对象的创建">匿名内部类和匿名对象的创建</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#快捷输入次数循环">快捷输入次数循环</a></li>
+    <li><a href="#快捷输入-list-循环">快捷输入 List 循环</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#1-栈stack">1. 栈（Stack）</a></li>
+    <li><a href="#2-堆heap">2. 堆（Heap）</a></li>
+    <li><a href="#3-方法区method-area">3. 方法区（Method Area）</a></li>
+    <li><a href="#4-本地方法栈native-method-stack">4. 本地方法栈（Native Method Stack）</a></li>
+    <li><a href="#5-寄存器pc-register">5. 寄存器（PC Register）</a></li>
+  </ul>
 </nav>
   </div>
 </div>
     <div class="post-content">
-      
-
-<blockquote>
+      <blockquote>
 <p>过一遍 <a href="https://www.bilibili.com/video/av69867488">Java 视频</a>，随便记录一些花里胡哨的知识点。</p>
 </blockquote>
-
 <h1 id="java基础语法">Java基础语法</h1>
-
-<h2 id="数据类型转换-运算符-方法入门">数据类型转换、运算符、方法入门</h2>
-
-<h3 id="数据类型转换-强制转换">数据类型转换_强制转换</h3>
-
+<h2 id="数据类型转换运算符方法入门">数据类型转换、运算符、方法入门</h2>
+<h3 id="数据类型转换_强制转换">数据类型转换_强制转换</h3>
 <ol>
-<li><p>大范围 -&gt; 小范围 无法进行隐式转换</p>
+<li>大范围 -&gt; 小范围 无法进行隐式转换</li>
+</ol>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-java" data-lang="java"><span class="lnt">1
+<pre class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-java" data-lang="java"><span class="kt">int</span> <span class="nf">num</span> <span class="o">=</span> <span class="p">(</span><span class="kt">int</span><span class="p">)</span><span class="n">100L</span><span class="p">;</span>	<span class="c1">// 可，强制类型转换
-</span><span class="c1"></span><span class="kt">int</span> <span class="nf">num</span> <span class="o">=</span> <span class="n">100L</span><span class="p">;</span>			<span class="o">//</span> <span class="n">不可</span><span class="err">，</span><span class="n">long范围更大</span><span class="err">，</span><span class="n">无法向int转换</span></code></pre></td></tr></table>
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="kt">int</span> <span class="n">num</span> <span class="o">=</span> <span class="o">(</span><span class="kt">int</span><span class="o">)</span><span class="n">100L</span><span class="o">;</span>	<span class="c1">// 可，强制类型转换
+</span><span class="c1"></span><span class="kt">int</span> <span class="n">num</span> <span class="o">=</span> <span class="n">100L</span><span class="o">;</span>			<span class="c1">// 不可，long范围更大，无法向int转换
+</span></code></pre></td></tr></table>
 </div>
-</div></li>
-
-<li><p>强制类型转换：大范围 -&gt; 小范围 <strong>注意数据溢出 / 精度溢出</strong></p>
+</div><ol start="2">
+<li>强制类型转换：大范围 -&gt; 小范围 <strong>注意数据溢出 / 精度溢出</strong></li>
+</ol>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-java" data-lang="java"><span class="lnt">1
+<pre class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -254,178 +237,141 @@
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma"><code class="language-java" data-lang="java"><span class="c1">// long强制转换成为int类型
-</span><span class="c1"></span><span class="kt">int</span> <span class="nf">num2</span> <span class="o">=</span> <span class="p">(</span><span class="kt">int</span><span class="p">)</span> <span class="n">6000000000L</span><span class="p">;</span>
-<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">num2</span><span class="p">);</span> <span class="c1">// 1705032704
+</span><span class="c1"></span><span class="kt">int</span> <span class="n">num2</span> <span class="o">=</span> <span class="o">(</span><span class="kt">int</span><span class="o">)</span> <span class="n">6000000000L</span><span class="o">;</span>
+<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">num2</span><span class="o">);</span> <span class="c1">// 1705032704
 </span><span class="c1"></span>
 <span class="c1">// double --&gt; int，强制类型转换
-</span><span class="c1"></span><span class="kt">int</span> <span class="nf">num3</span> <span class="o">=</span> <span class="p">(</span><span class="kt">int</span><span class="p">)</span> <span class="n">3</span><span class="p">.</span><span class="na">99</span><span class="p">;</span>
-<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">num3</span><span class="p">);</span> <span class="o">//</span> <span class="n">3</span><span class="err">，</span><span class="n">这并不是四舍五入</span><span class="err">，</span><span class="n">所有的小数位都会被舍弃掉</span></code></pre></td></tr></table>
+</span><span class="c1"></span><span class="kt">int</span> <span class="n">num3</span> <span class="o">=</span> <span class="o">(</span><span class="kt">int</span><span class="o">)</span> <span class="n">3</span><span class="o">.</span><span class="na">99</span><span class="o">;</span>
+<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">num3</span><span class="o">);</span> <span class="c1">// 3，这并不是四舍五入，所有的小数位都会被舍弃掉
+</span></code></pre></td></tr></table>
 </div>
-</div></li>
-
-<li><p>byte/short/char 间的数学运算会被提升为 int</p>
+</div><ol start="3">
+<li>byte/short/char 间的数学运算会被提升为 int</li>
+</ol>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-java" data-lang="java"><span class="lnt">1
+<pre class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-java" data-lang="java"><span class="kt">byte</span> <span class="nf">num4</span> <span class="o">=</span> <span class="n">40</span><span class="p">;</span> 
-<span class="kt">byte</span> <span class="nf">num5</span> <span class="o">=</span> <span class="n">50</span><span class="p">;</span>
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="kt">byte</span> <span class="n">num4</span> <span class="o">=</span> <span class="n">40</span><span class="o">;</span> 
+<span class="kt">byte</span> <span class="n">num5</span> <span class="o">=</span> <span class="n">50</span><span class="o">;</span>
 <span class="c1">// byte + byte --&gt; int + int --&gt; int
-</span><span class="c1"></span><span class="kt">int</span> <span class="nf">result1</span> <span class="o">=</span> <span class="n">num4</span> <span class="o">+</span> <span class="n">num5</span><span class="p">;</span>	<span class="c1">// 可
-</span><span class="c1"></span><span class="kt">byte</span> <span class="nf">result1</span> <span class="o">=</span> <span class="n">num4</span> <span class="o">+</span> <span class="n">num5</span><span class="p">;</span>	<span class="o">//</span> <span class="n">不可</span></code></pre></td></tr></table>
+</span><span class="c1"></span><span class="kt">int</span> <span class="n">result1</span> <span class="o">=</span> <span class="n">num4</span> <span class="o">+</span> <span class="n">num5</span><span class="o">;</span>	<span class="c1">// 可
+</span><span class="c1"></span><span class="kt">byte</span> <span class="n">result1</span> <span class="o">=</span> <span class="n">num4</span> <span class="o">+</span> <span class="n">num5</span><span class="o">;</span>	<span class="c1">// 不可
+</span></code></pre></td></tr></table>
 </div>
-</div></li>
-
-<li><p>java 中，<strong>boolean 不进行任何类型转换</strong></p></li>
+</div><ol start="4">
+<li>java 中，<strong>boolean 不进行任何类型转换</strong></li>
 </ol>
-
-<h3 id="算术运算符-加号的多种用法">算术运算符_加号的多种用法</h3>
-
+<h3 id="算术运算符_加号的多种用法">算术运算符_加号的多种用法</h3>
 <p>任何数据类型与字符串通过+号相连，都会被转换为字符串类型</p>
-
 <h3 id="编译器的两点优化">编译器的两点优化</h3>
-
 <p>对于byte/short/char三种类型来说，如果右侧赋值的数值没有超过范围，那么javac编译器将会自动隐含地为我们补上一个(byte)(short)(char)。否则将报错。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-java" data-lang="java"><span class="lnt">1
+<pre class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-java" data-lang="java"><span class="kt">byte</span> <span class="nf">num1</span> <span class="o">=</span> <span class="n">30</span><span class="p">;</span> <span class="c1">// 右侧没有超过左侧的范围 =(byte)30;
-</span><span class="c1"></span><span class="kt">byte</span> <span class="nf">num2</span> <span class="o">=</span> <span class="n">128</span><span class="p">;</span> <span class="o">//</span> <span class="n">右侧超过了左侧的范围</span><span class="p">,</span><span class="n">报错</span></code></pre></td></tr></table>
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="kt">byte</span> <span class="n">num1</span> <span class="o">=</span> <span class="n">30</span><span class="o">;</span> <span class="c1">// 右侧没有超过左侧的范围 =(byte)30;
+</span><span class="c1"></span><span class="kt">byte</span> <span class="n">num2</span> <span class="o">=</span> <span class="n">128</span><span class="o">;</span> <span class="c1">// 右侧超过了左侧的范围,报错
+</span></code></pre></td></tr></table>
 </div>
-</div>
-<h2 id="数组">数组</h2>
-
+</div><h2 id="数组">数组</h2>
 <p>初始化：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-java" data-lang="java"><span class="lnt">1
+<pre class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-java" data-lang="java"><span class="kt">int</span><span class="p">[]</span> <span class="nf">array</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="p">[</span><span class="n">10</span><span class="p">];</span>					<span class="c1">// 指定大小
-</span><span class="c1"></span><span class="kt">int</span><span class="p">[]</span> <span class="nf">array</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="p">[]</span> <span class="p">{</span> <span class="n">5</span><span class="p">,</span> <span class="n">15</span><span class="p">,</span> <span class="n">25</span><span class="p">,</span> <span class="n">40</span> <span class="p">};</span>	<span class="c1">// 指定元素
-</span><span class="c1"></span><span class="kt">int</span><span class="p">[]</span> <span class="nf">array</span> <span class="o">=</span> <span class="p">{</span> <span class="n">5</span><span class="p">,</span> <span class="n">15</span><span class="p">,</span> <span class="n">25</span><span class="p">,</span> <span class="n">40</span> <span class="p">};</span>			<span class="c1">// 指定元素简略版
-</span><span class="c1"></span><span class="o">//</span> <span class="n">java</span> <span class="nf">这里可以接受变量作为初始值</span><span class="err">👆</span></code></pre></td></tr></table>
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="kt">int</span><span class="o">[]</span> <span class="n">array</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[</span><span class="n">10</span><span class="o">];</span>					<span class="c1">// 指定大小
+</span><span class="c1"></span><span class="kt">int</span><span class="o">[]</span> <span class="n">array</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[]</span> <span class="o">{</span> <span class="n">5</span><span class="o">,</span> <span class="n">15</span><span class="o">,</span> <span class="n">25</span><span class="o">,</span> <span class="n">40</span> <span class="o">};</span>	<span class="c1">// 指定元素
+</span><span class="c1"></span><span class="kt">int</span><span class="o">[]</span> <span class="n">array</span> <span class="o">=</span> <span class="o">{</span> <span class="n">5</span><span class="o">,</span> <span class="n">15</span><span class="o">,</span> <span class="n">25</span><span class="o">,</span> <span class="n">40</span> <span class="o">};</span>			<span class="c1">// 指定元素简略版
+</span><span class="c1">// java 这里可以接受变量作为初始值👆
+</span></code></pre></td></tr></table>
 </div>
-</div>
-<p>数组元素默认值：</p>
+</div><p>数组元素默认值：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
+<pre class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span><span class="lnt">5
-</span></pre></td>
+</span></code></pre></td>
 <td class="lntd">
-<pre class="chroma">如果是整数类型，那么默认为0；
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">如果是整数类型，那么默认为0；
 如果是浮点类型，那么默认为0.0；
 如果是字符类型，那么默认为&#39;\u0000&#39;；
 如果是布尔类型，那么默认为false；
-如果是引用类型，那么默认为null。</pre></td></tr></table>
+如果是引用类型，那么默认为null。
+</code></pre></td></tr></table>
 </div>
-</div>
-<h1 id="面向对象与常用类">面向对象与常用类</h1>
-
-<h2 id="类与对象-封装-构造方法">类与对象、封装、构造方法</h2>
-
+</div><h1 id="面向对象与常用类">面向对象与常用类</h1>
+<h2 id="类与对象封装构造方法">类与对象、封装、构造方法</h2>
 <h3 id="成员变量和局部变量的区别">成员变量和局部变量的区别</h3>
-
 <p><strong>局部变量没有初始值</strong>，详见：<a href="https://www.bilibili.com/video/av69867488?p=107">成员变量和局部变量的区别</a></p>
-
-<h2 id="scanner类-random类-arraylist类">Scanner类、Random类、ArrayList类</h2>
-
+<h2 id="scanner类random类arraylist类">Scanner类、Random类、ArrayList类</h2>
 <h3 id="arraylist集合存储基本数据类型">ArrayList集合存储基本数据类型</h3>
-
 <p><strong>泛型只能是引用类型，不能是基本类型</strong>，ArrayList 里的成员是引用类型</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-java" data-lang="java"><span class="lnt">1
+<pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-java" data-lang="java"><span class="n">ArrayList</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="nf">list</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;&gt;</span><span class="p">();</span> <span class="o">//</span> <span class="n">错误写法</span></code></pre></td></tr></table>
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="n">ArrayList</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">list</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;&gt;();</span> <span class="c1">// 错误写法
+</span></code></pre></td></tr></table>
 </div>
-</div>
-<p>解决方案：使用基本类型的<strong>包装类</strong></p>
+</div><p>解决方案：使用基本类型的<strong>包装类</strong></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-java" data-lang="java"><span class="lnt">1
+<pre class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-java" data-lang="java"><span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Integer</span><span class="o">&gt;</span> <span class="nf">list</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;&gt;</span><span class="p">();</span><span class="c1">// 正确写法
-</span><span class="c1"></span><span class="n">list</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="n">100</span><span class="p">);</span></code></pre></td></tr></table>
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Integer</span><span class="o">&gt;</span> <span class="n">list</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;&gt;();</span><span class="c1">// 正确写法
+</span><span class="c1"></span><span class="n">list</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">100</span><span class="o">);</span>
+</code></pre></td></tr></table>
 </div>
-</div>
-<h2 id="string类-static-arrays类-math类">String类、static、Arrays类、Math类</h2>
-
+</div><h2 id="string类staticarrays类math类">String类、static、Arrays类、Math类</h2>
 <h3 id="字符串概述和特点">字符串概述和特点</h3>
-
 <h4 id="字符串常量">字符串常量</h4>
-
-<p>java 中所有的字符串，包括常量字符串 <code>&quot;abc&quot;</code> 都是 String 类的实现<br />
+<p>java 中所有的字符串，包括常量字符串 <code>&quot;abc&quot;</code> 都是 String 类的实现<br>
 字符串相当于 <code>char[]</code> ，<strong>但</strong>底层为 <code>byte[]</code>，详见 <a href="https://www.bilibili.com/video/av69882344?p=22">字符串的常量池</a></p>
-
-<h4 id="和-equals">== 和 equals</h4>
-
+<h4 id="-和-equals">== 和 equals</h4>
 <p><code>==</code> 比较<strong>引用</strong>（地址），<code>equals</code> 比较<strong>值</strong></p>
-
-<h4 id="字符串分割-string-split-regex">字符串分割 String.split(regex)</h4>
-
+<h4 id="字符串分割-stringsplitregex">字符串分割 String.split(regex)</h4>
 <p>注意正则表达式的处理,如：分隔符为 <code>.</code> 时，需将表达式写为 <code>\\.</code></p>
-
 <h3 id="静态static关键字修饰成员方法">静态static关键字修饰成员方法</h3>
-
 <ol>
 <li>静态内容先于非静态内容创建，故静态内容无法直接访问非静态内容</li>
 <li><code>this</code> 代表当前<strong>对象</strong>，故无法在静态方法中使用 <code>this</code></li>
 </ol>
-
 <h3 id="静态代码块">静态代码块</h3>
-
 <p>被 <code>static{ }</code> 包裹的内容，第一次用到该类时，静态代码块执行<strong>唯一一次</strong>。</p>
-
 <p>常用作对静态成员变量的统一赋值。</p>
-
 <h3 id="数组工具类arrays">数组工具类Arrays</h3>
-
 <p><code>Arrays.sort(arr)</code> ：将 arr 排序</p>
-
 <p><code>str.toCharArray()</code> ：将 str 转化为数组</p>
-
 <h3 id="数组工具类math">数组工具类Math</h3>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span></pre></td>
-<td class="lntd">
-<pre class="chroma">public static double abs(double num)：获取绝对值。有多种重载。
+<pre><code>public static double abs(double num)：获取绝对值。有多种重载。
 public static double ceil(double num)：向上取整。
 public static double floor(double num)：向下取整。
 public static long round(double num)：四舍五入。
-Math.PI代表近似的圆周率常量（double）。</pre></td></tr></table>
-</div>
-</div>
-<h2 id="接口-多态">接口、多态</h2>
-
+Math.PI代表近似的圆周率常量（double）。
+</code></pre>
+<h2 id="接口多态">接口、多态</h2>
 <p>instanceof 用法</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-java" data-lang="java"><span class="lnt"> 1
+<pre class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -437,58 +383,53 @@ Math.PI代表近似的圆周率常量（double）。</pre></td></tr></table>
 </span><span class="lnt">10
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="nf">static</span> <span class="kt">void</span> <span class="nf">giveMeAPet</span><span class="p">(</span><span class="n">Animal</span> <span class="nf">animal</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">if</span> <span class="p">(</span><span class="n">animal</span> <span class="nf">instanceof</span> <span class="n">Dog</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">Dog</span> <span class="nf">dog</span> <span class="o">=</span> <span class="p">(</span><span class="n">Dog</span><span class="p">)</span> <span class="n">animal</span><span class="p">;</span>
-        <span class="n">dog</span><span class="p">.</span><span class="na">watchHouse</span><span class="p">();</span>
-    <span class="p">}</span>
-    <span class="k">if</span> <span class="p">(</span><span class="n">animal</span> <span class="nf">instanceof</span> <span class="n">Cat</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">Cat</span> <span class="nf">cat</span> <span class="o">=</span> <span class="p">(</span><span class="n">Cat</span><span class="p">)</span> <span class="n">animal</span><span class="p">;</span>
-        <span class="n">cat</span><span class="p">.</span><span class="na">catchMouse</span><span class="p">();</span>
-    <span class="p">}</span>
-<span class="p">}</span></code></pre></td></tr></table>
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">giveMeAPet</span><span class="o">(</span><span class="n">Animal</span> <span class="n">animal</span><span class="o">)</span> <span class="o">{</span>
+    <span class="k">if</span> <span class="o">(</span><span class="n">animal</span> <span class="k">instanceof</span> <span class="n">Dog</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">Dog</span> <span class="n">dog</span> <span class="o">=</span> <span class="o">(</span><span class="n">Dog</span><span class="o">)</span> <span class="n">animal</span><span class="o">;</span>
+        <span class="n">dog</span><span class="o">.</span><span class="na">watchHouse</span><span class="o">();</span>
+    <span class="o">}</span>
+    <span class="k">if</span> <span class="o">(</span><span class="n">animal</span> <span class="k">instanceof</span> <span class="n">Cat</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">Cat</span> <span class="n">cat</span> <span class="o">=</span> <span class="o">(</span><span class="n">Cat</span><span class="o">)</span> <span class="n">animal</span><span class="o">;</span>
+        <span class="n">cat</span><span class="o">.</span><span class="na">catchMouse</span><span class="o">();</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></td></tr></table>
 </div>
-</div>
-<h2 id="final-权限-内部类">final、权限、内部类</h2>
-
+</div><h2 id="final权限内部类">final、权限、内部类</h2>
 <h3 id="关于final">关于final</h3>
-
 <h4 id="基本类型与引用类型">基本类型与引用类型</h4>
-
-<p>对于基本类型来说，不可变说的是变量当中的数据不可改变<br />
+<p>对于基本类型来说，不可变说的是变量当中的数据不可改变<br>
 对于引用类型来说，不可变说的是变量当中的<strong>地址值</strong>不可改变</p>
-
 <p>即：指向的对象不可变，但是对象的成员变量的值可以更改</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-java" data-lang="java"><span class="lnt">1
+<pre class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">final</span> <span class="nf">Student</span> <span class="n">stu2</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Student</span><span class="p">(</span><span class="s">&#34;stu1&#34;</span><span class="p">);</span>
-<span class="n">stu2</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Student</span><span class="p">(</span><span class="s">&#34;stu2&#34;</span><span class="p">);</span>	<span class="c1">// 不可改变指向
-</span><span class="c1"></span><span class="n">stu2</span><span class="p">.</span><span class="na">setName</span><span class="p">(</span><span class="s">&#34;stu2&#34;</span><span class="p">);</span>	<span class="o">//</span> <span class="n">可改变成员数据</span></code></pre></td></tr></table>
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">final</span> <span class="n">Student</span> <span class="n">stu2</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Student</span><span class="o">(</span><span class="s">&#34;stu1&#34;</span><span class="o">);</span>
+<span class="n">stu2</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Student</span><span class="o">(</span><span class="s">&#34;stu2&#34;</span><span class="o">);</span>	<span class="c1">// 不可改变指向
+</span><span class="c1"></span><span class="n">stu2</span><span class="o">.</span><span class="na">setName</span><span class="o">(</span><span class="s">&#34;stu2&#34;</span><span class="o">);</span>	<span class="c1">// 可改变成员数据
+</span></code></pre></td></tr></table>
 </div>
-</div>
-<h4 id="局部变量与成员变量">局部变量与成员变量</h4>
-
+</div><h4 id="局部变量与成员变量">局部变量与成员变量</h4>
 <p>对于局部变量而言，可以先创建，再赋值</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-java" data-lang="java"><span class="lnt">1
+<pre class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">final</span> <span class="nf">int</span> <span class="n">num3</span><span class="p">;</span>
-<span class="n">num3</span> <span class="o">=</span> <span class="n">30</span><span class="p">;</span></code></pre></td></tr></table>
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">final</span> <span class="kt">int</span> <span class="n">num3</span><span class="o">;</span>
+<span class="n">num3</span> <span class="o">=</span> <span class="n">30</span><span class="o">;</span>
+</code></pre></td></tr></table>
 </div>
-</div>
-<p>而对于成员变量，必须<strong>在创建时就赋值</strong>，或者<strong>通过构造方法赋值</strong><br />
+</div><p>而对于成员变量，必须<strong>在创建时就赋值</strong>，或者<strong>通过构造方法赋值</strong><br>
 <strong>注意，两种方法为二选一，不能同时采用</strong></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-java" data-lang="java"><span class="lnt"> 1
+<pre class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -510,32 +451,30 @@ Math.PI代表近似的圆周率常量（double）。</pre></td></tr></table>
 </span><span class="lnt">20
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="nf">class</span> <span class="n">Person</span> <span class="p">{</span>
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Person</span> <span class="o">{</span>
 
-    <span class="kd">private</span> <span class="nf">final</span> <span class="n">String</span> <span class="nf">name</span> <span class="o">=</span> <span class="s">&#34;name1&#34;</span><span class="p">;</span>	<span class="c1">// 二选一
+    <span class="kd">private</span> <span class="kd">final</span> <span class="n">String</span> <span class="n">name</span> <span class="o">=</span> <span class="s">&#34;name1&#34;</span><span class="o">;</span>	<span class="c1">// 二选一
 </span><span class="c1"></span>
-    <span class="kd">public</span> <span class="nf">Person</span><span class="p">()</span> <span class="p">{</span>
-        <span class="n">name</span> <span class="o">=</span> <span class="s">&#34;name2&#34;</span><span class="p">;</span>	<span class="c1">// 二选一
-</span><span class="c1"></span>    <span class="p">}</span>
+    <span class="kd">public</span> <span class="nf">Person</span><span class="o">()</span> <span class="o">{</span>
+        <span class="n">name</span> <span class="o">=</span> <span class="s">&#34;name2&#34;</span><span class="o">;</span>	<span class="c1">// 二选一
+</span><span class="c1"></span>    <span class="o">}</span>
 
-    <span class="kd">public</span> <span class="nf">Person</span><span class="p">(</span><span class="n">String</span> <span class="nf">name</span><span class="p">)</span> <span class="p">{</span>
-        <span class="k">this</span><span class="p">.</span><span class="na">name</span> <span class="o">=</span> <span class="n">name</span><span class="p">;</span>
-    <span class="p">}</span>
+    <span class="kd">public</span> <span class="nf">Person</span><span class="o">(</span><span class="n">String</span> <span class="n">name</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">name</span> <span class="o">=</span> <span class="n">name</span><span class="o">;</span>
+    <span class="o">}</span>
 
-    <span class="kd">public</span> <span class="nf">String</span> <span class="n">getName</span><span class="p">()</span> <span class="p">{</span>
-        <span class="k">return</span> <span class="n">name</span><span class="p">;</span>
-    <span class="p">}</span>
+    <span class="kd">public</span> <span class="n">String</span> <span class="nf">getName</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">return</span> <span class="n">name</span><span class="o">;</span>
+    <span class="o">}</span>
 
-   <span class="kd">public</span> <span class="nf">void</span> <span class="n">setName</span><span class="p">(</span><span class="n">String</span> <span class="nf">name</span><span class="p">)</span> <span class="p">{</span>
-       <span class="k">this</span><span class="p">.</span><span class="na">name</span> <span class="o">=</span> <span class="n">name</span><span class="p">;</span>	<span class="c1">// final，不可再次赋值
-</span><span class="c1"></span>   <span class="p">}</span>
-<span class="p">}</span></code></pre></td></tr></table>
+   <span class="kd">public</span> <span class="kt">void</span> <span class="nf">setName</span><span class="o">(</span><span class="n">String</span> <span class="n">name</span><span class="o">)</span> <span class="o">{</span>
+       <span class="k">this</span><span class="o">.</span><span class="na">name</span> <span class="o">=</span> <span class="n">name</span><span class="o">;</span>	<span class="c1">// final，不可再次赋值
+</span><span class="c1"></span>   <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></td></tr></table>
 </div>
-</div>
-<h3 id="public-protected-default-private">public、protected、default、private</h3>
-
+</div><h3 id="publicprotecteddefaultprivate">public、protected、default、private</h3>
 <p>类间访问权限：<a href="https://www.bilibili.com/video/av69882344?p=87">四种权限修饰符的权限范围</a></p>
-
 <table>
 <thead>
 <tr>
@@ -546,7 +485,6 @@ Math.PI代表近似的圆周率常量（double）。</pre></td></tr></table>
 <th>private</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td>同一个类</td>
@@ -555,7 +493,6 @@ Math.PI代表近似的圆周率常量（double）。</pre></td></tr></table>
 <td>YES</td>
 <td>YES</td>
 </tr>
-
 <tr>
 <td>同一个包</td>
 <td>YES</td>
@@ -563,7 +500,6 @@ Math.PI代表近似的圆周率常量（double）。</pre></td></tr></table>
 <td>YES</td>
 <td>NO</td>
 </tr>
-
 <tr>
 <td>不同包子类</td>
 <td>YES</td>
@@ -571,7 +507,6 @@ Math.PI代表近似的圆周率常量（double）。</pre></td></tr></table>
 <td>NO</td>
 <td>NO</td>
 </tr>
-
 <tr>
 <td>不同包非子类</td>
 <td>YES</td>
@@ -581,38 +516,32 @@ Math.PI代表近似的圆周率常量（double）。</pre></td></tr></table>
 </tr>
 </tbody>
 </table>
-
 <p>类的权限修饰符：<a href="https://www.bilibili.com/video/av69882344?p=92">局部内部类定义</a></p>
-
 <p>public &gt; protected &gt; (default) &gt; private</p>
-
 <p>定义一个类的时候，权限修饰符规则：</p>
-
 <ol>
 <li>外部类：public / (default)</li>
 <li>成员内部类：public / protected / (default) / private</li>
 <li>局部内部类：什么都不能写</li>
 </ol>
-
 <h3 id="内部类调用">内部类调用</h3>
-
 <p>内部类直接调用格式：【外部类名称.内部类名称 对象名 = new 外部类名称().new 内部类名称();】</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-java" data-lang="java"><span class="lnt">1
+<pre class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma"><code class="language-java" data-lang="java"><span class="c1">// Heart为Body的内部类
-</span><span class="c1"></span><span class="n">Body</span><span class="p">.</span><span class="na">Heart</span> <span class="nf">heart</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Body</span><span class="p">().</span><span class="na">new</span> <span class="n">Heart</span><span class="p">();</span>
-<span class="n">heart</span><span class="p">.</span><span class="na">beat</span><span class="p">();</span></code></pre></td></tr></table>
+</span><span class="c1"></span><span class="n">Body</span><span class="o">.</span><span class="na">Heart</span> <span class="n">heart</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Body</span><span class="o">().</span><span class="na">new</span> <span class="n">Heart</span><span class="o">();</span>
+<span class="n">heart</span><span class="o">.</span><span class="na">beat</span><span class="o">();</span>
+</code></pre></td></tr></table>
 </div>
-</div>
-<h3 id="变量重名时内部类访问外部类的变量">变量重名时内部类访问外部类的变量</h3>
+</div><h3 id="变量重名时内部类访问外部类的变量">变量重名时内部类访问外部类的变量</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-java" data-lang="java"><span class="lnt"> 1
+<pre class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -632,48 +561,47 @@ Math.PI代表近似的圆周率常量（double）。</pre></td></tr></table>
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma"><code class="language-java" data-lang="java"><span class="c1">// 如果出现了重名现象，那么格式是：外部类名称.this.外部类成员变量名
-</span><span class="c1"></span><span class="kd">public</span> <span class="nf">class</span> <span class="n">Outer</span> <span class="p">{</span>
+</span><span class="c1"></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Outer</span> <span class="o">{</span>
 
-    <span class="kt">int</span> <span class="nf">num</span> <span class="o">=</span> <span class="n">10</span><span class="p">;</span> <span class="c1">// 外部类的成员变量
+    <span class="kt">int</span> <span class="n">num</span> <span class="o">=</span> <span class="n">10</span><span class="o">;</span> <span class="c1">// 外部类的成员变量
 </span><span class="c1"></span>
-    <span class="kd">public</span> <span class="nf">class</span> <span class="n">Inner</span> <span class="cm">/*extends Object*/</span> <span class="p">{</span>
+    <span class="kd">public</span> <span class="kd">class</span> <span class="nc">Inner</span> <span class="cm">/*extends Object*/</span> <span class="o">{</span>
 
-        <span class="kt">int</span> <span class="nf">num</span> <span class="o">=</span> <span class="n">20</span><span class="p">;</span> <span class="c1">// 内部类的成员变量
+        <span class="kt">int</span> <span class="n">num</span> <span class="o">=</span> <span class="n">20</span><span class="o">;</span> <span class="c1">// 内部类的成员变量
 </span><span class="c1"></span>
-        <span class="kd">public</span> <span class="nf">void</span> <span class="n">methodInner</span><span class="p">()</span> <span class="p">{</span>
-            <span class="kt">int</span> <span class="nf">num</span> <span class="o">=</span> <span class="n">30</span><span class="p">;</span> <span class="c1">// 内部类方法的局部变量
-</span><span class="c1"></span>            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">num</span><span class="p">);</span> <span class="c1">// 局部变量，就近原则
-</span><span class="c1"></span>            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="na">num</span><span class="p">);</span> <span class="c1">// 内部类的成员变量
-</span><span class="c1"></span>            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">Outer</span><span class="p">.</span><span class="na">this</span><span class="p">.</span><span class="na">num</span><span class="p">);</span> <span class="c1">// 外部类的成员变量
-</span><span class="c1"></span>        <span class="p">}</span>
-    <span class="p">}</span>
-<span class="p">}</span></code></pre></td></tr></table>
+        <span class="kd">public</span> <span class="kt">void</span> <span class="nf">methodInner</span><span class="o">()</span> <span class="o">{</span>
+            <span class="kt">int</span> <span class="n">num</span> <span class="o">=</span> <span class="n">30</span><span class="o">;</span> <span class="c1">// 内部类方法的局部变量
+</span><span class="c1"></span>            <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">num</span><span class="o">);</span> <span class="c1">// 局部变量，就近原则
+</span><span class="c1"></span>            <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="k">this</span><span class="o">.</span><span class="na">num</span><span class="o">);</span> <span class="c1">// 内部类的成员变量
+</span><span class="c1"></span>            <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">Outer</span><span class="o">.</span><span class="na">this</span><span class="o">.</span><span class="na">num</span><span class="o">);</span> <span class="c1">// 外部类的成员变量
+</span><span class="c1"></span>        <span class="o">}</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></td></tr></table>
 </div>
-</div>
-<h3 id="局部内部类访问-有效final的-局部变量">局部内部类访问【有效final的】局部变量</h3>
-
+</div><h3 id="局部内部类访问有效final的局部变量">局部内部类访问【有效final的】局部变量</h3>
 <p><a href="https://www.bilibili.com/video/av69882344?p=93">局部内部类的final问题</a></p>
-
 <p>局部内部类，如果希望访问所在方法的局部变量，那么这个局部变量必须是【有效final的】</p>
-
 <p>原因：</p>
-
 <ol>
-<li><p>new出来的对象在堆内存当中。</p></li>
-
-<li><p>局部变量是跟着方法走的，在栈内存当中。</p></li>
-
-<li><p>方法运行结束之后，立刻出栈，局部变量就会立刻消失。</p></li>
-
-<li><p>但是new出来的对象会在堆当中持续存在，直到垃圾回收消失。</p></li>
+<li>
+<p>new出来的对象在堆内存当中。</p>
+</li>
+<li>
+<p>局部变量是跟着方法走的，在栈内存当中。</p>
+</li>
+<li>
+<p>方法运行结束之后，立刻出栈，局部变量就会立刻消失。</p>
+</li>
+<li>
+<p>但是new出来的对象会在堆当中持续存在，直到垃圾回收消失。</p>
+</li>
 </ol>
-
 <h3 id="匿名内部类和匿名对象的创建">匿名内部类和匿名对象的创建</h3>
-
 <p>匿名内部类：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-java" data-lang="java"><span class="lnt">1
+<pre class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -681,22 +609,21 @@ Math.PI代表近似的圆周率常量（double）。</pre></td></tr></table>
 </span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-java" data-lang="java"><span class="n">MyInterface</span> <span class="nf">obj</span> <span class="o">=</span> <span class="k">new</span> <span class="n">MyInterface</span><span class="p">()</span> <span class="p">{</span>
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="n">MyInterface</span> <span class="n">obj</span> <span class="o">=</span> <span class="k">new</span> <span class="n">MyInterface</span><span class="o">()</span> <span class="o">{</span>
     <span class="nd">@Override</span>
-    <span class="kd">public</span> <span class="nf">void</span> <span class="n">method</span><span class="p">()</span> <span class="p">{</span>
-        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&#34;匿名内部类实现了方法&#34;</span><span class="p">);</span>
-    <span class="p">}</span>
-<span class="p">};</span></code></pre></td></tr></table>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">method</span><span class="o">()</span> <span class="o">{</span>
+        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;匿名内部类实现了方法&#34;</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">};</span>
+</code></pre></td></tr></table>
 </div>
-</div>
-<blockquote>
+</div><blockquote>
 <p>匿名内部类适用于需要实现接口，并<strong>只需要创建一个对象</strong>的情况。</p>
 </blockquote>
-
 <p>匿名对象：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-java" data-lang="java"><span class="lnt">1
+<pre class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -704,73 +631,67 @@ Math.PI代表近似的圆周率常量（double）。</pre></td></tr></table>
 </span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-java" data-lang="java"><span class="k">new</span> <span class="n">MyInterface</span><span class="p">()</span> <span class="p">{</span>
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="k">new</span> <span class="n">MyInterface</span><span class="o">()</span> <span class="o">{</span>
     <span class="nd">@Override</span>
-    <span class="kd">public</span> <span class="nf">void</span> <span class="n">method</span><span class="p">()</span> <span class="p">{</span>
-        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&#34;匿名对象实现方法&#34;</span><span class="p">);</span>
-    <span class="p">}</span>
-<span class="p">}.</span><span class="na">method</span><span class="p">();</span></code></pre></td></tr></table>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">method</span><span class="o">()</span> <span class="o">{</span>
+        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;匿名对象实现方法&#34;</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}.</span><span class="na">method</span><span class="o">();</span>
+</code></pre></td></tr></table>
 </div>
-</div>
-<blockquote>
+</div><blockquote>
 <p>匿名对象适用于只需要使用一次对象方法的情况。</p>
 </blockquote>
-
 <ol>
-<li><p>匿名内部类，在【创建对象】的时候，只能使用唯一一次。<br />
-如果希望多次创建对象，而且类的内容一样的话，那么就需要使用单独定义的实现类了。</p></li>
-
-<li><p>匿名对象，在【调用方法】的时候，只能调用唯一一次。<br />
-如果希望同一个对象，调用多次方法，那么必须给对象起个名字。</p></li>
-
-<li><p>匿名内部类是省略了【实现类/子类名称】，但是匿名对象是省略了【对象名称】</p></li>
+<li>
+<p>匿名内部类，在【创建对象】的时候，只能使用唯一一次。<br>
+如果希望多次创建对象，而且类的内容一样的话，那么就需要使用单独定义的实现类了。</p>
+</li>
+<li>
+<p>匿名对象，在【调用方法】的时候，只能调用唯一一次。<br>
+如果希望同一个对象，调用多次方法，那么必须给对象起个名字。</p>
+</li>
+<li>
+<p>匿名内部类是省略了【实现类/子类名称】，但是匿名对象是省略了【对象名称】</p>
+</li>
 </ol>
-
 <h1 id="idea-快捷操作">IDEA 快捷操作</h1>
-
 <h2 id="快捷输入次数循环">快捷输入次数循环</h2>
-
 <p>输入：<code>10.fori</code></p>
-
 <p>生成：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-java" data-lang="java"><span class="lnt">1
+<pre class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-java" data-lang="java"><span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="nf">i</span> <span class="o">=</span> <span class="n">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">10</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="n">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">10</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
 
-<span class="p">}</span></code></pre></td></tr></table>
+<span class="o">}</span>
+</code></pre></td></tr></table>
 </div>
-</div>
-<h2 id="快捷输入-list-循环">快捷输入 List 循环</h2>
-
+</div><h2 id="快捷输入-list-循环">快捷输入 List 循环</h2>
 <p>输入：<code>list.fori</code></p>
-
 <p>生成：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-java" data-lang="java"><span class="lnt">1
+<pre class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-java" data-lang="java"><span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="nf">i</span> <span class="o">=</span> <span class="n">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">list</span><span class="p">.</span><span class="na">size</span><span class="p">();</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="n">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">list</span><span class="o">.</span><span class="na">size</span><span class="o">();</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
 
-<span class="p">}</span></code></pre></td></tr></table>
+<span class="o">}</span>
+</code></pre></td></tr></table>
 </div>
-</div>
-<blockquote>
+</div><blockquote>
 <p>.for<strong>r</strong> 可生成倒序</p>
 </blockquote>
-
-<h1 id="java-内存划分-栈-堆">Java 内存划分（栈、堆……）</h1>
-
+<h1 id="java-内存划分栈堆">Java 内存划分（栈、堆……）</h1>
 <blockquote>
 <p>这部分内容详解见 <a href="https://www.bilibili.com/video/av69867488?p=84">Java中的内存划分</a></p>
-
 <ol>
 <li>数组：<a href="https://www.bilibili.com/video/av69867488?p=85">一个数组的内存图</a></li>
 <li>对象：<a href="https://www.bilibili.com/video/av69867488?p=102">一个对象的内存图</a></li>
@@ -779,51 +700,40 @@ Math.PI代表近似的圆周率常量（double）。</pre></td></tr></table>
 <li>super和this：<a href="https://www.bilibili.com/video/av69882344?p=50">super和tihis关键字图解</a></li>
 </ol>
 </blockquote>
-
-<h2 id="1-栈-stack">1. 栈（Stack）</h2>
-
-<p><strong>存放的都是方法中的局部变量，方法的运行一定要在栈中</strong><br />
-   局部变量：方法的<strong>参数</strong>，或者是方法{}内部的变量<br />
-   作用域：一旦超出作用域，立刻从栈内存当中消失<br />
-   （ tips: 局部变量 = 方法中的局部变量 = 栈中的局部变量；<strong>局部变量没有初始值</strong>）</p>
-
-<h2 id="2-堆-heap">2. 堆（Heap）</h2>
-
-<p><strong>凡是 new 出来的东西（如数组、对象），都在堆中</strong><br />
-   堆内存里的东西都有一个地址值：16进制<br />
-   堆内存里面的数据，都有默认值：</p>
+<h2 id="1-栈stack">1. 栈（Stack）</h2>
+<p><strong>存放的都是方法中的局部变量，方法的运行一定要在栈中</strong> <br>
+局部变量：方法的<strong>参数</strong>，或者是方法{}内部的变量<br>
+作用域：一旦超出作用域，立刻从栈内存当中消失<br>
+（ tips: 局部变量 = 方法中的局部变量 = 栈中的局部变量；<strong>局部变量没有初始值</strong>）</p>
+<h2 id="2-堆heap">2. 堆（Heap）</h2>
+<p><strong>凡是 new 出来的东西（如数组、对象），都在堆中</strong><br>
+堆内存里的东西都有一个地址值：16进制<br>
+堆内存里面的数据，都有默认值：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
+<pre class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span><span class="lnt">5
-</span></pre></td>
+</span></code></pre></td>
 <td class="lntd">
-<pre class="chroma">如果是整数类型，那么默认为0；
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">如果是整数类型，那么默认为0；
 如果是浮点类型，那么默认为0.0；
 如果是字符类型，那么默认为&#39;\u0000&#39;；
 如果是布尔类型，那么默认为false；
-如果是引用类型，那么默认为null。</pre></td></tr></table>
+如果是引用类型，那么默认为null。
+</code></pre></td></tr></table>
 </div>
-</div>
-<blockquote>
+</div><blockquote>
 <p>字符串常量池在堆中，详见 <a href="https://www.bilibili.com/video/av69882344?p=22">字符串的常量池</a></p>
 </blockquote>
-
-<h2 id="3-方法区-method-area">3. 方法区（Method Area）</h2>
-
+<h2 id="3-方法区method-area">3. 方法区（Method Area）</h2>
 <p><strong>存储 .class 相关信息（即类）,包含方法的信息</strong></p>
-
 <p>方法区中含有一个<strong>静态区</strong>，静态成员到<strong>方法区</strong>的<strong>静态区</strong>内访问</p>
-
-<h2 id="4-本地方法栈-native-method-stack">4. 本地方法栈（Native Method Stack）</h2>
-
+<h2 id="4-本地方法栈native-method-stack">4. 本地方法栈（Native Method Stack）</h2>
 <p><strong>与操作系统相关</strong></p>
-
-<h2 id="5-寄存器-pc-register">5. 寄存器（PC Register）</h2>
-
+<h2 id="5-寄存器pc-register">5. 寄存器（PC Register）</h2>
 <p><strong>与 CPU 相关</strong></p>
 
     </div>
@@ -902,7 +812,7 @@ Math.PI代表近似的圆周率常量（double）。</pre></td></tr></table>
   
 
   
-  <span class="copyright-and-others">Copyright &copy; 2020 <a href="https://github.com/Deng-Jiajun" style="color:#c05b4d">Deng</a></span>. All Rights Reserved
+  <span class="copyright-and-others">Copyright &copy; 2021 <a href="https://github.com/Deng-Jiajun" style="color:#c05b4d">Deng</a></span>. All Rights Reserved
 </div>
     </footer>
 
@@ -918,7 +828,7 @@ Math.PI代表近似的圆周率常量（double）。</pre></td></tr></table>
 
 
 
-<script type="text/javascript" src="/js/main.min.c12618f9a600c40bd024996677e951e64d3487006775aeb22e200c990006c5c7.js"></script>
+<script type="text/javascript" src="/js/main.min.c99b103c33d1539acf3025e1913697534542c4a5aa5af0ccc20475ed2863603b.js"></script>
   <script type="text/javascript">
     window.MathJax = {
       tex: {
