@@ -6,7 +6,7 @@
     <description>Recent content on Don&#39;t Judge</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 05 Mar 2021 00:39:28 +0800</lastBuildDate><atom:link href="https://blog.dontjudge.cn/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 02 May 2021 07:33:04 +0800</lastBuildDate><atom:link href="https://blog.dontjudge.cn/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
       <link>https://blog.dontjudge.cn/about/</link>
@@ -14,6 +14,33 @@
       
       <guid>https://blog.dontjudge.cn/about/</guid>
       <description>关于我 FJNU SE 2020届 FW毕业生 2020 KY落榜生 2021 KY考生 干啥啥不行 睡觉第一名 天天想些奇奇怪怪的事情 立各种 FLAG 、列各种 Todo List 不完成 关于Blog 用来记流</description>
+    </item>
+    
+    <item>
+      <title>Zsh 和 Power Shell 命令行配置</title>
+      <link>https://blog.dontjudge.cn/post/zsh-%E5%92%8C-power-shell-%E5%91%BD%E4%BB%A4%E8%A1%8C%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Sun, 02 May 2021 07:33:04 +0800</pubDate>
+      
+      <guid>https://blog.dontjudge.cn/post/zsh-%E5%92%8C-power-shell-%E5%91%BD%E4%BB%A4%E8%A1%8C%E9%85%8D%E7%BD%AE/</guid>
+      <description>Terminal 字体 Cascadia Mono（Windows Terminal 默认） MesloLGS NF（Powerlevel10k推荐 romkatv/powerlevel10k: A Zsh theme (github.com)](https://githu</description>
+    </item>
+    
+    <item>
+      <title>Typora 自动序号 CSS</title>
+      <link>https://blog.dontjudge.cn/post/typora-%E8%87%AA%E5%8A%A8%E5%BA%8F%E5%8F%B7-css/</link>
+      <pubDate>Thu, 29 Apr 2021 22:56:31 +0800</pubDate>
+      
+      <guid>https://blog.dontjudge.cn/post/typora-%E8%87%AA%E5%8A%A8%E5%BA%8F%E5%8F%B7-css/</guid>
+      <description>来源：typora大纲视图如何显示标题？ 添加以下代码段，为 Typora 产生自动序号 文件命名为 base.user.css 全局生效 导出 PDF，保留序号；导出 Word，序号丢失（w</description>
+    </item>
+    
+    <item>
+      <title>Linux 常用命令</title>
+      <link>https://blog.dontjudge.cn/post/linux-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
+      <pubDate>Thu, 22 Apr 2021 17:00:15 +0800</pubDate>
+      
+      <guid>https://blog.dontjudge.cn/post/linux-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
+      <description>后台运行 nohup &amp;lt;目标命令&amp;gt; &amp;amp; 找进程 ps -aux |grep &amp;lt;查找内容&amp;gt; 杀进程 kill -9 &amp;lt;进程号&amp;gt; 几个花里胡哨的程序 htop 系统监控 sudo apt-get install htop</description>
     </item>
     
     <item>
@@ -152,12 +179,12 @@
     </item>
     
     <item>
-      <title>WSL2走Windows代理</title>
-      <link>https://blog.dontjudge.cn/post/wsl2%E8%B5%B0windows%E4%BB%A3%E7%90%86/</link>
+      <title>WSL2/PowerShell走Windows代理</title>
+      <link>https://blog.dontjudge.cn/post/wsl2%E5%92%8Cpowershell%E8%B5%B0windows%E4%BB%A3%E7%90%86/</link>
       <pubDate>Tue, 11 Aug 2020 15:43:00 +0800</pubDate>
       
-      <guid>https://blog.dontjudge.cn/post/wsl2%E8%B5%B0windows%E4%BB%A3%E7%90%86/</guid>
-      <description>背景描述 wsl下解决特定方案可能需要clone项目/下文件等需要连接外网，wsl不走代理可能很慢甚至连不上 需求描述 让wsl2连接Window</description>
+      <guid>https://blog.dontjudge.cn/post/wsl2%E5%92%8Cpowershell%E8%B5%B0windows%E4%BB%A3%E7%90%86/</guid>
+      <description>WSL2 走代理 背景描述 wsl下解决特定方案可能需要clone项目/下文件等需要连接外网，wsl不走代理可能很慢甚至连不上 需求描述 让wsl2连接Wi</description>
     </item>
     
     <item>

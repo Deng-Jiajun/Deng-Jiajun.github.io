@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Terminal on Don&#39;t Judge</title>
+    <link>https://blog.dontjudge.cn/categories/terminal/</link>
+    <description>Recent content in Terminal on Don&#39;t Judge</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 02 May 2021 07:33:04 +0800</lastBuildDate><atom:link href="https://blog.dontjudge.cn/categories/terminal/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Zsh 和 Power Shell 命令行配置</title>
+      <link>https://blog.dontjudge.cn/post/zsh-%E5%92%8C-power-shell-%E5%91%BD%E4%BB%A4%E8%A1%8C%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Sun, 02 May 2021 07:33:04 +0800</pubDate>
+      
+      <guid>https://blog.dontjudge.cn/post/zsh-%E5%92%8C-power-shell-%E5%91%BD%E4%BB%A4%E8%A1%8C%E9%85%8D%E7%BD%AE/</guid>
+      <description>Terminal 字体 Cascadia Mono（Windows Terminal 默认） MesloLGS NF（Powerlevel10k推荐 romkatv/powerlevel10k: A Zsh theme (github.com)](https://githu</description>
+    </item>
+    
+  </channel>
+</rss>

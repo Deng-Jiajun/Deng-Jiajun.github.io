@@ -10,28 +10,105 @@
   
   <url>
     <loc>https://blog.dontjudge.cn/categories/</loc>
-    <lastmod>2021-04-21T00:34:38+08:00</lastmod>
+    <lastmod>2021-05-02T07:33:09+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://blog.dontjudge.cn/</loc>
-    <lastmod>2021-04-21T00:34:38+08:00</lastmod>
+    <lastmod>2021-05-02T07:33:09+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.dontjudge.cn/tags/linux/</loc>
+    <lastmod>2021-05-02T07:33:09+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.dontjudge.cn/categories/linux/</loc>
+    <lastmod>2021-05-02T07:33:09+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://blog.dontjudge.cn/post/</loc>
-    <lastmod>2021-04-21T00:34:38+08:00</lastmod>
+    <lastmod>2021-05-02T07:33:09+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.dontjudge.cn/tags/shell/</loc>
+    <lastmod>2021-05-02T07:33:09+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.dontjudge.cn/categories/shell/</loc>
+    <lastmod>2021-05-02T07:33:09+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://blog.dontjudge.cn/tags/</loc>
-    <lastmod>2021-04-21T00:34:38+08:00</lastmod>
+    <lastmod>2021-05-02T07:33:09+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.dontjudge.cn/tags/terminal/</loc>
+    <lastmod>2021-05-02T07:33:09+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.dontjudge.cn/categories/terminal/</loc>
+    <lastmod>2021-05-02T07:33:09+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.dontjudge.cn/post/zsh-%E5%92%8C-power-shell-%E5%91%BD%E4%BB%A4%E8%A1%8C%E9%85%8D%E7%BD%AE/</loc>
+    <lastmod>2021-05-02T07:33:09+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.dontjudge.cn/tags/typora/</loc>
+    <lastmod>2021-04-29T22:56:37+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.dontjudge.cn/categories/typora/</loc>
+    <lastmod>2021-04-29T22:56:37+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.dontjudge.cn/post/typora-%E8%87%AA%E5%8A%A8%E5%BA%8F%E5%8F%B7-css/</loc>
+    <lastmod>2021-04-29T22:56:37+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.dontjudge.cn/post/linux-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</loc>
+    <lastmod>2021-04-22T17:00:33+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -233,7 +310,7 @@
   </url>
   
   <url>
-    <loc>https://blog.dontjudge.cn/post/wsl2%E8%B5%B0windows%E4%BB%A3%E7%90%86/</loc>
+    <loc>https://blog.dontjudge.cn/post/wsl2%E5%92%8Cpowershell%E8%B5%B0windows%E4%BB%A3%E7%90%86/</loc>
     <lastmod>2021-04-21T00:34:38+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -583,20 +660,6 @@
   </url>
   
   <url>
-    <loc>https://blog.dontjudge.cn/tags/typora/</loc>
-    <lastmod>2020-01-27T16:47:00+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.dontjudge.cn/categories/typora/</loc>
-    <lastmod>2020-01-27T16:47:00+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.dontjudge.cn/post/java-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/</loc>
     <lastmod>2020-02-06T23:37:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -774,20 +837,6 @@
   <url>
     <loc>https://blog.dontjudge.cn/post/python-%E6%96%87%E4%BB%B6%E5%A4%84%E7%90%86%E7%9B%B8%E5%85%B3/</loc>
     <lastmod>2019-08-14T19:09:25+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.dontjudge.cn/tags/linux/</loc>
-    <lastmod>2019-08-13T17:26:38+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.dontjudge.cn/categories/linux/</loc>
-    <lastmod>2019-08-13T17:26:38+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
