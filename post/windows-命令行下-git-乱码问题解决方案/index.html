@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Windows 使用技巧 - Don&#39;t Judge</title>
+  <title>Windows 命令行下 git 乱码问题解决方案 - Don&#39;t Judge</title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -16,7 +16,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="Deng" /><meta name="description" content="一些需要记录/解释的Windows使用技巧 自定义时间短语 短语 格式 效果 sj %yyyy%年%M%月%dd%日%HH%点%mm%分 2021年03月0" /><meta name="keywords" content="Code, Life" />
+<meta name="author" content="Deng" /><meta name="description" content="参考链接：git log 无法正常显示中文,怎么解决? 解决方案先行 直接写入环境变量：LESSCHARSET=utf-8 原文全文转载 作者：Zombie" /><meta name="keywords" content="Code, Life" />
 
 
 
@@ -26,7 +26,7 @@
 <meta name="generator" content="Hugo 0.82.1 with theme even" />
 
 
-<link rel="canonical" href="https://blog.dontjudge.cn/post/windows-%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/" />
+<link rel="canonical" href="https://blog.dontjudge.cn/post/windows-%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%8B-git-%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -39,20 +39,20 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
-<meta property="og:title" content="Windows 使用技巧" />
-<meta property="og:description" content="一些需要记录/解释的Windows使用技巧 自定义时间短语 短语 格式 效果 sj %yyyy%年%M%月%dd%日%HH%点%mm%分 2021年03月0" />
+<meta property="og:title" content="Windows 命令行下 git 乱码问题解决方案" />
+<meta property="og:description" content="参考链接：git log 无法正常显示中文,怎么解决? 解决方案先行 直接写入环境变量：LESSCHARSET=utf-8 原文全文转载 作者：Zombie" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://blog.dontjudge.cn/post/windows-%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/" /><meta property="article:section" content="post" />
-<meta property="article:published_time" content="2021-03-05T00:39:28&#43;08:00" />
-<meta property="article:modified_time" content="2021-03-05T00:39:35&#43;08:00" />
+<meta property="og:url" content="https://blog.dontjudge.cn/post/windows-%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%8B-git-%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2021-05-10T20:12:33&#43;08:00" />
+<meta property="article:modified_time" content="2021-05-10T20:12:33&#43;08:00" />
 
-<meta itemprop="name" content="Windows 使用技巧">
-<meta itemprop="description" content="一些需要记录/解释的Windows使用技巧 自定义时间短语 短语 格式 效果 sj %yyyy%年%M%月%dd%日%HH%点%mm%分 2021年03月0"><meta itemprop="datePublished" content="2021-03-05T00:39:28&#43;08:00" />
-<meta itemprop="dateModified" content="2021-03-05T00:39:35&#43;08:00" />
-<meta itemprop="wordCount" content="229">
-<meta itemprop="keywords" content="Windows," /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Windows 使用技巧"/>
-<meta name="twitter:description" content="一些需要记录/解释的Windows使用技巧 自定义时间短语 短语 格式 效果 sj %yyyy%年%M%月%dd%日%HH%点%mm%分 2021年03月0"/>
+<meta itemprop="name" content="Windows 命令行下 git 乱码问题解决方案">
+<meta itemprop="description" content="参考链接：git log 无法正常显示中文,怎么解决? 解决方案先行 直接写入环境变量：LESSCHARSET=utf-8 原文全文转载 作者：Zombie"><meta itemprop="datePublished" content="2021-05-10T20:12:33&#43;08:00" />
+<meta itemprop="dateModified" content="2021-05-10T20:12:33&#43;08:00" />
+<meta itemprop="wordCount" content="581">
+<meta itemprop="keywords" content="Windows,Git," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Windows 命令行下 git 乱码问题解决方案"/>
+<meta name="twitter:description" content="参考链接：git log 无法正常显示中文,怎么解决? 解决方案先行 直接写入环境变量：LESSCHARSET=utf-8 原文全文转载 作者：Zombie"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -125,15 +125,16 @@
           <article class="post">
     
     <header class="post-header">
-      <h1 class="post-title">Windows 使用技巧</h1>
+      <h1 class="post-title">Windows 命令行下 git 乱码问题解决方案</h1>
 
       <div class="post-meta">
-        <span class="post-time"> 2021-03-05 00:39 </span>
+        <span class="post-time"> 2021-05-10 20:12 </span>
         <div class="post-category">
             <a href="/categories/windows/"> Windows </a>
+            <a href="/categories/git/"> Git </a>
             </div>
-          <span class="more-meta"> 约 229 字 </span>
-          <span class="more-meta"> 预计阅读 1 分钟 </span>
+          <span class="more-meta"> 约 581 字 </span>
+          <span class="more-meta"> 预计阅读 2 分钟 </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
       </div>
     </header>
@@ -141,60 +142,99 @@
     <div class="post-toc" id="post-toc">
   <h2 class="post-toc-title">文章目录</h2>
   <div class="post-toc-content always-active">
-    <nav id="TableOfContents"></nav>
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#解决方案先行">解决方案先行</a></li>
+        <li><a href="#原文全文转载">原文全文转载</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
   </div>
 </div>
     <div class="post-content">
       <blockquote>
-<p>一些需要记录/解释的Windows使用技巧</p>
+<p>参考链接：<a href="https://www.zhihu.com/question/57162172/answer/547538054">git log 无法正常显示中文,怎么解决?</a></p>
 </blockquote>
-<h1 id="自定义时间短语">自定义时间短语</h1>
-<table>
-<thead>
-<tr>
-<th>短语</th>
-<th>格式</th>
-<th>效果</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>sj</td>
-<td>%yyyy%年%M%月%dd%日%HH%点%mm%分</td>
-<td>2021年03月05日00点36分</td>
-</tr>
-<tr>
-<td>now</td>
-<td>%yyyy%-%MM%-%dd%T%HH%:%mm%:%ss%+08:00</td>
-<td>2021-03-05T00:45:54+08:00</td>
-</tr>
-</tbody>
-</table>
-<h1 id="隐藏浏览器拓展图标">隐藏浏览器拓展图标</h1>
-<p>Microsoft edge：右键拓展图标 👉 「移至菜单」</p>
-<h1 id="字体中文字符处理问题">字体中文字符处理问题</h1>
+<h3 id="解决方案先行">解决方案先行</h3>
+<p>直接写入<code>环境变量</code>：<code>LESSCHARSET=utf-8</code></p>
+<h3 id="原文全文转载">原文全文转载</h3>
+<blockquote>
+<p>作者：Zombie110year
+链接：https://www.zhihu.com/question/57162172/answer/547538054
+来源：知乎
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p>
+<p><code>git log</code> 与 <code>git status</code> 时, 如果文件与 commit message 中含有中文, 那么就可能出现乱码</p>
+<p>git status 中的乱码</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-text" data-lang="text">        new file:   &#34;\350\247\243\345\206\263-conda-sslerror-\351\227\256\351\242\230.md&#34;
+</code></pre></td></tr></table>
+</div>
+</div><p>git log 中的乱码</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-text" data-lang="text">        &lt;E4&gt;&lt;BD&gt;&lt;A0&gt;&lt;E5&gt;&lt;A5&gt;&lt;BD&gt;&lt;E4&gt;&lt;B8&gt;&lt;96&gt;&lt;E7&gt;&lt;95&gt;&lt;8C&gt;
+</code></pre></td></tr></table>
+</div>
+</div><p>对于 <code>git status</code> 中的乱码, 使用</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-text" data-lang="text">git config --global core.quotepath false
+</code></pre></td></tr></table>
+</div>
+</div><p>来解决.</p>
+<p>对于 <code>git log</code> 中的乱码, 使用</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-css" data-lang="css"><span class="c">/* 将中文“双引号”‘单引号’逗号，顿号、引号：替换为宋体 */</span>
-<span class="p">@</span><span class="k">font-face</span> <span class="p">{</span>
-
-  <span class="nt">font-family</span><span class="o">:</span> <span class="nt">quote</span><span class="o">;</span> <span class="c">/* 👈通过字体名 quote 引入 */</span>
-  <span class="nt">src</span><span class="o">:</span> <span class="nt">local</span><span class="o">(</span><span class="s1">&#39;SimSun&#39;</span><span class="o">);</span>   
-  <span class="nt">unicode-range</span><span class="o">:</span> <span class="nt">U</span><span class="o">+</span><span class="nt">201c</span><span class="o">,</span> <span class="nt">U</span><span class="o">+</span><span class="nt">201d</span><span class="o">,</span> <span class="nt">U</span><span class="o">+</span><span class="nt">2018</span><span class="o">,</span><span class="nt">U</span><span class="o">+</span><span class="nt">2019</span><span class="o">,</span><span class="nt">U</span><span class="o">+</span><span class="nt">ff0c</span><span class="o">,</span><span class="nt">U</span><span class="o">+</span><span class="nt">3001</span><span class="o">,</span><span class="nt">U</span><span class="o">+</span><span class="nt">ff1b</span><span class="o">;</span>
-<span class="p">}</span>
+<pre class="chroma"><code class="language-text" data-lang="text">git config --global i18n.commitEncoding utf-8
+    git config --global i18n.logOutputEncoding utf-8
 </code></pre></td></tr></table>
 </div>
-</div><h1 id="windows-热点问题">Windows 热点问题</h1>
-<p>电脑打开的热点连不上，看看是不是没把网络共享出去。（<a href="https://zhuanlan.zhihu.com/p/339371064">电脑开热点，手机连接不上电脑热点解决方案</a>）</p>
+</div><p>解决.</p>
+<p>前者设置提交时, message 以什么编码保存.</p>
+<p>后者设置查看时, message 以什么编码传递给查看器.</p>
+<p>在 Windows 中文版系统中, 由于系统编码为 gbk (cp936). 虽然可以通过注册表修改 (最新的 Win10 将这个功能放进了 语言与区域 设置面板中) 但是很多上年纪的程序 (比如各种破解版商业软件) 可能会因此崩溃或乱码, 所以不建议更改.</p>
+<p>对于 Windows 可以单独设置.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-text" data-lang="text">    git config --global i18n.commitEncoding utf-8
+    git config --global i18n.logOutputEncoding gbk
+</code></pre></td></tr></table>
+</div>
+</div><p>如果对 utf-8 有特别的执念, 一定要设置 logOutputEncoding 为 utf-8 的话, 就修改查看器的编码, 定义环境变量</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-text" data-lang="text">LESSCHARSET=utf-8
+</code></pre></td></tr></table>
+</div>
+</div><p>在系统环境变量设置的 GUI 中设置一个用户变量 : <code>LESSCHARSET</code> 为 &ldquo;utf-8&rdquo;</p>
+<p><img src="https://pic1.zhimg.com/50/v2-6147577afdd3bc4f781fa95d081e7900_hd.jpg?source=1940ef5c" alt="img"><img src="https://pic1.zhimg.com/80/v2-6147577afdd3bc4f781fa95d081e7900_720w.jpg?source=1940ef5c" alt="img"></p>
+<p>如果, 安装的 Git for Windows 是最小安装, 那么是不包含 less 程序的. 这样的话 <code>LESSCHARSET</code> 当然不起作用. git log 会直接输出到终端. 这就必须设置为 gbk 才不会乱码了.</p>
+<p>如果使用其他查看器, 从 less 类推, 修改相关的字符编码设置即可.</p>
+</blockquote>
 
     </div>
 
@@ -206,7 +246,7 @@
   <p class="copyright-item">
     <span class="item-title">上次更新</span>
     <span class="item-content">
-        2021-03-05 00:39
+        2021-05-10 20:12
         
     </span>
   </p>
@@ -216,15 +256,12 @@
 <footer class="post-footer">
       <div class="post-tags">
           <a href="/tags/windows/">Windows</a>
+          <a href="/tags/git/">Git</a>
           </div>
       <nav class="post-nav">
-        <a class="prev" href="/post/linux-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">
-            <i class="iconfont icon-left"></i>
-            <span class="prev-text nav-default">Linux 常用命令</span>
-            <span class="prev-text nav-mobile">上一篇</span>
-          </a>
-        <a class="next" href="/post/%E9%9D%9E%E6%9A%B4%E5%8A%9B%E6%B2%9F%E9%80%9A%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">
-            <span class="next-text nav-default">《非暴力沟通》读书笔记</span>
+        
+        <a class="next" href="/post/zsh-%E5%92%8C-power-shell-%E5%91%BD%E4%BB%A4%E8%A1%8C%E9%85%8D%E7%BD%AE/">
+            <span class="next-text nav-default">Zsh 和 Power Shell 命令行配置</span>
             <span class="next-text nav-mobile">下一篇</span>
             <i class="iconfont icon-right"></i>
           </a>
