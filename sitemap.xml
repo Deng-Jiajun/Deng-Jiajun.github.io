@@ -10,14 +10,49 @@
   
   <url>
     <loc>https://blog.dontjudge.cn/categories/</loc>
-    <lastmod>2021-05-10T20:12:33+08:00</lastmod>
+    <lastmod>2021-09-06T19:50:50+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://blog.dontjudge.cn/</loc>
-    <lastmod>2021-05-10T20:12:33+08:00</lastmod>
+    <lastmod>2021-09-06T19:50:50+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.dontjudge.cn/tags/ffmpeg/</loc>
+    <lastmod>2021-09-06T19:50:50+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.dontjudge.cn/categories/ffmpeg/</loc>
+    <lastmod>2021-09-06T19:50:50+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.dontjudge.cn/post/ffmpeg-%E5%91%BD%E4%BB%A4%E8%AE%B0%E5%BD%95/</loc>
+    <lastmod>2021-09-06T19:50:50+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.dontjudge.cn/post/</loc>
+    <lastmod>2021-09-06T19:50:50+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.dontjudge.cn/tags/</loc>
+    <lastmod>2021-09-06T19:50:50+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -31,20 +66,6 @@
   
   <url>
     <loc>https://blog.dontjudge.cn/categories/git/</loc>
-    <lastmod>2021-05-10T20:12:33+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.dontjudge.cn/post/</loc>
-    <lastmod>2021-05-10T20:12:33+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.dontjudge.cn/tags/</loc>
     <lastmod>2021-05-10T20:12:33+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

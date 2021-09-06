@@ -6,7 +6,16 @@
     <description>Recent content in Categories on Don&#39;t Judge</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 10 May 2021 20:12:33 +0800</lastBuildDate><atom:link href="https://blog.dontjudge.cn/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 06 Sep 2021 19:50:50 +0800</lastBuildDate><atom:link href="https://blog.dontjudge.cn/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ffmpeg</title>
+      <link>https://blog.dontjudge.cn/categories/ffmpeg/</link>
+      <pubDate>Mon, 06 Sep 2021 19:50:50 +0800</pubDate>
+      
+      <guid>https://blog.dontjudge.cn/categories/ffmpeg/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Git</title>
       <link>https://blog.dontjudge.cn/categories/git/</link>
