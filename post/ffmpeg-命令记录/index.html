@@ -16,7 +16,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="Deng" /><meta name="description" content="格式转换&#43;网络优化 for %a in (*.*) do ffmpeg -i &amp;quot;%a&amp;quot; -movflags faststart -acodec copy -vcodec copy &amp;quot;out%~na.mp4&amp;quot; *.*,默认合并该路径下所有文件 ts 分块合并 ffmpeg -i &amp;quot;concat:1.ts|2.ts|3.ts|4.ts&amp;quot; -acodec copy -vcodec copy -absf aac_adtstoasc output.mp4 加密 ts 合并 https://blog.csdn.net/zmjames2000/article/details/102770272 ffmpeg -allowed_extensions ALL -i index.m3u8 -c copy out.mp4 串" /><meta name="keywords" content="Code, Life" />
+<meta name="author" content="Deng" /><meta name="description" content="格式转换&#43;网络优化 for %a in (*.*) do ffmpeg -i &amp;quot;%a&amp;quot; -movflags faststart -acodec copy -vcodec copy &amp;quot;out%~na.mp4&amp;quot; *.*,默认合并该路径下所有文件 ❗不做优化的话，一些视频是不能在线播放的 单个视频：ffmpe" /><meta name="keywords" content="Code, Life" />
 
 
 
@@ -40,19 +40,19 @@
 
 
 <meta property="og:title" content="ffmpeg 命令记录" />
-<meta property="og:description" content="格式转换&#43;网络优化 for %a in (*.*) do ffmpeg -i &quot;%a&quot; -movflags faststart -acodec copy -vcodec copy &quot;out%~na.mp4&quot; *.*,默认合并该路径下所有文件 ts 分块合并 ffmpeg -i &quot;concat:1.ts|2.ts|3.ts|4.ts&quot; -acodec copy -vcodec copy -absf aac_adtstoasc output.mp4 加密 ts 合并 https://blog.csdn.net/zmjames2000/article/details/102770272 ffmpeg -allowed_extensions ALL -i index.m3u8 -c copy out.mp4 串" />
+<meta property="og:description" content="格式转换&#43;网络优化 for %a in (*.*) do ffmpeg -i &quot;%a&quot; -movflags faststart -acodec copy -vcodec copy &quot;out%~na.mp4&quot; *.*,默认合并该路径下所有文件 ❗不做优化的话，一些视频是不能在线播放的 单个视频：ffmpe" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://blog.dontjudge.cn/post/ffmpeg-%E5%91%BD%E4%BB%A4%E8%AE%B0%E5%BD%95/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2021-09-06T19:50:50&#43;08:00" />
 <meta property="article:modified_time" content="2021-09-06T19:50:50&#43;08:00" />
 
 <meta itemprop="name" content="ffmpeg 命令记录">
-<meta itemprop="description" content="格式转换&#43;网络优化 for %a in (*.*) do ffmpeg -i &quot;%a&quot; -movflags faststart -acodec copy -vcodec copy &quot;out%~na.mp4&quot; *.*,默认合并该路径下所有文件 ts 分块合并 ffmpeg -i &quot;concat:1.ts|2.ts|3.ts|4.ts&quot; -acodec copy -vcodec copy -absf aac_adtstoasc output.mp4 加密 ts 合并 https://blog.csdn.net/zmjames2000/article/details/102770272 ffmpeg -allowed_extensions ALL -i index.m3u8 -c copy out.mp4 串"><meta itemprop="datePublished" content="2021-09-06T19:50:50&#43;08:00" />
+<meta itemprop="description" content="格式转换&#43;网络优化 for %a in (*.*) do ffmpeg -i &quot;%a&quot; -movflags faststart -acodec copy -vcodec copy &quot;out%~na.mp4&quot; *.*,默认合并该路径下所有文件 ❗不做优化的话，一些视频是不能在线播放的 单个视频：ffmpe"><meta itemprop="datePublished" content="2021-09-06T19:50:50&#43;08:00" />
 <meta itemprop="dateModified" content="2021-09-06T19:50:50&#43;08:00" />
-<meta itemprop="wordCount" content="260">
+<meta itemprop="wordCount" content="300">
 <meta itemprop="keywords" content="ffmpeg," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="ffmpeg 命令记录"/>
-<meta name="twitter:description" content="格式转换&#43;网络优化 for %a in (*.*) do ffmpeg -i &quot;%a&quot; -movflags faststart -acodec copy -vcodec copy &quot;out%~na.mp4&quot; *.*,默认合并该路径下所有文件 ts 分块合并 ffmpeg -i &quot;concat:1.ts|2.ts|3.ts|4.ts&quot; -acodec copy -vcodec copy -absf aac_adtstoasc output.mp4 加密 ts 合并 https://blog.csdn.net/zmjames2000/article/details/102770272 ffmpeg -allowed_extensions ALL -i index.m3u8 -c copy out.mp4 串"/>
+<meta name="twitter:description" content="格式转换&#43;网络优化 for %a in (*.*) do ffmpeg -i &quot;%a&quot; -movflags faststart -acodec copy -vcodec copy &quot;out%~na.mp4&quot; *.*,默认合并该路径下所有文件 ❗不做优化的话，一些视频是不能在线播放的 单个视频：ffmpe"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -132,7 +132,7 @@
         <div class="post-category">
             <a href="/categories/ffmpeg/"> ffmpeg </a>
             </div>
-          <span class="more-meta"> 约 260 字 </span>
+          <span class="more-meta"> 约 300 字 </span>
           <span class="more-meta"> 预计阅读 1 分钟 </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
       </div>
@@ -161,7 +161,9 @@
 <p><code>for %a in (*.*) do ffmpeg -i &quot;%a&quot; -movflags faststart -acodec copy -vcodec copy &quot;out%~na.mp4&quot;</code></p>
 <blockquote>
 <p><code>*.*</code>,默认合并该路径下所有文件</p>
+<p>❗不做优化的话，一些视频是不能在线播放的</p>
 </blockquote>
+<p>单个视频：<code>ffmpeg -i &quot;input.mp4&quot; -movflags faststart -acodec copy -vcodec copy &quot;output.mp4&quot;</code></p>
 <h3 id="ts-分块合并">ts 分块合并</h3>
 <p><code>ffmpeg -i &quot;concat:1.ts|2.ts|3.ts|4.ts&quot; -acodec copy -vcodec copy -absf aac_adtstoasc output.mp4</code></p>
 <h3 id="加密-ts-合并">加密 ts 合并</h3>

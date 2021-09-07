@@ -22,7 +22,7 @@
       <pubDate>Mon, 06 Sep 2021 19:50:50 +0800</pubDate>
       
       <guid>https://blog.dontjudge.cn/post/ffmpeg-%E5%91%BD%E4%BB%A4%E8%AE%B0%E5%BD%95/</guid>
-      <description>格式转换+网络优化 for %a in (*.*) do ffmpeg -i &amp;quot;%a&amp;quot; -movflags faststart -acodec copy -vcodec copy &amp;quot;out%~na.mp4&amp;quot; *.*,默认合并该路径下所有文件 ts 分块合并 ffmpeg -i &amp;quot;concat:1.ts|2.ts|3.ts|4.ts&amp;quot; -acodec copy -vcodec copy -absf aac_adtstoasc output.mp4 加密 ts 合并 https://blog.csdn.net/zmjames2000/article/details/102770272 ffmpeg -allowed_extensions ALL -i index.m3u8 -c copy out.mp4 串</description>
+      <description>格式转换+网络优化 for %a in (*.*) do ffmpeg -i &amp;quot;%a&amp;quot; -movflags faststart -acodec copy -vcodec copy &amp;quot;out%~na.mp4&amp;quot; *.*,默认合并该路径下所有文件 ❗不做优化的话，一些视频是不能在线播放的 单个视频：ffmpe</description>
     </item>
     
     <item>
